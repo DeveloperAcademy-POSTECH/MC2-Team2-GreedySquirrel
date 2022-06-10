@@ -11,12 +11,11 @@
 		A884D24E2852CD7B004871B1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A884D24D2852CD7B004871B1 /* ContentView.swift */; };
 		A884D2502852CD7C004871B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A884D24F2852CD7C004871B1 /* Assets.xcassets */; };
 		A884D2532852CD7C004871B1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A884D2522852CD7C004871B1 /* Preview Assets.xcassets */; };
-		A884D25C2852CDD7004871B1 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = A884D25B2852CDD7004871B1 /* File.swift */; };
-		A884D25F2852CDE5004871B1 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = A884D25E2852CDE5004871B1 /* File.swift */; };
-		A884D2622852CDF8004871B1 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = A884D2612852CDF8004871B1 /* File.swift */; };
-		A884D2652852CE07004871B1 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = A884D2642852CE07004871B1 /* File.swift */; };
-		A884D2682852CE16004871B1 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = A884D2672852CE16004871B1 /* File.swift */; };
-		A884D26D2852CE36004871B1 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = A884D26C2852CE36004871B1 /* File.swift */; };
+		A8F7DD7628537C4600A4629E /* UtilityPlaceHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F7DD7528537C4600A4629E /* UtilityPlaceHolder.swift */; };
+		A8F7DD7828537C6000A4629E /* ViewModelPlaceHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F7DD7728537C6000A4629E /* ViewModelPlaceHolder.swift */; };
+		A8F7DD7A28537C7500A4629E /* UseCasePlaceHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F7DD7928537C7500A4629E /* UseCasePlaceHolder.swift */; };
+		A8F7DD7C28537C7C00A4629E /* ModelPlaceHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F7DD7B28537C7C00A4629E /* ModelPlaceHolder.swift */; };
+		A8F7DD7E28537C8300A4629E /* EntityPlaceHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F7DD7D28537C8300A4629E /* EntityPlaceHolder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,12 +24,11 @@
 		A884D24D2852CD7B004871B1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A884D24F2852CD7C004871B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A884D2522852CD7C004871B1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		A884D25B2852CDD7004871B1 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
-		A884D25E2852CDE5004871B1 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
-		A884D2612852CDF8004871B1 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
-		A884D2642852CE07004871B1 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
-		A884D2672852CE16004871B1 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
-		A884D26C2852CE36004871B1 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		A8F7DD7528537C4600A4629E /* UtilityPlaceHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityPlaceHolder.swift; sourceTree = "<group>"; };
+		A8F7DD7728537C6000A4629E /* ViewModelPlaceHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelPlaceHolder.swift; sourceTree = "<group>"; };
+		A8F7DD7928537C7500A4629E /* UseCasePlaceHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCasePlaceHolder.swift; sourceTree = "<group>"; };
+		A8F7DD7B28537C7C00A4629E /* ModelPlaceHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelPlaceHolder.swift; sourceTree = "<group>"; };
+		A8F7DD7D28537C8300A4629E /* EntityPlaceHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityPlaceHolder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,9 +83,8 @@
 		A884D2592852CDAE004871B1 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				A884D24B2852CD7B004871B1 /* campairApp.swift */,
-				A884D24D2852CD7B004871B1 /* ContentView.swift */,
 				A884D24F2852CD7C004871B1 /* Assets.xcassets */,
+				A884D24B2852CD7B004871B1 /* campairApp.swift */,
 				A884D2512852CD7C004871B1 /* Preview Content */,
 			);
 			path = Application;
@@ -96,7 +93,7 @@
 		A884D25A2852CDB9004871B1 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				A884D25B2852CDD7004871B1 /* File.swift */,
+				A8F7DD7528537C4600A4629E /* UtilityPlaceHolder.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -104,7 +101,7 @@
 		A884D25D2852CDDD004871B1 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A884D25E2852CDE5004871B1 /* File.swift */,
+				A884D24D2852CD7B004871B1 /* ContentView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -112,7 +109,7 @@
 		A884D2602852CDEB004871B1 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				A884D2612852CDF8004871B1 /* File.swift */,
+				A8F7DD7728537C6000A4629E /* ViewModelPlaceHolder.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -120,7 +117,7 @@
 		A884D2632852CDFE004871B1 /* UseCase */ = {
 			isa = PBXGroup;
 			children = (
-				A884D2642852CE07004871B1 /* File.swift */,
+				A8F7DD7928537C7500A4629E /* UseCasePlaceHolder.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -128,7 +125,7 @@
 		A884D2662852CE0C004871B1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				A884D2672852CE16004871B1 /* File.swift */,
+				A8F7DD7B28537C7C00A4629E /* ModelPlaceHolder.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -136,7 +133,7 @@
 		A884D26B2852CE2A004871B1 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
-				A884D26C2852CE36004871B1 /* File.swift */,
+				A8F7DD7D28537C8300A4629E /* EntityPlaceHolder.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -211,14 +208,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A884D2622852CDF8004871B1 /* File.swift in Sources */,
-				A884D2652852CE07004871B1 /* File.swift in Sources */,
-				A884D2682852CE16004871B1 /* File.swift in Sources */,
+				A8F7DD7828537C6000A4629E /* ViewModelPlaceHolder.swift in Sources */,
+				A8F7DD7A28537C7500A4629E /* UseCasePlaceHolder.swift in Sources */,
 				A884D24E2852CD7B004871B1 /* ContentView.swift in Sources */,
-				A884D25F2852CDE5004871B1 /* File.swift in Sources */,
-				A884D26D2852CE36004871B1 /* File.swift in Sources */,
-				A884D25C2852CDD7004871B1 /* File.swift in Sources */,
 				A884D24C2852CD7B004871B1 /* campairApp.swift in Sources */,
+				A8F7DD7628537C4600A4629E /* UtilityPlaceHolder.swift in Sources */,
+				A8F7DD7E28537C8300A4629E /* EntityPlaceHolder.swift in Sources */,
+				A8F7DD7C28537C7C00A4629E /* ModelPlaceHolder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,7 +342,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"campair/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"campair/Application/Preview Content\"";
 				DEVELOPMENT_TEAM = 78F54XW75V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -376,7 +372,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"campair/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"campair/Application/Preview Content\"";
 				DEVELOPMENT_TEAM = 78F54XW75V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
