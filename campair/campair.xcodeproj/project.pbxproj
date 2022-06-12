@@ -24,6 +24,7 @@
 		CC9D118F2857337A000FEC81 /* EditorRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9D118E2857337A000FEC81 /* EditorRepository.swift */; };
 		CC9D1191285733A2000FEC81 /* Equipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9D1190285733A2000FEC81 /* Equipment.swift */; };
 		CCAD618E2855A449004B7801 /* ToolDictionaryMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAD618D2855A449004B7801 /* ToolDictionaryMainView.swift */; };
+		CCAD61952855D0F5004B7801 /* ToolDictionaryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAD61942855D0F5004B7801 /* ToolDictionaryDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		CC9D118E2857337A000FEC81 /* EditorRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditorRepository.swift; sourceTree = "<group>"; };
 		CC9D1190285733A2000FEC81 /* Equipment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Equipment.swift; sourceTree = "<group>"; };
 		CCAD618D2855A449004B7801 /* ToolDictionaryMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolDictionaryMainView.swift; sourceTree = "<group>"; };
+		CCAD61942855D0F5004B7801 /* ToolDictionaryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolDictionaryDetailView.swift; sourceTree = "<group>"; };
 		EEE262B177D80904B01C5D51 /* Pods_campair.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_campair.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -187,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				CCAD618D2855A449004B7801 /* ToolDictionaryMainView.swift */,
+				CCAD61942855D0F5004B7801 /* ToolDictionaryDetailView.swift */,
 			);
 			path = ToolDictionary;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 				A884D24C2852CD7B004871B1 /* CampairApp.swift in Sources */,
 				CCAD618E2855A449004B7801 /* ToolDictionaryMainView.swift in Sources */,
 				CC9D118D2857336F000FEC81 /* EditorUseCase.swift in Sources */,
+				CCAD61952855D0F5004B7801 /* ToolDictionaryDetailView.swift in Sources */,
 				A884D24C2852CD7B004871B1 /* CampairApp.swift in Sources */,
 				A8F7DD7628537C4600A4629E /* UtilityPlaceHolder.swift in Sources */,
 				915AE0F82856FB9A00CAC50A /* EquipmentContent.swift in Sources */,
