@@ -1,0 +1,27 @@
+{
+    "editorContents":
+    [
+        {
+            "title": "챀챀챀 알아보자고",
+            "concept": "초보차크닉",
+            "content": "캠핑페어 알아보쟈",
+            "recommendedEquipment":
+            [
+                {
+                    "name": "돔 텐트",
+                    "category": "텐트",
+                    "description": "이 텐트는 어쩌구 저쩌구",
+                    "pros": "아늑하다",
+                    "cons": "돔이다"
+                },
+                {
+                    "name": "폴딩 테이블",
+                    "category": "캠핑 테이블",
+                    "description": "이 테이블은 어쩌구 저쩌구",
+                    "pros": "잘접힌다",
+                    "cons": "글쎄"
+                }
+            ]
+        }
+    ]
+}
