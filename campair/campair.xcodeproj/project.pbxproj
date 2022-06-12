@@ -21,8 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3F6A3F75A68688207A5EED68 /* Pods-campair.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-campair.debug.xcconfig"; path = "Target Support Files/Pods-campair/Pods-campair.debug.xcconfig"; sourceTree = "<group>"; };
-		5F7BF1AF07463135F4EEEDD1 /* Pods-campair.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-campair.release.xcconfig"; path = "Target Support Files/Pods-campair/Pods-campair.release.xcconfig"; sourceTree = "<group>"; };
+		0A0ECEB268ACE01987E659A3 /* Pods-campair.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-campair.debug.xcconfig"; path = "Target Support Files/Pods-campair/Pods-campair.debug.xcconfig"; sourceTree = "<group>"; };
+		4467E420AFA70CB9D8286C7E /* Pods-campair.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-campair.release.xcconfig"; path = "Target Support Files/Pods-campair/Pods-campair.release.xcconfig"; sourceTree = "<group>"; };
 		91F74E7C285495C30002A637 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		A884D2482852CD7B004871B1 /* campair.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = campair.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A884D24B2852CD7B004871B1 /* CampairApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampairApp.swift; sourceTree = "<group>"; };
@@ -57,23 +57,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		3BBB1424BACA9A57A41BA384 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				3F6A3F75A68688207A5EED68 /* Pods-campair.debug.xcconfig */,
-				5F7BF1AF07463135F4EEEDD1 /* Pods-campair.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		A884D23F2852CD7B004871B1 = {
 			isa = PBXGroup;
 			children = (
 				91F74E7C285495C30002A637 /* .swiftlint.yml */,
 				A884D24A2852CD7B004871B1 /* campair */,
 				A884D2492852CD7B004871B1 /* Products */,
-				3BBB1424BACA9A57A41BA384 /* Pods */,
 				0F68B6219A352C19692AE98D /* Frameworks */,
+				C216A97E5D9208F641FD72EB /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -165,6 +156,16 @@
 			path = Entity;
 			sourceTree = "<group>";
 		};
+		C216A97E5D9208F641FD72EB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0A0ECEB268ACE01987E659A3 /* Pods-campair.debug.xcconfig */,
+				4467E420AFA70CB9D8286C7E /* Pods-campair.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -249,7 +250,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint autocorrect\n";
+			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint\n";
 		};
 		D76A5444DDB6457AB77F7EBF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -409,7 +410,7 @@
 		};
 		A884D2572852CD7C004871B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3F6A3F75A68688207A5EED68 /* Pods-campair.debug.xcconfig */;
+			baseConfigurationReference = 0A0ECEB268ACE01987E659A3 /* Pods-campair.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -440,7 +441,7 @@
 		};
 		A884D2582852CD7C004871B1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5F7BF1AF07463135F4EEEDD1 /* Pods-campair.release.xcconfig */;
+			baseConfigurationReference = 4467E420AFA70CB9D8286C7E /* Pods-campair.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
