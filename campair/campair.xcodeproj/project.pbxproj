@@ -19,14 +19,10 @@
 		A884D2502852CD7C004871B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A884D24F2852CD7C004871B1 /* Assets.xcassets */; };
 		A884D2532852CD7C004871B1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A884D2522852CD7C004871B1 /* Preview Assets.xcassets */; };
 		A8F7DD7628537C4600A4629E /* UtilityPlaceHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F7DD7528537C4600A4629E /* UtilityPlaceHolder.swift */; };
-		A8F7DD7828537C6000A4629E /* EditorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F7DD7728537C6000A4629E /* EditorViewModel.swift */; };
-		A8F7DD7A28537C7500A4629E /* EditorUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F7DD7928537C7500A4629E /* EditorUseCase.swift */; };
-		A8F7DD7C28537C7C00A4629E /* EditorRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F7DD7B28537C7C00A4629E /* EditorRepository.swift */; };
-		A8F7DD7E28537C8300A4629E /* Equipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F7DD7D28537C8300A4629E /* Equipment.swift */; };
-		A8F7DD7828537C6000A4629E /* ViewModelPlaceHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F7DD7728537C6000A4629E /* ViewModelPlaceHolder.swift */; };
-		A8F7DD7A28537C7500A4629E /* UseCasePlaceHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F7DD7928537C7500A4629E /* UseCasePlaceHolder.swift */; };
-		A8F7DD7C28537C7C00A4629E /* ModelPlaceHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F7DD7B28537C7C00A4629E /* ModelPlaceHolder.swift */; };
-		A8F7DD7E28537C8300A4629E /* EntityPlaceHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F7DD7D28537C8300A4629E /* EntityPlaceHolder.swift */; };
+		CC9D118B28573366000FEC81 /* EditorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9D118A28573366000FEC81 /* EditorViewModel.swift */; };
+		CC9D118D2857336F000FEC81 /* EditorUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9D118C2857336F000FEC81 /* EditorUseCase.swift */; };
+		CC9D118F2857337A000FEC81 /* EditorRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9D118E2857337A000FEC81 /* EditorRepository.swift */; };
+		CC9D1191285733A2000FEC81 /* Equipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9D1190285733A2000FEC81 /* Equipment.swift */; };
 		CCAD618E2855A449004B7801 /* ToolDictionaryMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAD618D2855A449004B7801 /* ToolDictionaryMainView.swift */; };
 /* End PBXBuildFile section */
 
@@ -45,15 +41,10 @@
 		A884D24F2852CD7C004871B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A884D2522852CD7C004871B1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A8F7DD7528537C4600A4629E /* UtilityPlaceHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityPlaceHolder.swift; sourceTree = "<group>"; };
-		A8F7DD7728537C6000A4629E /* EditorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorViewModel.swift; sourceTree = "<group>"; };
-		A8F7DD7928537C7500A4629E /* EditorUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorUseCase.swift; sourceTree = "<group>"; };
-		A8F7DD7B28537C7C00A4629E /* EditorRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorRepository.swift; sourceTree = "<group>"; };
-		A8F7DD7D28537C8300A4629E /* Equipment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Equipment.swift; sourceTree = "<group>"; };
-		EEE262B177D80904B01C5D51 /* Pods_campair.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_campair.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A8F7DD7728537C6000A4629E /* ViewModelPlaceHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelPlaceHolder.swift; sourceTree = "<group>"; };
-		A8F7DD7928537C7500A4629E /* UseCasePlaceHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCasePlaceHolder.swift; sourceTree = "<group>"; };
-		A8F7DD7B28537C7C00A4629E /* ModelPlaceHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelPlaceHolder.swift; sourceTree = "<group>"; };
-		A8F7DD7D28537C8300A4629E /* EntityPlaceHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityPlaceHolder.swift; sourceTree = "<group>"; };
+		CC9D118A28573366000FEC81 /* EditorViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditorViewModel.swift; sourceTree = "<group>"; };
+		CC9D118C2857336F000FEC81 /* EditorUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditorUseCase.swift; sourceTree = "<group>"; };
+		CC9D118E2857337A000FEC81 /* EditorRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditorRepository.swift; sourceTree = "<group>"; };
+		CC9D1190285733A2000FEC81 /* Equipment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Equipment.swift; sourceTree = "<group>"; };
 		CCAD618D2855A449004B7801 /* ToolDictionaryMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolDictionaryMainView.swift; sourceTree = "<group>"; };
 		EEE262B177D80904B01C5D51 /* Pods_campair.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_campair.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -149,7 +140,7 @@
 		A884D2602852CDEB004871B1 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				A8F7DD7728537C6000A4629E /* EditorViewModel.swift */,
+				CC9D118A28573366000FEC81 /* EditorViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -157,7 +148,7 @@
 		A884D2632852CDFE004871B1 /* UseCase */ = {
 			isa = PBXGroup;
 			children = (
-				A8F7DD7928537C7500A4629E /* EditorUseCase.swift */,
+				CC9D118C2857336F000FEC81 /* EditorUseCase.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -165,7 +156,7 @@
 		A884D2662852CE0C004871B1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				A8F7DD7B28537C7C00A4629E /* EditorRepository.swift */,
+				CC9D118E2857337A000FEC81 /* EditorRepository.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -176,7 +167,7 @@
 				91B8BC2C2855A91300786C2D /* EditorCollection.swift */,
 				91B8BC2A2855A90500786C2D /* EditorContent .swift */,
 				915AE0F72856FB9A00CAC50A /* EquipmentContent.swift */,
-				A8F7DD7D28537C8300A4629E /* Equipment.swift */,
+				CC9D1190285733A2000FEC81 /* Equipment.swift */,
 				915AE0F52856FB8100CAC50A /* OpeningSection.swift */,
 				91B8BC282855A8CB00786C2D /* EditorCollectionData.json */,
 			);
@@ -318,23 +309,17 @@
 			files = (
 				915AE0F62856FB8100CAC50A /* OpeningSection.swift in Sources */,
 				91B8BC2D2855A91300786C2D /* EditorCollection.swift in Sources */,
-				A8F7DD7828537C6000A4629E /* EditorViewModel.swift in Sources */,
+				CC9D118B28573366000FEC81 /* EditorViewModel.swift in Sources */,
 				91B8BC2B2855A90500786C2D /* EditorContent .swift in Sources */,
-				A8F7DD7A28537C7500A4629E /* EditorUseCase.swift in Sources */,
-				CCAD61932855B11B004B7801 /* ToolDictionaryContentView.swift in Sources */,
-				A8F7DD7828537C6000A4629E /* ViewModelPlaceHolder.swift in Sources */,
-				A8F7DD7A28537C7500A4629E /* UseCasePlaceHolder.swift in Sources */,
+				CC9D118F2857337A000FEC81 /* EditorRepository.swift in Sources */,
 				A884D24E2852CD7B004871B1 /* ContentView.swift in Sources */,
+				CC9D1191285733A2000FEC81 /* Equipment.swift in Sources */,
 				A884D24C2852CD7B004871B1 /* CampairApp.swift in Sources */,
 				CCAD618E2855A449004B7801 /* ToolDictionaryMainView.swift in Sources */,
+				CC9D118D2857336F000FEC81 /* EditorUseCase.swift in Sources */,
 				A884D24C2852CD7B004871B1 /* CampairApp.swift in Sources */,
 				A8F7DD7628537C4600A4629E /* UtilityPlaceHolder.swift in Sources */,
-				A8F7DD7E28537C8300A4629E /* Equipment.swift in Sources */,
-				A8F7DD7C28537C7C00A4629E /* EditorRepository.swift in Sources */,
 				915AE0F82856FB9A00CAC50A /* EquipmentContent.swift in Sources */,
-				CCAD61912855A467004B7801 /* ToolDictionaryDetailView.swift in Sources */,
-				A8F7DD7E28537C8300A4629E /* EntityPlaceHolder.swift in Sources */,
-				A8F7DD7C28537C7C00A4629E /* ModelPlaceHolder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
