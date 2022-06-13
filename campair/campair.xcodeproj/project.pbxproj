@@ -19,6 +19,8 @@
 		A884D2502852CD7C004871B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A884D24F2852CD7C004871B1 /* Assets.xcassets */; };
 		A884D2532852CD7C004871B1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A884D2522852CD7C004871B1 /* Preview Assets.xcassets */; };
 		A8F7DD7628537C4600A4629E /* UtilityPlaceHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F7DD7528537C4600A4629E /* UtilityPlaceHolder.swift */; };
+		CC00FAD428574F5F00BA8549 /* EditorDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC00FAD328574F5F00BA8549 /* EditorDetailView.swift */; };
+		CC00FADA28581E8E00BA8549 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC00FAD928581E8E00BA8549 /* ColorExtension.swift */; };
 		CC9D118B28573366000FEC81 /* EditorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9D118A28573366000FEC81 /* EditorViewModel.swift */; };
 		CC9D118D2857336F000FEC81 /* EditorUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9D118C2857336F000FEC81 /* EditorUseCase.swift */; };
 		CC9D118F2857337A000FEC81 /* EditorRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9D118E2857337A000FEC81 /* EditorRepository.swift */; };
@@ -42,6 +44,8 @@
 		A884D24F2852CD7C004871B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A884D2522852CD7C004871B1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A8F7DD7528537C4600A4629E /* UtilityPlaceHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityPlaceHolder.swift; sourceTree = "<group>"; };
+		CC00FAD328574F5F00BA8549 /* EditorDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorDetailView.swift; sourceTree = "<group>"; };
+		CC00FAD928581E8E00BA8549 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		CC9D118A28573366000FEC81 /* EditorViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditorViewModel.swift; sourceTree = "<group>"; };
 		CC9D118C2857336F000FEC81 /* EditorUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditorUseCase.swift; sourceTree = "<group>"; };
 		CC9D118E2857337A000FEC81 /* EditorRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditorRepository.swift; sourceTree = "<group>"; };
@@ -117,6 +121,7 @@
 			children = (
 				A884D24F2852CD7C004871B1 /* Assets.xcassets */,
 				A884D24B2852CD7B004871B1 /* CampairApp.swift */,
+				CC00FAD928581E8E00BA8549 /* ColorExtension.swift */,
 				A884D2512852CD7C004871B1 /* Preview Content */,
 			);
 			path = Application;
@@ -134,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				A884D24D2852CD7B004871B1 /* ContentView.swift */,
+				CC00FAD228574F3C00BA8549 /* Editor */,
 				CCAD618F2855A450004B7801 /* ToolDictionary */,
 			);
 			path = View;
@@ -183,6 +189,14 @@
 				4467E420AFA70CB9D8286C7E /* Pods-campair.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		CC00FAD228574F3C00BA8549 /* Editor */ = {
+			isa = PBXGroup;
+			children = (
+				CC00FAD328574F5F00BA8549 /* EditorDetailView.swift */,
+			);
+			path = Editor;
 			sourceTree = "<group>";
 		};
 		CCAD618F2855A450004B7801 /* ToolDictionary */ = {
@@ -310,6 +324,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC00FAD428574F5F00BA8549 /* EditorDetailView.swift in Sources */,
 				915AE0F62856FB8100CAC50A /* OpeningSection.swift in Sources */,
 				91B8BC2D2855A91300786C2D /* EditorCollection.swift in Sources */,
 				CC9D118B28573366000FEC81 /* EditorViewModel.swift in Sources */,
@@ -320,6 +335,7 @@
 				A884D24C2852CD7B004871B1 /* CampairApp.swift in Sources */,
 				CCAD618E2855A449004B7801 /* ToolDictionaryMainView.swift in Sources */,
 				CC9D118D2857336F000FEC81 /* EditorUseCase.swift in Sources */,
+				CC00FADA28581E8E00BA8549 /* ColorExtension.swift in Sources */,
 				CCAD61952855D0F5004B7801 /* ToolDictionaryDetailView.swift in Sources */,
 				A884D24C2852CD7B004871B1 /* CampairApp.swift in Sources */,
 				A8F7DD7628537C4600A4629E /* UtilityPlaceHolder.swift in Sources */,
