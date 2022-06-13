@@ -11,8 +11,9 @@ class EditorViewModel: ObservableObject {
     let editorUseCase = EditorUseCase(repository: EditorRepository())
     @Published var titleText = "test"
     func testButtonTouched() {
-        editorUseCase.getEditorCollection { editorCollection in
-            self.titleText = editorCollection.editorContents[0].title
+        self.editorUseCase.getEditorCollection { [weak self] editorCollection in
+            // test code
+            self!.titleText = editorCollection.editorContents[0].equipmentContents[2].recommendedEquipments[0].content
         }
     }
 }

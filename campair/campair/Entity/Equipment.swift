@@ -8,9 +8,9 @@
 import Foundation
 
 struct Equipment: Codable {
-    let name: String
-    let category: String
-    let description: String
-    let pros: String
-    let cons: String
+    let paintingURL: String
+    let title: String
+    let content: String
+    let pros: [String]
+    let cons: [String]
 }

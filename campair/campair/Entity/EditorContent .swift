@@ -8,8 +8,6 @@
 import Foundation
 
 struct EditorContent: Codable {
-    let title: String
-    let concept: String
-    let content: String
-    let recommendedEquipment: [Equipment]
+    let opening: OpeningSection
+    let equipmentContents: [EquipmentContent]
 }

@@ -8,9 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var viewModel = EditorViewModel()
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            Text(viewModel.titleText)
+                .padding()
+            // testcode
+            Button("test") {
+                viewModel.testButtonTouched()
+            }
+        }
     }
 }
 
