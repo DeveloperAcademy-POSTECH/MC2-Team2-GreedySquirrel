@@ -1,14 +1,15 @@
 //
-//  ViewModelPlaceHolder.swift
+//  EditorViewModel.swift
 //  campair
 //
 //  Created by Shin Jae Ung on 2022/06/10.
 //
 
+import Combine
 import Foundation
 
-class EditorViewModel: ObservableObject {
-    let editorUseCase = EditorUseCase(repository: EditorRepository())
+final class EditorViewModel: ObservableObject {
+    private let editorUseCase = EditorUseCase(repository: EditorRepository())
     @Published var titleText = "test"
     func testButtonTouched() {
         self.editorUseCase.getEditorCollection { [weak self] editorCollection in

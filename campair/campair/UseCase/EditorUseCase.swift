@@ -1,5 +1,5 @@
 //
-//  UseCasePlaceHolder.swift
+//  EditorUseCase.swift
 //  campair
 //
 //  Created by Shin Jae Ung on 2022/06/10.
@@ -9,7 +9,7 @@ import Foundation
 import OSLog
 
 struct EditorUseCase {
-    let repository: EditorcontentsFetchable
+    private let repository: EditorcontentsFetchable
     init(repository: EditorcontentsFetchable) {
         self.repository = repository
     }
