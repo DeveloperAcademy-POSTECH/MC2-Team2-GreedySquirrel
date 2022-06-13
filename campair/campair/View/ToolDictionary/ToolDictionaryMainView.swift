@@ -1,5 +1,5 @@
 //
-//  ToolDictionaryMainView.swift
+//  EquipmentDictionaryMainView.swift
 //  campair
 //
 //  Created by 이가은 on 2022/06/12.
@@ -7,28 +7,26 @@
 
 import SwiftUI
 
-struct ToolDictionaryMainView: View {
-    @State private var searchWord : String = ""
-    
+struct EquipmentDictionaryMainView: View {
+    @State private var searchWord = ""
     private let columns: [GridItem] = [
         GridItem(.flexible(), spacing: 10, alignment: nil),
         GridItem(.flexible(), spacing: 10, alignment: nil),
         GridItem(.flexible(), spacing: 10, alignment: nil),
         GridItem(.flexible(), spacing: 10, alignment: nil)
     ]
-    
     var body: some View {
-        NavigationView{
-            VStack(alignment : .leading, spacing: 20){
-                HStack(spacing : 0){
+        NavigationView {
+            VStack(alignment: .leading, spacing: 20) {
+                HStack(spacing: 0) {
                     Text("Logo")
                         .padding(.trailing, 20)
-                    ZStack(alignment: .leading){
+                    ZStack(alignment: .leading) {
                         Rectangle()
                             .stroke()
                             .background(Color.white)
                             .frame(height: 34)
-                        HStack(spacing : 0){
+                        HStack(spacing: 0) {
                             Image(systemName: "magnifyingglass")
                                 .padding(.horizontal, 10)
                             TextField("검색어를 입력하세요.", text: self.$searchWord)
@@ -37,36 +35,32 @@ struct ToolDictionaryMainView: View {
                 }
                 Text("어서와요!(가안)\n장비를 알아보아요")
                     .bold()
-                    .font(.system(size:25))
+                    .font(.system(size: 25))
                     .padding(.vertical, 10)
                 Text("캠핑페어 알아보쟛")
                     .font(.system(size: 20))
                 LazyVGrid(columns: self.columns) {
-                    
-                    ForEach(0..<16){ index in
-                        ToolBoxView(image: Image(systemName: "hammer"), name: "캠핑페어")
+                    ForEach (0..<16) { _ in
+                        EquipmentBoxView(image: Image(systemName: "hammer"), name: "캠핑페어")
                     }
                 }
                 Spacer()
             }
             .padding(.horizontal, 25)
             .padding(.top, 30)
-            .navigationTitle("")
             .navigationBarHidden(true)
         }
     }
 }
 
-struct ToolBoxView: View {
-    let image : Image
-    let name : String
-    
+struct EquipmentBoxView: View {
+    let image: Image
+    let name: String
     var body: some View {
-        
         Button {
-            
+            // TODO: Add Handling
         } label: {
-            VStack{
+            VStack {
                 Rectangle()
                     .stroke()
                     .frame(width: 70, height: 70)
@@ -83,10 +77,8 @@ struct ToolBoxView: View {
     }
 }
 
-struct ToolDictionaryMainView_Previews: PreviewProvider {
+struct EquipmentDictionaryMainView_Previews: PreviewProvider {
     static var previews: some View {
-        ToolDictionaryMainView()
+        EquipmentDictionaryMainView()
     }
 }
-
-
