@@ -25,8 +25,8 @@
 		CC9D118D2857336F000FEC81 /* EditorUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9D118C2857336F000FEC81 /* EditorUseCase.swift */; };
 		CC9D118F2857337A000FEC81 /* EditorRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9D118E2857337A000FEC81 /* EditorRepository.swift */; };
 		CC9D1191285733A2000FEC81 /* Equipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9D1190285733A2000FEC81 /* Equipment.swift */; };
-		CCAD618E2855A449004B7801 /* ToolDictionaryMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAD618D2855A449004B7801 /* ToolDictionaryMainView.swift */; };
-		CCAD61952855D0F5004B7801 /* ToolDictionaryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAD61942855D0F5004B7801 /* ToolDictionaryDetailView.swift */; };
+		CCAD618E2855A449004B7801 /* EquipmentDictionaryMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAD618D2855A449004B7801 /* EquipmentDictionaryMainView.swift */; };
+		CCAD61952855D0F5004B7801 /* EquipmentDictionaryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAD61942855D0F5004B7801 /* EquipmentDictionaryDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,8 +50,8 @@
 		CC9D118C2857336F000FEC81 /* EditorUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditorUseCase.swift; sourceTree = "<group>"; };
 		CC9D118E2857337A000FEC81 /* EditorRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditorRepository.swift; sourceTree = "<group>"; };
 		CC9D1190285733A2000FEC81 /* Equipment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Equipment.swift; sourceTree = "<group>"; };
-		CCAD618D2855A449004B7801 /* ToolDictionaryMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolDictionaryMainView.swift; sourceTree = "<group>"; };
-		CCAD61942855D0F5004B7801 /* ToolDictionaryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolDictionaryDetailView.swift; sourceTree = "<group>"; };
+		CCAD618D2855A449004B7801 /* EquipmentDictionaryMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentDictionaryMainView.swift; sourceTree = "<group>"; };
+		CCAD61942855D0F5004B7801 /* EquipmentDictionaryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentDictionaryDetailView.swift; sourceTree = "<group>"; };
 		EEE262B177D80904B01C5D51 /* Pods_campair.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_campair.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -140,7 +140,7 @@
 			children = (
 				A884D24D2852CD7B004871B1 /* ContentView.swift */,
 				CC00FAD228574F3C00BA8549 /* Editor */,
-				CCAD618F2855A450004B7801 /* ToolDictionary */,
+				CCAD618F2855A450004B7801 /* EquipmentDictionary */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -199,13 +199,13 @@
 			path = Editor;
 			sourceTree = "<group>";
 		};
-		CCAD618F2855A450004B7801 /* ToolDictionary */ = {
+		CCAD618F2855A450004B7801 /* EquipmentDictionary */ = {
 			isa = PBXGroup;
 			children = (
-				CCAD618D2855A449004B7801 /* ToolDictionaryMainView.swift */,
-				CCAD61942855D0F5004B7801 /* ToolDictionaryDetailView.swift */,
+				CCAD618D2855A449004B7801 /* EquipmentDictionaryMainView.swift */,
+				CCAD61942855D0F5004B7801 /* EquipmentDictionaryDetailView.swift */,
 			);
-			path = ToolDictionary;
+			path = EquipmentDictionary;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,10 +333,11 @@
 				A884D24E2852CD7B004871B1 /* ContentView.swift in Sources */,
 				CC9D1191285733A2000FEC81 /* Equipment.swift in Sources */,
 				A884D24C2852CD7B004871B1 /* CampairApp.swift in Sources */,
-				CCAD618E2855A449004B7801 /* ToolDictionaryMainView.swift in Sources */,
+				CCAD618E2855A449004B7801 /* EquipmentDictionaryMainView.swift in Sources */,
 				CC9D118D2857336F000FEC81 /* EditorUseCase.swift in Sources */,
 				CC00FADA28581E8E00BA8549 /* ColorExtension.swift in Sources */,
 				CCAD61952855D0F5004B7801 /* ToolDictionaryDetailView.swift in Sources */,
+				CCAD61952855D0F5004B7801 /* EquipmentDictionaryDetailView.swift in Sources */,
 				A884D24C2852CD7B004871B1 /* CampairApp.swift in Sources */,
 				A8F7DD7628537C4600A4629E /* UtilityPlaceHolder.swift in Sources */,
 				915AE0F82856FB9A00CAC50A /* EquipmentContent.swift in Sources */,
