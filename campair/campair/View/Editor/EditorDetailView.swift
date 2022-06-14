@@ -48,7 +48,7 @@ struct OpeningEditorView: View {
                     // heavy -> extraBold : 800 숫자로 맞춰야 하는데 숫자를 fontWeight으로 주는 방법을 모르겠습니다.
                         .fontWeight(.heavy)
                 }
-                .padding(.top, 64)
+                .padding(.top, 30 + UIDevice.current.getSafeAreaTopValue)
                 .padding(.leading, 20)
             }
             VStack(alignment: .leading, spacing: 11) {
@@ -149,5 +149,7 @@ struct RecommendedEquipmentCardView: View {
 struct EditorDetailView_Previews: PreviewProvider {
     static var previews: some View {
         EditorDetailView()
+        EditorDetailView()
+            .previewDevice("iPhone SE (3rd generation)")
     }
 }
