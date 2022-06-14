@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		823A03E07B3007B9DB63E4CA /* Pods_campair.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEE262B177D80904B01C5D51 /* Pods_campair.framework */; };
+		911531CF28587B7000961E08 /* EditorEquipListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911531CE28587B7000961E08 /* EditorEquipListView.swift */; };
 		915AE0F62856FB8100CAC50A /* OpeningSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915AE0F52856FB8100CAC50A /* OpeningSection.swift */; };
 		915AE0F82856FB9A00CAC50A /* EquipmentContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915AE0F72856FB9A00CAC50A /* EquipmentContent.swift */; };
+		9194800728575DAE004F4BF5 /* EditorMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9194800628575DAE004F4BF5 /* EditorMainView.swift */; };
+		9194800928581E1C004F4BF5 /* EditorCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9194800828581E1C004F4BF5 /* EditorCardView.swift */; };
 		91B8BC292855A8CB00786C2D /* EditorCollectionData.json in Resources */ = {isa = PBXBuildFile; fileRef = 91B8BC282855A8CB00786C2D /* EditorCollectionData.json */; };
 		91B8BC2B2855A90500786C2D /* EditorContent .swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B8BC2A2855A90500786C2D /* EditorContent .swift */; };
 		91B8BC2D2855A91300786C2D /* EditorCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B8BC2C2855A91300786C2D /* EditorCollection.swift */; };
@@ -33,8 +36,11 @@
 /* Begin PBXFileReference section */
 		0A0ECEB268ACE01987E659A3 /* Pods-campair.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-campair.debug.xcconfig"; path = "Target Support Files/Pods-campair/Pods-campair.debug.xcconfig"; sourceTree = "<group>"; };
 		4467E420AFA70CB9D8286C7E /* Pods-campair.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-campair.release.xcconfig"; path = "Target Support Files/Pods-campair/Pods-campair.release.xcconfig"; sourceTree = "<group>"; };
+		911531CE28587B7000961E08 /* EditorEquipListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorEquipListView.swift; sourceTree = "<group>"; };
 		915AE0F52856FB8100CAC50A /* OpeningSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeningSection.swift; sourceTree = "<group>"; };
 		915AE0F72856FB9A00CAC50A /* EquipmentContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentContent.swift; sourceTree = "<group>"; };
+		9194800628575DAE004F4BF5 /* EditorMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorMainView.swift; sourceTree = "<group>"; };
+		9194800828581E1C004F4BF5 /* EditorCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorCardView.swift; sourceTree = "<group>"; };
 		91B8BC282855A8CB00786C2D /* EditorCollectionData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = EditorCollectionData.json; sourceTree = "<group>"; };
 		91B8BC2A2855A90500786C2D /* EditorContent .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditorContent .swift"; sourceTree = "<group>"; };
 		91B8BC2C2855A91300786C2D /* EditorCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorCollection.swift; sourceTree = "<group>"; };
@@ -75,6 +81,16 @@
 				EEE262B177D80904B01C5D51 /* Pods_campair.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9194800528575D91004F4BF5 /* Editor */ = {
+			isa = PBXGroup;
+			children = (
+				9194800628575DAE004F4BF5 /* EditorMainView.swift */,
+				9194800828581E1C004F4BF5 /* EditorCardView.swift */,
+				911531CE28587B7000961E08 /* EditorEquipListView.swift */,
+			);
+			path = Editor;
 			sourceTree = "<group>";
 		};
 		A884D23F2852CD7B004871B1 = {
@@ -141,6 +157,7 @@
 		A884D25D2852CDDD004871B1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9194800528575D91004F4BF5 /* Editor */,
 				A884D24D2852CD7B004871B1 /* ContentView.swift */,
 				CC00FAD228574F3C00BA8549 /* Editor */,
 				CCAD618F2855A450004B7801 /* EquipmentDictionary */,
@@ -328,8 +345,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC00FAD428574F5F00BA8549 /* EditorDetailView.swift in Sources */,
+				9194800728575DAE004F4BF5 /* EditorMainView.swift in Sources */,
 				915AE0F62856FB8100CAC50A /* OpeningSection.swift in Sources */,
 				91B8BC2D2855A91300786C2D /* EditorCollection.swift in Sources */,
+				911531CF28587B7000961E08 /* EditorEquipListView.swift in Sources */,
 				CC9D118B28573366000FEC81 /* EditorViewModel.swift in Sources */,
 				91B8BC2B2855A90500786C2D /* EditorContent .swift in Sources */,
 				CC9D118F2857337A000FEC81 /* EditorRepository.swift in Sources */,
@@ -341,6 +360,8 @@
 				CC9D118D2857336F000FEC81 /* EditorUseCase.swift in Sources */,
 				CC00FADA28581E8E00BA8549 /* ColorExtension.swift in Sources */,
 				CCAD61952855D0F5004B7801 /* EquipmentDictionaryDetailView.swift in Sources */,
+				9194800928581E1C004F4BF5 /* EditorCardView.swift in Sources */,
+				CCAD61952855D0F5004B7801 /* ToolDictionaryDetailView.swift in Sources */,
 				CCAD61952855D0F5004B7801 /* EquipmentDictionaryDetailView.swift in Sources */,
 				A884D24C2852CD7B004871B1 /* CampairApp.swift in Sources */,
 				A8F7DD7628537C4600A4629E /* UtilityPlaceHolder.swift in Sources */,
