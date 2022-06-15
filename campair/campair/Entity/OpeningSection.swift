@@ -8,7 +8,10 @@
 import Foundation
 
 struct OpeningSection: Codable {
+    let cardPaintingBackgroundColor: String
+    let cardPaintingTextColor: String
     let cardPaintingURL: String
+    let cardTitleColor: String
     let cardTitle: String
     let cardSubTitle: String
     let title: String

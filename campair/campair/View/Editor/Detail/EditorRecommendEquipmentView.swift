@@ -12,27 +12,38 @@ struct EditorRecommendEquipmentView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
             VStack(alignment: .leading, spacing: 0) {
-                HStack(spacing: 20) {
+                HStack(spacing: 0) {
                     VStack(alignment: .leading, spacing: 0) {
                         if let title = self.equipmentContent.title {
                             Text("\(title)")
-                                .fontWeight(.semibold)
+                                .font(.system(.headline, design: .default))
+                                .foregroundColor(Color.customBlack)
                                 .padding(.bottom, 10)
                                 .padding(.top, 40)
                         }
                         if let upperContent = self.equipmentContent.upperContent {
                             Text("\(upperContent)")
-                                .foregroundColor(Color.customTextGray)
+                                .font(.system(.body, design: .default))
+                                .foregroundColor(Color.customDarkGray)
+                                .padding(.bottom, 20)
+                                .lineSpacing(5.0)
                         }
                         let recommendedEquipments = self.equipmentContent.recommendedEquipments
                         ForEach(recommendedEquipments.indices) { index in
                             RecommendedEquipmentCardView(equipment: recommendedEquipments[index])
+                                .padding(.top, index > 0 ? 6 : 0)
                         }
                         if let lowerContent = self.equipmentContent.lowerContent {
+                            Text("에디터 팁")
+                                .font(.system(.headline, design: .default))
+                                .padding(.top, 20)
+                                .padding(.bottom, 10)
+                                .foregroundColor(Color.customDarkGray)
                             Text("\(lowerContent)")
+                                .font(.system(.body, design: .default))
+                                .foregroundColor(Color.customDarkGray)
                                 .padding(.bottom, 40)
-                                .foregroundColor(Color.customTextGray)
-                                .padding(.top, 30)
+                                .lineSpacing(5.0)
                         }
                     }
                 }

@@ -26,7 +26,10 @@ struct EditorDetailView_Previews: PreviewProvider {
                                                                 EditorContent(
                                                                     version: EditorVersion.contents,
                                                                     opening: OpeningSection(
+                                                                        cardPaintingBackgroundColor: "E9DFD4",
+                                                                        cardPaintingTextColor: "EAA496",
                                                                         cardPaintingURL: "주소",
+                                                                        cardTitleColor: "D98E7F",
                                                                         cardTitle: "차로 떠나는 피크닉",
                                                                         cardSubTitle: "초보차크닉",
                                                                         title: "최소한으로 차크닉을 떠날 때.",

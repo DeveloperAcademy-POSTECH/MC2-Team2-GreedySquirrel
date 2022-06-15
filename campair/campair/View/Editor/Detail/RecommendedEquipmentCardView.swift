@@ -10,27 +10,38 @@ import SwiftUI
 struct RecommendedEquipmentCardView: View {
     let equipment: Equipment
     var body: some View {
-        HStack(spacing: 0) {
-            Image("exampleEquipment")
-                .resizable()
-                .frame(width: 40, height: 40)
-                .padding(.horizontal, 20)
-            VStack(alignment: .leading, spacing: 5) {
-                Text("장비사전 읽어보기")
-                    .font(.system(size: 12))
-                    .foregroundColor(Color.customTextGray)
-                Text("\(self.equipment.title)")
-            }
-            Spacer()
-            Image(systemName: "heart.fill")
-                .padding(.trailing, 30)
-                .font(.system(size: 20))
-                .foregroundColor(Color.customSelectedHeartRed)
-        }
-        .padding(.vertical, 20)
-        .background(Color.customCardGray)
-        .cornerRadius(20)
-        .padding(.top, 30)
+        RoundedRectangle(cornerRadius: 20)
+            .stroke(lineWidth: 1)
+            .foregroundColor(Color.customLightGray)
+            .frame(width: .infinity, height: 84)
+            .overlay(
+                HStack(spacing: 0) {
+                    Image("exampleEquipment")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 66, height: 66)
+                        .padding(.horizontal, 10)
+                        .padding(.vertical, 9)
+                    VStack(alignment: .leading, spacing: 5) {
+                        Text("\(self.equipment.title)")
+                            .font(.system(.headline, design: .default))
+                            .foregroundColor(Color.customBlack)
+                            .padding(.bottom, 4)
+                        Text("장비사전 읽어보기")
+                            .font(.system(.caption, design: .default))
+                            .foregroundColor(Color.customDarkGray)
+                    }
+                    Spacer()
+                    Image("buttonArrow")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 34, height: 34)
+                        .foregroundColor(Color(#colorLiteral(red: 0.8196078431, green: 0.8196078431, blue: 0.8392156863, alpha: 1)))
+                        .foregroundColor(Color.red)
+                        .padding(.trailing, 14)
+                }
+                .padding(.vertical, 20)
+            )
     }
 }
 
