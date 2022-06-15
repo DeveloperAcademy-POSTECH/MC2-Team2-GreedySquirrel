@@ -8,8 +8,8 @@
 import Foundation
 
 struct EquipmentContent: Codable {
-    let title: String
-    let upperContent: String
+    let title: String?
+    let upperContent: String?
     let recommendedEquipments: [Equipment]
-    let lowerContent: String
+    let lowerContent: String?
 }

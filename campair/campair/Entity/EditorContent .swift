@@ -7,7 +7,13 @@
 
 import Foundation
 
+enum EditorVersion: Codable {
+    case contents
+    case list
+}
+
 struct EditorContent: Codable {
+    let version: EditorVersion
     let opening: OpeningSection
     let equipmentContents: [EquipmentContent]
 }

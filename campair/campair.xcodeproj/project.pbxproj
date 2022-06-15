@@ -22,9 +22,15 @@
 		A884D2502852CD7C004871B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A884D24F2852CD7C004871B1 /* Assets.xcassets */; };
 		A884D2532852CD7C004871B1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A884D2522852CD7C004871B1 /* Preview Assets.xcassets */; };
 		A8F7DD7628537C4600A4629E /* UtilityPlaceHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F7DD7528537C4600A4629E /* UtilityPlaceHolder.swift */; };
-		CC00FAD428574F5F00BA8549 /* EditorDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC00FAD328574F5F00BA8549 /* EditorDetailView.swift */; };
+		CC00FAD428574F5F00BA8549 /* EditorDetailContentsVersionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC00FAD328574F5F00BA8549 /* EditorDetailContentsVersionView.swift */; };
 		CC00FADA28581E8E00BA8549 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC00FAD928581E8E00BA8549 /* ColorExtension.swift */; };
 		CC00FADC28583B1F00BA8549 /* SafeAreaPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC00FADB28583B1F00BA8549 /* SafeAreaPadding.swift */; };
+		CC434EAA2859C80600EB487F /* ShareRecommendedEquipmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC434EA92859C80600EB487F /* ShareRecommendedEquipmentView.swift */; };
+		CC434EAC2859C82300EB487F /* RecommendedEquipmentCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC434EAB2859C82300EB487F /* RecommendedEquipmentCardView.swift */; };
+		CC434EAE2859C83400EB487F /* EditorRecommendEquipmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC434EAD2859C83400EB487F /* EditorRecommendEquipmentView.swift */; };
+		CC434EB02859CC2A00EB487F /* OpeningEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC434EAF2859CC2A00EB487F /* OpeningEditorView.swift */; };
+		CC434EB32859CCBD00EB487F /* EditorDetailListVersionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC434EB22859CCBD00EB487F /* EditorDetailListVersionView.swift */; };
+		CC434EB72859D23700EB487F /* EditorDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC434EB62859D23700EB487F /* EditorDetailView.swift */; };
 		CC9D118B28573366000FEC81 /* EditorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9D118A28573366000FEC81 /* EditorViewModel.swift */; };
 		CC9D118D2857336F000FEC81 /* EditorUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9D118C2857336F000FEC81 /* EditorUseCase.swift */; };
 		CC9D118F2857337A000FEC81 /* EditorRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9D118E2857337A000FEC81 /* EditorRepository.swift */; };
@@ -51,9 +57,15 @@
 		A884D24F2852CD7C004871B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A884D2522852CD7C004871B1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A8F7DD7528537C4600A4629E /* UtilityPlaceHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityPlaceHolder.swift; sourceTree = "<group>"; };
-		CC00FAD328574F5F00BA8549 /* EditorDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorDetailView.swift; sourceTree = "<group>"; };
+		CC00FAD328574F5F00BA8549 /* EditorDetailContentsVersionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorDetailContentsVersionView.swift; sourceTree = "<group>"; };
 		CC00FAD928581E8E00BA8549 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		CC00FADB28583B1F00BA8549 /* SafeAreaPadding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeAreaPadding.swift; sourceTree = "<group>"; };
+		CC434EA92859C80600EB487F /* ShareRecommendedEquipmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareRecommendedEquipmentView.swift; sourceTree = "<group>"; };
+		CC434EAB2859C82300EB487F /* RecommendedEquipmentCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedEquipmentCardView.swift; sourceTree = "<group>"; };
+		CC434EAD2859C83400EB487F /* EditorRecommendEquipmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorRecommendEquipmentView.swift; sourceTree = "<group>"; };
+		CC434EAF2859CC2A00EB487F /* OpeningEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeningEditorView.swift; sourceTree = "<group>"; };
+		CC434EB22859CCBD00EB487F /* EditorDetailListVersionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorDetailListVersionView.swift; sourceTree = "<group>"; };
+		CC434EB62859D23700EB487F /* EditorDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorDetailView.swift; sourceTree = "<group>"; };
 		CC9D118A28573366000FEC81 /* EditorViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditorViewModel.swift; sourceTree = "<group>"; };
 		CC9D118C2857336F000FEC81 /* EditorUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditorUseCase.swift; sourceTree = "<group>"; };
 		CC9D118E2857337A000FEC81 /* EditorRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditorRepository.swift; sourceTree = "<group>"; };
@@ -222,9 +234,23 @@
 		CC434EA82859BB6600EB487F /* Detail */ = {
 			isa = PBXGroup;
 			children = (
-				CC00FAD328574F5F00BA8549 /* EditorDetailView.swift */,
+				CC434EB12859CC6B00EB487F /* EditorDetailView */,
+				CC434EAF2859CC2A00EB487F /* OpeningEditorView.swift */,
+				CC434EAD2859C83400EB487F /* EditorRecommendEquipmentView.swift */,
+				CC434EAB2859C82300EB487F /* RecommendedEquipmentCardView.swift */,
+				CC434EA92859C80600EB487F /* ShareRecommendedEquipmentView.swift */,
 			);
 			path = Detail;
+			sourceTree = "<group>";
+		};
+		CC434EB12859CC6B00EB487F /* EditorDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				CC434EB62859D23700EB487F /* EditorDetailView.swift */,
+				CC00FAD328574F5F00BA8549 /* EditorDetailContentsVersionView.swift */,
+				CC434EB22859CCBD00EB487F /* EditorDetailListVersionView.swift */,
+			);
+			path = EditorDetailView;
 			sourceTree = "<group>";
 		};
 		CCAD618F2855A450004B7801 /* EquipmentDictionary */ = {
@@ -352,10 +378,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC00FAD428574F5F00BA8549 /* EditorDetailView.swift in Sources */,
+				CC00FAD428574F5F00BA8549 /* EditorDetailContentsVersionView.swift in Sources */,
+				CC434EAC2859C82300EB487F /* RecommendedEquipmentCardView.swift in Sources */,
+				CC434EB32859CCBD00EB487F /* EditorDetailListVersionView.swift in Sources */,
+				CC434EB02859CC2A00EB487F /* OpeningEditorView.swift in Sources */,
 				9194800728575DAE004F4BF5 /* EditorMainView.swift in Sources */,
 				915AE0F62856FB8100CAC50A /* OpeningSection.swift in Sources */,
 				91B8BC2D2855A91300786C2D /* EditorCollection.swift in Sources */,
+				CC434EAA2859C80600EB487F /* ShareRecommendedEquipmentView.swift in Sources */,
 				911531CF28587B7000961E08 /* EditorEquipListView.swift in Sources */,
 				CC9D118B28573366000FEC81 /* EditorViewModel.swift in Sources */,
 				91B8BC2B2855A90500786C2D /* EditorContent .swift in Sources */,
@@ -365,10 +395,12 @@
 				A884D24C2852CD7B004871B1 /* CampairApp.swift in Sources */,
 				CC00FADC28583B1F00BA8549 /* SafeAreaPadding.swift in Sources */,
 				CCAD618E2855A449004B7801 /* EquipmentDictionaryMainView.swift in Sources */,
+				CC434EAE2859C83400EB487F /* EditorRecommendEquipmentView.swift in Sources */,
 				CC9D118D2857336F000FEC81 /* EditorUseCase.swift in Sources */,
 				CC00FADA28581E8E00BA8549 /* ColorExtension.swift in Sources */,
 				CCAD61952855D0F5004B7801 /* EquipmentDictionaryDetailView.swift in Sources */,
 				9194800928581E1C004F4BF5 /* EditorCardView.swift in Sources */,
+				CC434EB72859D23700EB487F /* EditorDetailView.swift in Sources */,
 				CCAD61952855D0F5004B7801 /* EquipmentDictionaryDetailView.swift in Sources */,
 				CCAD61952855D0F5004B7801 /* EquipmentDictionaryDetailView.swift in Sources */,
 				A884D24C2852CD7B004871B1 /* CampairApp.swift in Sources */,
