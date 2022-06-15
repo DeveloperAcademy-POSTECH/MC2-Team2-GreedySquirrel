@@ -18,7 +18,7 @@ struct EditorEquipListView: View {
                         .padding(.horizontal, 23)
                         .padding(.vertical, 20)
                         .background(
-                            RoundedRectangle(cornerRadius: 30)
+                            RoundedRectangle(cornerRadius: 18)
                                 .foregroundColor(Color(#colorLiteral(red: 0.9317113757, green: 0.8984663486, blue: 0.8601023555, alpha: 1)))
                         )
                     Text("폴딩체어")

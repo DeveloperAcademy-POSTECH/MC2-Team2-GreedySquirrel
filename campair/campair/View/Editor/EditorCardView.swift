@@ -22,7 +22,7 @@ struct EditorCardView: View {
             }
             .padding(.top, 34)
             .padding(.leading, 20)
-            Image("ContentCard1")
+            Image("contentCard1")
                 .resizable()
                 .scaledToFit()
                 .padding(20)
