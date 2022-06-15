@@ -40,7 +40,7 @@ struct EquipmentDictionaryMainView: View {
                 Text("캠핑페어 알아보쟛")
                     .font(.system(size: 20))
                 LazyVGrid(columns: self.columns) {
-                    ForEach (0..<16) { _ in
+                    ForEach(0..<16) { _ in
                         EquipmentBoxView(image: Image(systemName: "hammer"), name: "캠핑페어")
                     }
                 }

@@ -30,7 +30,7 @@ struct SelectingEquipmentDictionaryView: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .top) {
                     ForEach(0..<16) { index in
-                        Button{
+                        Button {
                             self.selectedEquipmentNumber = index
                         } label: {
                             if self.selectedEquipmentNumber == index {
