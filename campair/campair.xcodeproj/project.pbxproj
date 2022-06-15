@@ -31,6 +31,9 @@
 		CC434EB02859CC2A00EB487F /* OpeningEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC434EAF2859CC2A00EB487F /* OpeningEditorView.swift */; };
 		CC434EB32859CCBD00EB487F /* EditorDetailListVersionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC434EB22859CCBD00EB487F /* EditorDetailListVersionView.swift */; };
 		CC434EB72859D23700EB487F /* EditorDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC434EB62859D23700EB487F /* EditorDetailView.swift */; };
+		CC434EBC285A250600EB487F /* EquipmentGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC434EBB285A250600EB487F /* EquipmentGroup.swift */; };
+		CC434EBE285A257200EB487F /* EquipmentCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC434EBD285A257200EB487F /* EquipmentCollection.swift */; };
+		CC434EC0285A267900EB487F /* EquipmentCollectionData.json in Sources */ = {isa = PBXBuildFile; fileRef = CC434EBF285A267900EB487F /* EquipmentCollectionData.json */; };
 		CC9D118B28573366000FEC81 /* EditorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9D118A28573366000FEC81 /* EditorViewModel.swift */; };
 		CC9D118D2857336F000FEC81 /* EditorUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9D118C2857336F000FEC81 /* EditorUseCase.swift */; };
 		CC9D118F2857337A000FEC81 /* EditorRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9D118E2857337A000FEC81 /* EditorRepository.swift */; };
@@ -66,6 +69,9 @@
 		CC434EAF2859CC2A00EB487F /* OpeningEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeningEditorView.swift; sourceTree = "<group>"; };
 		CC434EB22859CCBD00EB487F /* EditorDetailListVersionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorDetailListVersionView.swift; sourceTree = "<group>"; };
 		CC434EB62859D23700EB487F /* EditorDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorDetailView.swift; sourceTree = "<group>"; };
+		CC434EBB285A250600EB487F /* EquipmentGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentGroup.swift; sourceTree = "<group>"; };
+		CC434EBD285A257200EB487F /* EquipmentCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentCollection.swift; sourceTree = "<group>"; };
+		CC434EBF285A267900EB487F /* EquipmentCollectionData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = EquipmentCollectionData.json; sourceTree = "<group>"; };
 		CC9D118A28573366000FEC81 /* EditorViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditorViewModel.swift; sourceTree = "<group>"; };
 		CC9D118C2857336F000FEC81 /* EditorUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditorUseCase.swift; sourceTree = "<group>"; };
 		CC9D118E2857337A000FEC81 /* EditorRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditorRepository.swift; sourceTree = "<group>"; };
@@ -207,7 +213,10 @@
 				915AE0F72856FB9A00CAC50A /* EquipmentContent.swift */,
 				CC9D1190285733A2000FEC81 /* Equipment.swift */,
 				915AE0F52856FB8100CAC50A /* OpeningSection.swift */,
+				CC434EBB285A250600EB487F /* EquipmentGroup.swift */,
+				CC434EBD285A257200EB487F /* EquipmentCollection.swift */,
 				91B8BC282855A8CB00786C2D /* EditorCollectionData.json */,
+				CC434EBF285A267900EB487F /* EquipmentCollectionData.json */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -383,6 +392,8 @@
 				CC434EB32859CCBD00EB487F /* EditorDetailListVersionView.swift in Sources */,
 				CC434EB02859CC2A00EB487F /* OpeningEditorView.swift in Sources */,
 				9194800728575DAE004F4BF5 /* EditorMainView.swift in Sources */,
+				CC434EC0285A267900EB487F /* EquipmentCollectionData.json in Sources */,
+				CC434EBC285A250600EB487F /* EquipmentGroup.swift in Sources */,
 				915AE0F62856FB8100CAC50A /* OpeningSection.swift in Sources */,
 				91B8BC2D2855A91300786C2D /* EditorCollection.swift in Sources */,
 				CC434EAA2859C80600EB487F /* ShareRecommendedEquipmentView.swift in Sources */,
@@ -402,6 +413,7 @@
 				9194800928581E1C004F4BF5 /* EditorCardView.swift in Sources */,
 				CC434EB72859D23700EB487F /* EditorDetailView.swift in Sources */,
 				CCAD61952855D0F5004B7801 /* EquipmentDictionaryDetailView.swift in Sources */,
+				CC434EBE285A257200EB487F /* EquipmentCollection.swift in Sources */,
 				CCAD61952855D0F5004B7801 /* EquipmentDictionaryDetailView.swift in Sources */,
 				A884D24C2852CD7B004871B1 /* CampairApp.swift in Sources */,
 				A8F7DD7628537C4600A4629E /* UtilityPlaceHolder.swift in Sources */,
