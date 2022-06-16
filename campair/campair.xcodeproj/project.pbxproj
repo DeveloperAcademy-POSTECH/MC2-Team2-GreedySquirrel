@@ -42,6 +42,8 @@
 		CC9D1191285733A2000FEC81 /* Equipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9D1190285733A2000FEC81 /* Equipment.swift */; };
 		CCAD618E2855A449004B7801 /* EquipmentDictionaryMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAD618D2855A449004B7801 /* EquipmentDictionaryMainView.swift */; };
 		CCAD61952855D0F5004B7801 /* EquipmentDictionaryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAD61942855D0F5004B7801 /* EquipmentDictionaryDetailView.swift */; };
+		F62A6D1C2859B9BC00755AF3 /* DictionaryDetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62A6D1B2859B9BC00755AF3 /* DictionaryDetailedView.swift */; };
+		F62A6D1E2859BC4400755AF3 /* DictionaryMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62A6D1D2859BC4400755AF3 /* DictionaryMainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +85,8 @@
 		CCAD618D2855A449004B7801 /* EquipmentDictionaryMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentDictionaryMainView.swift; sourceTree = "<group>"; };
 		CCAD61942855D0F5004B7801 /* EquipmentDictionaryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentDictionaryDetailView.swift; sourceTree = "<group>"; };
 		EEE262B177D80904B01C5D51 /* Pods_campair.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_campair.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F62A6D1B2859B9BC00755AF3 /* DictionaryDetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryDetailedView.swift; sourceTree = "<group>"; };
+		F62A6D1D2859BC4400755AF3 /* DictionaryMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryMainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +186,7 @@
 				A884D2632852CDFE004871B1 /* UseCase */,
 				A884D2662852CE0C004871B1 /* Model */,
 				A884D26B2852CE2A004871B1 /* Entity */,
+				F62A6D1A2859B99D00755AF3 /* Dictionary */,
 			);
 			path = campair;
 			sourceTree = "<group>";
@@ -307,6 +312,15 @@
 				CCAD61942855D0F5004B7801 /* EquipmentDictionaryDetailView.swift */,
 			);
 			path = EquipmentDictionary;
+			sourceTree = "<group>";
+		};
+		F62A6D1A2859B99D00755AF3 /* Dictionary */ = {
+			isa = PBXGroup;
+			children = (
+				F62A6D1D2859BC4400755AF3 /* DictionaryMainView.swift */,
+				F62A6D1B2859B9BC00755AF3 /* DictionaryDetailedView.swift */,
+			);
+			path = Dictionary;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -447,13 +461,16 @@
 				CCAD618E2855A449004B7801 /* EquipmentDictionaryMainView.swift in Sources */,
 				CC434EAE2859C83400EB487F /* EditorRecommendEquipmentView.swift in Sources */,
 				CC9D118D2857336F000FEC81 /* EditorUseCase.swift in Sources */,
+				F62A6D1C2859B9BC00755AF3 /* DictionaryDetailedView.swift in Sources */,
 				CC00FADA28581E8E00BA8549 /* ColorExtension.swift in Sources */,
 				CCAD61952855D0F5004B7801 /* EquipmentDictionaryDetailView.swift in Sources */,
+				F62A6D1E2859BC4400755AF3 /* DictionaryMainView.swift in Sources */,
 				9194800928581E1C004F4BF5 /* EditorCardView.swift in Sources */,
 				CC434EB72859D23700EB487F /* EditorDetailView.swift in Sources */,
 				91915ABC285AC72100003C7F /* EditorDetailContent.swift in Sources */,
 				CCAD61952855D0F5004B7801 /* EquipmentDictionaryDetailView.swift in Sources */,
 				CC434EBE285A257200EB487F /* EquipmentCollection.swift in Sources */,
+				CCAD61952855D0F5004B7801 /* EquipmentDictionaryDetailView.swift in Sources */,
 				CCAD61952855D0F5004B7801 /* EquipmentDictionaryDetailView.swift in Sources */,
 				A884D24C2852CD7B004871B1 /* CampairApp.swift in Sources */,
 				A8F7DD7628537C4600A4629E /* UtilityPlaceHolder.swift in Sources */,
