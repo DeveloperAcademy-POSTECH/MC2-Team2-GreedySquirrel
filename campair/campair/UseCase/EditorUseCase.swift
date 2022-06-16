@@ -33,4 +33,14 @@ struct EditorUseCase {
             }
         }
     }
+    func fetchImageData(fromURLString urlString: String, completion: @escaping (Data) -> Void) {
+        repository.fetchImage(urlString: urlString) { result in
+            switch result {
+            case .success(let data):
+                completion(data)
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
 }

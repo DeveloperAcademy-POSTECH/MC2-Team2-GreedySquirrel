@@ -37,7 +37,6 @@ struct EditorCardView: View {
 struct EditorCardView_Previews: PreviewProvider {
     static var previews: some View {
         EditorCardView()
-        EditorCardView()
             .previewDevice("iPod touch (7th generation)")
     }
 }

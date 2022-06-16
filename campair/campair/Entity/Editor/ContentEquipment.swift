@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct ContentEquipment: Codable{
+struct ContentEquipment: Codable {
     let name: String
-    let paintingURLString: String
+    var paintingImageName: String
+    var paintingURLString: String
 }

@@ -8,12 +8,13 @@
 import SwiftUI
 
 struct EditorMainView: View {
+    @ObservedObject var viewModel = EditorMainViewModel()
     var body: some View {
         NavigationView {
             ScrollView(.vertical) {
                 VStack(alignment: .leading, spacing: 20) {
                     VStack(alignment: .leading) {
-                        Text("캠프페어와")
+                        Text(viewModel.editorMainCollection?.editorMainContents[0].cardPaintingTitle ?? "some")
                             .font(.largeTitle)
                             .fontWeight(.bold)
                         Text("새 여행을 준비해요")
@@ -34,6 +35,9 @@ struct EditorMainView: View {
                 }
             }
             .navigationBarHidden(true)
+            .onAppear(perform: {
+                viewModel.viewAppeared()
+            })
         }
     }
 }

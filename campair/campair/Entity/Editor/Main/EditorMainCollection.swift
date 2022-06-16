@@ -8,5 +8,5 @@
 import Foundation
 
 struct EditorMainCollection: Codable {
-    let editorMainContents: [EditorMainContent]
+    var editorMainContents: [EditorMainContent]
 }

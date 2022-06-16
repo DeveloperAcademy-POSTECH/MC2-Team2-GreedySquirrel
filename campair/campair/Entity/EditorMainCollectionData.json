@@ -6,23 +6,28 @@
             "cardPaintingSubTitleColor" : "D98E7F",
             "cardPaintingSubTitle" : "초보차크닉",
             "cardPaintingTitle" : "차로 떠나는 피크닉",
-            "cardPaintingURLString" : "차로_떠나는_피크닉",
+            "cardPaintingImageName" : "차로_떠나는_피크닉",
+            "cardPaintingURLString" : "",
             "contentEquipments" : [
                 {
                     "name" : "경량 체어",
-                    "paintingURLString" : "경량_체어"
+                    "paintingImageName" : "경량_체어",
+                    "paintingURLString" : ""
                 },
                 {
                     "name" : "돗자리",
-                    "paintingURLString" : "돗자리"
+                    "paintingImageName" : "경량_체어",
+                    "paintingURLString" : ""
                 },
                 {
                     "name" : "어닝/사이드월",
-                    "paintingURLString" : "어닝/사이드월"
+                    "paintingImageName" : "경량_체어",
+                    "paintingURLString" : ""
                 },
                 {
                     "name" : "타프",
-                    "paintingURLString" : "타프"
+                    "paintingImageName" : "경량_체어",
+                    "paintingURLString" : ""
                 }
             ]
         },
@@ -32,23 +37,28 @@
             "cardPaintingSubTitleColor" : "D98E7F",
             "cardPaintingSubTitle" : "초보차크닉2",
             "cardPaintingTitle" : "차로 떠나는 피크닉2",
-            "cardPaintingURLString" : "차로_떠나는_피크닉2",
+            "cardPaintingImageName" : "차로_떠나는_피크닉",
+            "cardPaintingURLString" : "",
             "contentEquipments" : [
                 {
                     "name" : "경량 체어",
-                    "paintingURLString" : "경량_체어"
+                    "paintingImageName" : "경량_체어",
+                    "paintingURLString" : ""
                 },
                 {
                     "name" : "타프",
-                    "paintingURLString" : "타프"
+                    "paintingImageName" : "경량_체어",
+                    "paintingURLString" : ""
                 },
                 {
                     "name" : "돗자리",
-                    "paintingURLString" : "돗자리"
+                    "paintingImageName" : "경량_체어",
+                    "paintingURLString" : ""
                 },
                 {
                     "name" : "어닝/사이드월",
-                    "paintingURLString" : "어닝/사이드월"
+                    "paintingImageName" : "경량_체어",
+                    "paintingURLString" : ""
                 }
             ]
         },
@@ -58,23 +68,28 @@
             "cardPaintingSubTitleColor" : "D98E7F",
             "cardPaintingSubTitle" : "초보차크닉3",
             "cardPaintingTitle" : "차로 떠나는 피크닉3",
-            "cardPaintingURLString" : "차로_떠나는_피크닉3",
+            "cardPaintingImageName" : "차로_떠나는_피크닉",
+            "cardPaintingURLString" : "",
             "contentEquipments" : [
                 {
                     "name" : "어닝/사이드월",
-                    "paintingURLString" : "어닝/사이드월"
+                    "paintingImageName" : "경량_체어",
+                    "paintingURLString" : ""
                 },
                 {
                     "name" : "타프",
-                    "paintingURLString" : "타프"
+                    "paintingImageName" : "경량_체어",
+                    "paintingURLString" : ""
                 },
                 {
                     "name" : "경량 체어",
-                    "paintingURLString" : "경량_체어"
+                    "paintingImageName" : "경량_체어",
+                    "paintingURLString" : ""
                 },
                 {
                     "name" : "돗자리",
-                    "paintingURLString" : "돗자리"
+                    "paintingImageName" : "경량_체어",
+                    "paintingURLString" : ""
                 }
             ]
         }

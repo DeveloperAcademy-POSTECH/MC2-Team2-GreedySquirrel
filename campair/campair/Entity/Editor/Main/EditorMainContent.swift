@@ -13,6 +13,7 @@ struct EditorMainContent: Codable {
     let cardPaintingSubTitleColor: String
     let cardPaintingSubTitle: String
     let cardPaintingTitle: String
-    let cardPaintingURLString: String
-    let contentEquipments: [ContentEquipment]
+    var cardPaintingImageName: String
+    var cardPaintingURLString: String
+    var contentEquipments: [ContentEquipment]
 }
