@@ -60,7 +60,7 @@ struct SelectingEquipmentDictionaryView: View {
 struct SelectingEquipmentView: View {
     var body: some View {
         Button {
-            // TODO: Add Handling
+            //ToDo: Add Handling
         } label: {
             VStack(alignment: .leading, spacing: 0) {
                 HStack(spacing: 30) {

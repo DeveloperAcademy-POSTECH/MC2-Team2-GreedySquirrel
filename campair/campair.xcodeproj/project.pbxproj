@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40DE7562285A125900E7B172 /* DictionaryMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DE7561285A125900E7B172 /* DictionaryMainView.swift */; };
+		40DE756B285AD1D700E7B172 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DE756A285AD1D700E7B172 /* Category.swift */; };
 		823A03E07B3007B9DB63E4CA /* Pods_campair.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEE262B177D80904B01C5D51 /* Pods_campair.framework */; };
 		911531CF28587B7000961E08 /* EditorEquipListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911531CE28587B7000961E08 /* EditorEquipListView.swift */; };
 		915AE0F62856FB8100CAC50A /* OpeningSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915AE0F52856FB8100CAC50A /* OpeningSection.swift */; };
@@ -41,6 +43,8 @@
 
 /* Begin PBXFileReference section */
 		0A0ECEB268ACE01987E659A3 /* Pods-campair.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-campair.debug.xcconfig"; path = "Target Support Files/Pods-campair/Pods-campair.debug.xcconfig"; sourceTree = "<group>"; };
+		40DE7561285A125900E7B172 /* DictionaryMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryMainView.swift; sourceTree = "<group>"; };
+		40DE756A285AD1D700E7B172 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		4467E420AFA70CB9D8286C7E /* Pods-campair.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-campair.release.xcconfig"; path = "Target Support Files/Pods-campair/Pods-campair.release.xcconfig"; sourceTree = "<group>"; };
 		911531CE28587B7000961E08 /* EditorEquipListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorEquipListView.swift; sourceTree = "<group>"; };
 		915AE0F52856FB8100CAC50A /* OpeningSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeningSection.swift; sourceTree = "<group>"; };
@@ -95,6 +99,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		40DE7568285AD17B00E7B172 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				40DE756A285AD1D700E7B172 /* Category.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
 		9194800528575D91004F4BF5 /* Editor */ = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +119,7 @@
 		A884D23F2852CD7B004871B1 = {
 			isa = PBXGroup;
 			children = (
+				40DE7568285AD17B00E7B172 /* Enum */,
 				91F74E7C285495C30002A637 /* .swiftlint.yml */,
 				A884D24A2852CD7B004871B1 /* campair */,
 				A884D2492852CD7B004871B1 /* Products */,
@@ -257,6 +270,7 @@
 			isa = PBXGroup;
 			children = (
 				CCAD618D2855A449004B7801 /* EquipmentDictionaryMainView.swift */,
+				40DE7561285A125900E7B172 /* DictionaryMainView.swift */,
 				CCAD61942855D0F5004B7801 /* EquipmentDictionaryDetailView.swift */,
 			);
 			path = EquipmentDictionary;
@@ -389,6 +403,7 @@
 				911531CF28587B7000961E08 /* EditorEquipListView.swift in Sources */,
 				CC9D118B28573366000FEC81 /* EditorViewModel.swift in Sources */,
 				91B8BC2B2855A90500786C2D /* EditorContent .swift in Sources */,
+				40DE756B285AD1D700E7B172 /* Category.swift in Sources */,
 				CC9D118F2857337A000FEC81 /* EditorRepository.swift in Sources */,
 				A884D24E2852CD7B004871B1 /* ContentView.swift in Sources */,
 				CC9D1191285733A2000FEC81 /* Equipment.swift in Sources */,
@@ -406,6 +421,7 @@
 				A884D24C2852CD7B004871B1 /* CampairApp.swift in Sources */,
 				A8F7DD7628537C4600A4629E /* UtilityPlaceHolder.swift in Sources */,
 				915AE0F82856FB9A00CAC50A /* EquipmentContent.swift in Sources */,
+				40DE7562285A125900E7B172 /* DictionaryMainView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
