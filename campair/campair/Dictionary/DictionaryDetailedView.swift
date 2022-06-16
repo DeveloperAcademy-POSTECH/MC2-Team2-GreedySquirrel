@@ -113,7 +113,6 @@ struct EquipmentCategory: View {
         VStack {
             Text("텐트")
                 .font(.system(.title))
-                .font(.system(size: 28))
                 .fontWeight(.bold)
                 .frame(maxWidth: 350, alignment: .leading)
                 .padding(.bottom, 14)
