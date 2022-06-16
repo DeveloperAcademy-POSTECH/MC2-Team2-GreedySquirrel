@@ -7,14 +7,13 @@
 
 import Foundation
 
-// TODO !
-enum EditorVersion: Codable {
+enum EditorVersion: String, Codable {
     case contents
     case list
 }
 
 struct EditorDetailContent: Codable {
-    let version: String
+    let version: EditorVersion
     let openingSection: OpeningSection
     let equipmentContents: [EquipmentContent]
 }

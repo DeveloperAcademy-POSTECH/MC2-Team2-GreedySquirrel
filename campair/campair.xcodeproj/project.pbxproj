@@ -28,6 +28,7 @@
 		CC00FAD428574F5F00BA8549 /* EditorDetailContentsVersionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC00FAD328574F5F00BA8549 /* EditorDetailContentsVersionView.swift */; };
 		CC00FADA28581E8E00BA8549 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC00FAD928581E8E00BA8549 /* ColorExtension.swift */; };
 		CC00FADC28583B1F00BA8549 /* SafeAreaPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC00FADB28583B1F00BA8549 /* SafeAreaPadding.swift */; };
+		CC396453285B338D005DC3F8 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC396452285B338D005DC3F8 /* ViewExtension.swift */; };
 		CC434EAA2859C80600EB487F /* ShareRecommendedEquipmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC434EA92859C80600EB487F /* ShareRecommendedEquipmentView.swift */; };
 		CC434EAC2859C82300EB487F /* RecommendedEquipmentCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC434EAB2859C82300EB487F /* RecommendedEquipmentCardView.swift */; };
 		CC434EAE2859C83400EB487F /* EditorRecommendEquipmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC434EAD2859C83400EB487F /* EditorRecommendEquipmentView.swift */; };
@@ -68,6 +69,7 @@
 		CC00FAD328574F5F00BA8549 /* EditorDetailContentsVersionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorDetailContentsVersionView.swift; sourceTree = "<group>"; };
 		CC00FAD928581E8E00BA8549 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		CC00FADB28583B1F00BA8549 /* SafeAreaPadding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeAreaPadding.swift; sourceTree = "<group>"; };
+		CC396452285B338D005DC3F8 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 		CC434EA92859C80600EB487F /* ShareRecommendedEquipmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareRecommendedEquipmentView.swift; sourceTree = "<group>"; };
 		CC434EAB2859C82300EB487F /* RecommendedEquipmentCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedEquipmentCardView.swift; sourceTree = "<group>"; };
 		CC434EAD2859C83400EB487F /* EditorRecommendEquipmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorRecommendEquipmentView.swift; sourceTree = "<group>"; };
@@ -201,6 +203,7 @@
 				A884D24B2852CD7B004871B1 /* CampairApp.swift */,
 				CC00FAD928581E8E00BA8549 /* ColorExtension.swift */,
 				CC00FADB28583B1F00BA8549 /* SafeAreaPadding.swift */,
+				CC396452285B338D005DC3F8 /* ViewExtension.swift */,
 				A884D2512852CD7C004871B1 /* Preview Content */,
 			);
 			path = Application;
@@ -432,6 +435,7 @@
 				CC434EB02859CC2A00EB487F /* OpeningEditorView.swift in Sources */,
 				91915AB7285AC55500003C7F /* ContentEquipment.swift in Sources */,
 				9194800728575DAE004F4BF5 /* EditorMainView.swift in Sources */,
+				CC396453285B338D005DC3F8 /* ViewExtension.swift in Sources */,
 				CC434EBC285A250600EB487F /* EquipmentGroup.swift in Sources */,
 				915AE0F62856FB8100CAC50A /* OpeningSection.swift in Sources */,
 				91B8BC2D2855A91300786C2D /* EditorMainCollection.swift in Sources */,

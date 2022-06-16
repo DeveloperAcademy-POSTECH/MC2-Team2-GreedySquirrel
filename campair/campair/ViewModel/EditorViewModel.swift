@@ -30,6 +30,7 @@ final class EditorDetailViewModel2: ObservableObject {
             print(editorDetailContents)
             // test code
             guard let self = self else { return }
+            print(editorDetailContents.version)
             self.titleText = editorDetailContents.equipmentContents[0].recommendedEquipments[0].paintingURLString
         }
     }
