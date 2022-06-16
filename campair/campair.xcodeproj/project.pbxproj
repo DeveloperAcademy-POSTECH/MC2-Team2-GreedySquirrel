@@ -44,6 +44,7 @@
 		CCAD61952855D0F5004B7801 /* EquipmentDictionaryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAD61942855D0F5004B7801 /* EquipmentDictionaryDetailView.swift */; };
 		F62A6D1C2859B9BC00755AF3 /* DictionaryDetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62A6D1B2859B9BC00755AF3 /* DictionaryDetailedView.swift */; };
 		F62A6D1E2859BC4400755AF3 /* DictionaryMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62A6D1D2859BC4400755AF3 /* DictionaryMainView.swift */; };
+		F680E765285AFC9B008F4639 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F680E764285AFC9B008F4639 /* SwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,6 +88,7 @@
 		EEE262B177D80904B01C5D51 /* Pods_campair.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_campair.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F62A6D1B2859B9BC00755AF3 /* DictionaryDetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryDetailedView.swift; sourceTree = "<group>"; };
 		F62A6D1D2859BC4400755AF3 /* DictionaryMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryMainView.swift; sourceTree = "<group>"; };
+		F680E764285AFC9B008F4639 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -319,6 +321,7 @@
 			children = (
 				F62A6D1D2859BC4400755AF3 /* DictionaryMainView.swift */,
 				F62A6D1B2859B9BC00755AF3 /* DictionaryDetailedView.swift */,
+				F680E764285AFC9B008F4639 /* SwiftUIView.swift */,
 			);
 			path = Dictionary;
 			sourceTree = "<group>";
@@ -442,6 +445,7 @@
 			files = (
 				CC00FAD428574F5F00BA8549 /* EditorDetailContentsVersionView.swift in Sources */,
 				CC434EAC2859C82300EB487F /* RecommendedEquipmentCardView.swift in Sources */,
+				F680E765285AFC9B008F4639 /* SwiftUIView.swift in Sources */,
 				CC434EB32859CCBD00EB487F /* EditorDetailListVersionView.swift in Sources */,
 				CC434EB02859CC2A00EB487F /* OpeningEditorView.swift in Sources */,
 				91915AB7285AC55500003C7F /* ContentEquipment.swift in Sources */,

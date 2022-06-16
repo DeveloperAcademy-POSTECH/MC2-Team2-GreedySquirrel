@@ -23,50 +23,35 @@ struct DictionaryDetailedView: View {
 
     var body: some View {
             VStack(spacing: 0) {
-//                GeometryReader { geometry in
-//                    Text("\(width)")
-//                        .frame(
-//                            width: geometry.size.width,
-//                            height: geometry.size.height
-//                        ).background(Color.red)
-//                }
-
                 ScrollView(.horizontal, showsIndicators: false) {
-                    HStack(spacing: 0) {
-                        ForEach(1..<17) { index in
-                            Button {
-                                self.selectedEquipmentNumber = index
-                            } label: {
-                                if self.selectedEquipmentNumber == index {
+                    ScrollViewReader { value in
+                        HStack(spacing: 0) {
+                            ForEach(1..<17) { index in
+                                Button {
+                                    self.selectedEquipmentNumber = index
+                                    value.scrollTo(index, anchor: .center)
+                                } label: {
                                     Text("Item " + String(index))
-                                        .foregroundColor(Color.white)
-                                        .font(.system(.subheadline, design: .default))
-                                        .font(Font.system(size: 14))
-                                        .frame(width: ("Item " + String(index)).widthOfString(usingFont: UIFont.systemFont(ofSize: 14, weight: .bold)) + 28, height: 34)
-                                        .background(Color(#colorLiteral(red: 0.3830943704, green: 0.3830943704, blue: 0.3830943704, alpha: 1)))
-                                        .cornerRadius(17.5)
-                                        .padding(.horizontal, 1)
-//                                        .overlay(
-//                                            RoundedRectangle(cornerRadius: 17.5)
-//                                                .foregroundColor(Color(#colorLiteral(red: 0.3014614582, green: 0.3024801612, blue: 0.332264483, alpha: 0.6)))
-//                                        )
-                                } else {
-                                    Text("Item " + String(index))
-                                        .foregroundColor(Color(#colorLiteral(red: 0.6071556211, green: 0.603967011, blue: 0.6179282665, alpha: 1)))
+                                        .foregroundColor(self.selectedEquipmentNumber == index ? Color.white : Color(#colorLiteral(red: 0.6071556211, green: 0.603967011, blue: 0.6179282665, alpha: 1)))
                                         .font(.system(.subheadline, design: .default))
                                         .font(Font.system(size: 14))
                                         .padding(.horizontal, 15)
-                                        // .frame(width: 50, height: 50)
-                                        // .background(Color.red)
+                                        .padding(.vertical, self.selectedEquipmentNumber == index ? 4 : 0)
+                                        .background(RoundedRectangle(cornerRadius: 17.5)
+                                            .foregroundColor(self.selectedEquipmentNumber == index ? Color(#colorLiteral(red: 0.3830943704, green: 0.3830943704, blue: 0.3830943704, alpha: 1)) : Color.white)
+                                                     )
+                                    }
                                 }
                             }
+                            .padding(.horizontal, 20)
+                            .padding(.bottom, 20)
                         }
                     }
-                    .padding(.horizontal, 20)
-                    .padding(.bottom, 20)
-                }
-
+                
                 ScrollView {
+                    EquipmentCategory()
+                    EquipmentCategory()
+                    EquipmentCategory()
                     EquipmentCategory()
                     EquipmentCategory()
                     EquipmentCategory()
@@ -74,12 +59,15 @@ struct DictionaryDetailedView: View {
 
             }
                 .navigationBarBackButtonHidden(true)
-                .navigationBarItems(leading: Button(action: {
-                                self.mode.wrappedValue.dismiss()
-                            }) {
+                .toolbar {
+                    ToolbarItemGroup(placement: .navigationBarLeading) {
+                        Button(action: {self.mode.wrappedValue.dismiss()})
+                            {
                                 Image(systemName: "chevron.left")
                                     .foregroundColor(Color.black)
-                            })
+                            }
+                    }
+                }
     }
 }
 
@@ -96,7 +84,6 @@ struct ExtractedView: View {
         ZStack {
             RoundedRectangle(cornerRadius: 20)
                 .stroke(Color(#colorLiteral(red: 0.9688159823, green: 0.9688159823, blue: 0.9688159823, alpha: 1)), lineWidth: 1)
-            // .stroke(Color.black, lineWidth: 1)
                 .frame(width: 350, height: 84)
 
             HStack(spacing: 0) {
