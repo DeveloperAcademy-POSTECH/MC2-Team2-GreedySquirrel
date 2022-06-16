@@ -7,16 +7,6 @@
 
 import SwiftUI
 
-extension String {
-   func widthOfString(usingFont font: UIFont) -> CGFloat {
-        let fontAttributes = [NSAttributedString.Key.font: font]
-        let size = self.size(withAttributes: fontAttributes)
-        return size.width
-    }
-}
-
-let width = "SomeString".widthOfString(usingFont: UIFont.systemFont(ofSize: 14, weight: .bold))
-
 struct DictionaryDetailedView: View {
     @Environment(\.presentationMode) var mode: Binding<PresentationMode>
     @State var selectedEquipmentNumber: Int = 0
