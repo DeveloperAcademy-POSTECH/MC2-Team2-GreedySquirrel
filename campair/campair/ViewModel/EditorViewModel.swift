@@ -9,7 +9,7 @@ import Combine
 import Foundation
 
 // EditorMainViewModel라고 이름을 바꾸는 게 좋을 거 같아요 ..!
-final class EditorViewModel: ObservableObject {
+final class EditorMainViewModel: ObservableObject {
     private let editorUseCase = EditorUseCase(repository: EditorRepository())
     @Published var titleText = "test"
     func testButtonTouched() {
@@ -17,14 +17,27 @@ final class EditorViewModel: ObservableObject {
             print(editorCollection)
             // test code
             guard let self = self else { return }
-            self.titleText = editorCollection.editorContents[0].equipmentContents[2].recommendedEquipments[0].content
+            self.titleText = editorCollection.editorMainContents[0].cardPaintingTitle
+        }
+    }
+}
+
+final class EditorDetailViewModel2: ObservableObject {
+    private let editorUseCase = EditorUseCase(repository: EditorRepository())
+    @Published var titleText = "test"
+    func testButtonTouched() {
+        self.editorUseCase.getEditorDetailContent { [weak self] editorDetailContents in
+            print(editorDetailContents)
+            // test code
+            guard let self = self else { return }
+            self.titleText = editorDetailContents.equipmentContents[0].recommendedEquipments[0].paintingURLString
         }
     }
 }
 
 final class EditorDetailViewModel: ObservableObject {
-    @Published var content: EditorContent
-    init(editorDetailContent: EditorContent) {
+    @Published var content: EditorDetailContent
+    init(editorDetailContent: EditorDetailContent) {
         self.content = editorDetailContent
     }
 }

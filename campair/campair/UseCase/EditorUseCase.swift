@@ -13,11 +13,21 @@ struct EditorUseCase {
     init(repository: EditorcontentsFetchable) {
         self.repository = repository
     }
-    func getEditorCollection(completion: @escaping (EditorCollection) -> Void) {
+    func getEditorCollection(completion: @escaping (EditorMainCollection) -> Void) {
         repository.fetchEditorCollection { result in
             switch result {
             case .success(let editorCollection) :
                 completion(editorCollection)
+            case .failure(let error) :
+                os_log(.error, log: .default, "\(error.localizedDescription)")
+            }
+        }
+    }
+    func getEditorDetailContent(completion: @escaping (EditorDetailContent) -> Void) {
+        repository.fetchEditorDetailContent { result in
+            switch result {
+            case .success(let editorDetailContent) :
+                completion(editorDetailContent)
             case .failure(let error) :
                 os_log(.error, log: .default, "\(error.localizedDescription)")
             }

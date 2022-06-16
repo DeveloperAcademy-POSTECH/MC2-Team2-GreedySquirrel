@@ -11,11 +11,14 @@
 		911531CF28587B7000961E08 /* EditorEquipListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911531CE28587B7000961E08 /* EditorEquipListView.swift */; };
 		915AE0F62856FB8100CAC50A /* OpeningSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915AE0F52856FB8100CAC50A /* OpeningSection.swift */; };
 		915AE0F82856FB9A00CAC50A /* EquipmentContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915AE0F72856FB9A00CAC50A /* EquipmentContent.swift */; };
+		91915AB7285AC55500003C7F /* ContentEquipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91915AB6285AC55500003C7F /* ContentEquipment.swift */; };
+		91915ABC285AC72100003C7F /* EditorDetailContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91915ABB285AC72100003C7F /* EditorDetailContent.swift */; };
+		91915AC0285AD52300003C7F /* EditorDetailContentData.json in Resources */ = {isa = PBXBuildFile; fileRef = 91915ABF285AD52300003C7F /* EditorDetailContentData.json */; };
 		9194800728575DAE004F4BF5 /* EditorMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9194800628575DAE004F4BF5 /* EditorMainView.swift */; };
 		9194800928581E1C004F4BF5 /* EditorCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9194800828581E1C004F4BF5 /* EditorCardView.swift */; };
-		91B8BC292855A8CB00786C2D /* EditorCollectionData.json in Resources */ = {isa = PBXBuildFile; fileRef = 91B8BC282855A8CB00786C2D /* EditorCollectionData.json */; };
-		91B8BC2B2855A90500786C2D /* EditorContent .swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B8BC2A2855A90500786C2D /* EditorContent .swift */; };
-		91B8BC2D2855A91300786C2D /* EditorCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B8BC2C2855A91300786C2D /* EditorCollection.swift */; };
+		91B8BC292855A8CB00786C2D /* EditorMainCollectionData.json in Resources */ = {isa = PBXBuildFile; fileRef = 91B8BC282855A8CB00786C2D /* EditorMainCollectionData.json */; };
+		91B8BC2B2855A90500786C2D /* EditorMainContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B8BC2A2855A90500786C2D /* EditorMainContent.swift */; };
+		91B8BC2D2855A91300786C2D /* EditorMainCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B8BC2C2855A91300786C2D /* EditorMainCollection.swift */; };
 		91F74E7D285495C30002A637 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 91F74E7C285495C30002A637 /* .swiftlint.yml */; };
 		A884D24C2852CD7B004871B1 /* CampairApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A884D24B2852CD7B004871B1 /* CampairApp.swift */; };
 		A884D24E2852CD7B004871B1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A884D24D2852CD7B004871B1 /* ContentView.swift */; };
@@ -33,7 +36,6 @@
 		CC434EB72859D23700EB487F /* EditorDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC434EB62859D23700EB487F /* EditorDetailView.swift */; };
 		CC434EBC285A250600EB487F /* EquipmentGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC434EBB285A250600EB487F /* EquipmentGroup.swift */; };
 		CC434EBE285A257200EB487F /* EquipmentCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC434EBD285A257200EB487F /* EquipmentCollection.swift */; };
-		CC434EC0285A267900EB487F /* EquipmentCollectionData.json in Sources */ = {isa = PBXBuildFile; fileRef = CC434EBF285A267900EB487F /* EquipmentCollectionData.json */; };
 		CC9D118B28573366000FEC81 /* EditorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9D118A28573366000FEC81 /* EditorViewModel.swift */; };
 		CC9D118D2857336F000FEC81 /* EditorUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9D118C2857336F000FEC81 /* EditorUseCase.swift */; };
 		CC9D118F2857337A000FEC81 /* EditorRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9D118E2857337A000FEC81 /* EditorRepository.swift */; };
@@ -48,11 +50,14 @@
 		911531CE28587B7000961E08 /* EditorEquipListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorEquipListView.swift; sourceTree = "<group>"; };
 		915AE0F52856FB8100CAC50A /* OpeningSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeningSection.swift; sourceTree = "<group>"; };
 		915AE0F72856FB9A00CAC50A /* EquipmentContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentContent.swift; sourceTree = "<group>"; };
+		91915AB6285AC55500003C7F /* ContentEquipment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentEquipment.swift; sourceTree = "<group>"; };
+		91915ABB285AC72100003C7F /* EditorDetailContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorDetailContent.swift; sourceTree = "<group>"; };
+		91915ABF285AD52300003C7F /* EditorDetailContentData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = EditorDetailContentData.json; sourceTree = "<group>"; };
 		9194800628575DAE004F4BF5 /* EditorMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorMainView.swift; sourceTree = "<group>"; };
 		9194800828581E1C004F4BF5 /* EditorCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorCardView.swift; sourceTree = "<group>"; };
-		91B8BC282855A8CB00786C2D /* EditorCollectionData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = EditorCollectionData.json; sourceTree = "<group>"; };
-		91B8BC2A2855A90500786C2D /* EditorContent .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditorContent .swift"; sourceTree = "<group>"; };
-		91B8BC2C2855A91300786C2D /* EditorCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorCollection.swift; sourceTree = "<group>"; };
+		91B8BC282855A8CB00786C2D /* EditorMainCollectionData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = EditorMainCollectionData.json; sourceTree = "<group>"; };
+		91B8BC2A2855A90500786C2D /* EditorMainContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorMainContent.swift; sourceTree = "<group>"; };
+		91B8BC2C2855A91300786C2D /* EditorMainCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorMainCollection.swift; sourceTree = "<group>"; };
 		91F74E7C285495C30002A637 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		A884D2482852CD7B004871B1 /* campair.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = campair.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A884D24B2852CD7B004871B1 /* CampairApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampairApp.swift; sourceTree = "<group>"; };
@@ -71,7 +76,6 @@
 		CC434EB62859D23700EB487F /* EditorDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorDetailView.swift; sourceTree = "<group>"; };
 		CC434EBB285A250600EB487F /* EquipmentGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentGroup.swift; sourceTree = "<group>"; };
 		CC434EBD285A257200EB487F /* EquipmentCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentCollection.swift; sourceTree = "<group>"; };
-		CC434EBF285A267900EB487F /* EquipmentCollectionData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = EquipmentCollectionData.json; sourceTree = "<group>"; };
 		CC9D118A28573366000FEC81 /* EditorViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditorViewModel.swift; sourceTree = "<group>"; };
 		CC9D118C2857336F000FEC81 /* EditorUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditorUseCase.swift; sourceTree = "<group>"; };
 		CC9D118E2857337A000FEC81 /* EditorRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditorRepository.swift; sourceTree = "<group>"; };
@@ -99,6 +103,45 @@
 				EEE262B177D80904B01C5D51 /* Pods_campair.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		91915AB4285AC33400003C7F /* Editor */ = {
+			isa = PBXGroup;
+			children = (
+				91915AB6285AC55500003C7F /* ContentEquipment.swift */,
+				91915AB8285AC58600003C7F /* Main */,
+				91915AB9285AC58F00003C7F /* Detail */,
+			);
+			path = Editor;
+			sourceTree = "<group>";
+		};
+		91915AB5285AC33D00003C7F /* Dictionary */ = {
+			isa = PBXGroup;
+			children = (
+				CC9D1190285733A2000FEC81 /* Equipment.swift */,
+				CC434EBB285A250600EB487F /* EquipmentGroup.swift */,
+				CC434EBD285A257200EB487F /* EquipmentCollection.swift */,
+			);
+			path = Dictionary;
+			sourceTree = "<group>";
+		};
+		91915AB8285AC58600003C7F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				91B8BC2C2855A91300786C2D /* EditorMainCollection.swift */,
+				91B8BC2A2855A90500786C2D /* EditorMainContent.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		91915AB9285AC58F00003C7F /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				91915ABB285AC72100003C7F /* EditorDetailContent.swift */,
+				915AE0F52856FB8100CAC50A /* OpeningSection.swift */,
+				915AE0F72856FB9A00CAC50A /* EquipmentContent.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 		9194800528575D91004F4BF5 /* Editor */ = {
@@ -174,8 +217,8 @@
 		A884D25D2852CDDD004871B1 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				9194800528575D91004F4BF5 /* Editor */,
 				A884D24D2852CD7B004871B1 /* ContentView.swift */,
+				9194800528575D91004F4BF5 /* Editor */,
 				CCAD618F2855A450004B7801 /* EquipmentDictionary */,
 			);
 			path = View;
@@ -208,15 +251,10 @@
 		A884D26B2852CE2A004871B1 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
-				91B8BC2C2855A91300786C2D /* EditorCollection.swift */,
-				91B8BC2A2855A90500786C2D /* EditorContent .swift */,
-				915AE0F72856FB9A00CAC50A /* EquipmentContent.swift */,
-				CC9D1190285733A2000FEC81 /* Equipment.swift */,
-				915AE0F52856FB8100CAC50A /* OpeningSection.swift */,
-				CC434EBB285A250600EB487F /* EquipmentGroup.swift */,
-				CC434EBD285A257200EB487F /* EquipmentCollection.swift */,
-				91B8BC282855A8CB00786C2D /* EditorCollectionData.json */,
-				CC434EBF285A267900EB487F /* EquipmentCollectionData.json */,
+				91915AB4285AC33400003C7F /* Editor */,
+				91915AB5285AC33D00003C7F /* Dictionary */,
+				91B8BC282855A8CB00786C2D /* EditorMainCollectionData.json */,
+				91915ABF285AD52300003C7F /* EditorDetailContentData.json */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -333,7 +371,8 @@
 			files = (
 				91F74E7D285495C30002A637 /* .swiftlint.yml in Resources */,
 				A884D2532852CD7C004871B1 /* Preview Assets.xcassets in Resources */,
-				91B8BC292855A8CB00786C2D /* EditorCollectionData.json in Resources */,
+				91915AC0285AD52300003C7F /* EditorDetailContentData.json in Resources */,
+				91B8BC292855A8CB00786C2D /* EditorMainCollectionData.json in Resources */,
 				A884D2502852CD7C004871B1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -391,15 +430,15 @@
 				CC434EAC2859C82300EB487F /* RecommendedEquipmentCardView.swift in Sources */,
 				CC434EB32859CCBD00EB487F /* EditorDetailListVersionView.swift in Sources */,
 				CC434EB02859CC2A00EB487F /* OpeningEditorView.swift in Sources */,
+				91915AB7285AC55500003C7F /* ContentEquipment.swift in Sources */,
 				9194800728575DAE004F4BF5 /* EditorMainView.swift in Sources */,
-				CC434EC0285A267900EB487F /* EquipmentCollectionData.json in Sources */,
 				CC434EBC285A250600EB487F /* EquipmentGroup.swift in Sources */,
 				915AE0F62856FB8100CAC50A /* OpeningSection.swift in Sources */,
-				91B8BC2D2855A91300786C2D /* EditorCollection.swift in Sources */,
+				91B8BC2D2855A91300786C2D /* EditorMainCollection.swift in Sources */,
 				CC434EAA2859C80600EB487F /* ShareRecommendedEquipmentView.swift in Sources */,
 				911531CF28587B7000961E08 /* EditorEquipListView.swift in Sources */,
 				CC9D118B28573366000FEC81 /* EditorViewModel.swift in Sources */,
-				91B8BC2B2855A90500786C2D /* EditorContent .swift in Sources */,
+				91B8BC2B2855A90500786C2D /* EditorMainContent.swift in Sources */,
 				CC9D118F2857337A000FEC81 /* EditorRepository.swift in Sources */,
 				A884D24E2852CD7B004871B1 /* ContentView.swift in Sources */,
 				CC9D1191285733A2000FEC81 /* Equipment.swift in Sources */,
@@ -412,6 +451,7 @@
 				CCAD61952855D0F5004B7801 /* EquipmentDictionaryDetailView.swift in Sources */,
 				9194800928581E1C004F4BF5 /* EditorCardView.swift in Sources */,
 				CC434EB72859D23700EB487F /* EditorDetailView.swift in Sources */,
+				91915ABC285AC72100003C7F /* EditorDetailContent.swift in Sources */,
 				CCAD61952855D0F5004B7801 /* EquipmentDictionaryDetailView.swift in Sources */,
 				CC434EBE285A257200EB487F /* EquipmentCollection.swift in Sources */,
 				CCAD61952855D0F5004B7801 /* EquipmentDictionaryDetailView.swift in Sources */,

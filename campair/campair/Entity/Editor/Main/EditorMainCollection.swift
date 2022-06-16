@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct EditorCollection: Codable {
-    let editorContents: [EditorContent]
+struct EditorMainCollection: Codable {
+    let editorMainContents: [EditorMainContent]
 }

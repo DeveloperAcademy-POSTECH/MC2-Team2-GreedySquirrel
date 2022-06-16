@@ -15,12 +15,13 @@ enum EditorRepositoryError: Error {
 }
 
 protocol EditorcontentsFetchable {
-    func fetchEditorCollection(completion: @escaping (Result<EditorCollection, Error>) -> Void )
+    func fetchEditorCollection(completion: @escaping (Result<EditorMainCollection, Error>) -> Void )
+    func fetchEditorDetailContent(completion: @escaping (Result<EditorDetailContent, Error>) -> Void )
 }
 
 struct EditorRepository: EditorcontentsFetchable {
-    func fetchEditorCollection(completion: @escaping (Result<EditorCollection, Error>) -> Void ) {
-        guard let filePath = Bundle.main.path(forResource: "EditorCollectionData", ofType: "json") else {
+    func fetchEditorCollection(completion: @escaping (Result<EditorMainCollection, Error>) -> Void ) {
+        guard let filePath = Bundle.main.path(forResource: "EditorMainCollectionData", ofType: "json") else {
             completion(.failure(EditorRepositoryError.invaildFilePath))
             return
         }
@@ -34,10 +35,31 @@ struct EditorRepository: EditorcontentsFetchable {
             return
         }
         guard let editorCollection = try?
-                JSONDecoder().decode(EditorCollection.self, from: data) else {
+                JSONDecoder().decode(EditorMainCollection.self, from: data) else {
             completion(.failure(EditorRepositoryError.failedToDecode))
             return
         }
         completion(.success(editorCollection))
+    }
+    func fetchEditorDetailContent(completion: @escaping (Result<EditorDetailContent, Error>) -> Void ) {
+        guard let filePath = Bundle.main.path(forResource: "EditorDetailContentData", ofType: "json") else {
+            completion(.failure(EditorRepositoryError.invaildFilePath))
+            return
+        }
+        guard let jsonString = try?
+                String(contentsOfFile: filePath) else {
+            completion(.failure(EditorRepositoryError.failedToStringify))
+            return
+        }
+        guard let data = jsonString.data(using: .utf8) else {
+            completion(.failure(EditorRepositoryError.unableToUtf8Encoding))
+            return
+        }
+        guard let editorDetailContent = try?
+                JSONDecoder().decode(EditorDetailContent.self, from: data) else {
+            completion(.failure(EditorRepositoryError.failedToDecode))
+            return
+        }
+        completion(.success(editorDetailContent))
     }
 }

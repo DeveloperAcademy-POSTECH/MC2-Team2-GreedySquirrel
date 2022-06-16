@@ -10,6 +10,6 @@ import Foundation
 struct EquipmentContent: Codable {
     let title: String?
     let upperContent: String?
-    let recommendedEquipments: [Equipment]
+    let recommendedEquipments: [ContentEquipment]
     let lowerContent: String?
 }
