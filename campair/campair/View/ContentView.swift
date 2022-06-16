@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @ObservedObject var viewModel = EditorDetailViewModel2()
+    @ObservedObject var viewModel = EditorMainViewModel()
     var body: some View {
         VStack {
             Text(viewModel.titleText)

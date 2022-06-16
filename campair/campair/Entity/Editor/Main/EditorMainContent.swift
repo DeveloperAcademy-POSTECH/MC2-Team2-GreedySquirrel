@@ -8,6 +8,7 @@
 import Foundation
 
 struct EditorMainContent: Codable {
+    let contentID: String
     let cardPaintingBackgroundColor: String
     let cardPaintingSubTitleColor: String
     let cardPaintingSubTitle: String

@@ -1,6 +1,7 @@
 {
     "editorMainContents" : [
         {
+            "contentID" : "Content_1",
             "cardPaintingBackgroundColor" : "E9DFD3",
             "cardPaintingSubTitleColor" : "D98E7F",
             "cardPaintingSubTitle" : "초보차크닉",
@@ -26,6 +27,7 @@
             ]
         },
         {
+            "contentID" : "Content_2",
             "cardPaintingBackgroundColor" : "E9DFD3",
             "cardPaintingSubTitleColor" : "D98E7F",
             "cardPaintingSubTitle" : "초보차크닉2",
@@ -51,6 +53,7 @@
             ]
         },
         {
+            "contentID" : "Content_3",
             "cardPaintingBackgroundColor" : "E9DFD3",
             "cardPaintingSubTitleColor" : "D98E7F",
             "cardPaintingSubTitle" : "초보차크닉3",
