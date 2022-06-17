@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>paint_2</title>
+    <g id="Contents_콘텐츠" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="paint_2">
+            <rect id="area" x="0" y="0" width="80" height="80"></rect>
+            <g transform="translate(10.000000, 16.000000)">
+                <g id="Group-5">
+                    <path d="M30.1978091,0 C30.1978091,0 37.3533152,3.45543329 44.6519313,6.97997524 L45.9924935,7.62734009 C53.1335752,11.0758078 60,14.3916422 60,14.3916422 C60,14.3916422 50.3678987,25.2610948 31.1036962,47 L31.1036962,47 L0,30.2395878 L0.385352736,28.4640402 L2.13733894,27.7819105 L28.2584109,43.0881725 L29.7982426,41.8857833 L29.7982426,39.6973607 L5.078,24.98 L8.00394919,27.7630928 L29.6103896,40.5825076 L28.8411381,41.7777778 L1.2987013,26.3725269 L1.2987013,22.7166667 L1.3735299,22.7303677 C20.5897161,7.57678922 30.1978091,0 30.1978091,0 Z" id="Combined-Shape-Copy" fill="#8FA984"></path>
+                    <polygon id="Path-276" fill="#FFFFFF" points="15.1636211 15.04 5.63108766 22.5489105 21.585836 31.96"></polygon>
+                    <polygon id="Path-276" fill="#FFFFFF" transform="translate(23.932123, 23.500000) scale(-1, -1) translate(-23.932123, -23.500000) " points="25.4872818 15.04 15.9547484 22.5489105 31.9094968 31.96"></polygon>
+                    <ellipse id="Oval" fill="#6C7E77" cx="28.1554383" cy="24.44" rx="1" ry="1"></ellipse>
+                </g>
+                <polygon id="Path-103" fill="#405738" points="15 14 22.9110157 32 33 24.5759547"></polygon>
+                <circle id="Oval" fill="#FFFFFF" cx="27" cy="24" r="1"></circle>
+                <polygon id="Path-104" fill="#D7DED3" points="14.5417359 14 16.6325972 18.6967515 23 33 3 22.301889"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
