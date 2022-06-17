@@ -27,3 +27,35 @@ final class EditorDetailViewModel: ObservableObject {
         self.content = editorDetailContent
     }
 }
+
+
+//final class EditorDetailViewModel: ObservableObject {
+//    private let editorUseCase = EditorUseCase(repository: EditorRepository())
+//    @Published var editorDetailContent: EditorDetailContent = EditorDetailContent()
+//    @Published var imageSet: [String: Data] = [:]
+//    func viewAppeared() {
+//        self.editorUseCase.getEditorDetailContent { [weak self] editorDetailContent in
+//            guard let self = self else { return }
+//            self.editorDetailContent = editorDetailContent
+//            for contentsIndex in editorDetailContent.equipmentContents.indices {
+////                // fetch editorDetailContent's image
+////                let editorMainContent = editorDetailContent.equipmentContents[contentsIndex]
+////                self.editorUseCase.fetchImageData(fromURLString: editorMainContent.cardPaintingURLString) { imageData in
+////                    DispatchQueue.main.async {
+////                        self.imageSet[editorMainContent.cardPaintingTitle] = imageData
+////                    }
+////                }
+////                // fetch ContentEquipment's image
+////                for equipmentIndex in editorMainContent.contentEquipments.indices {
+////                    let contentEquipment = editorMainContent.contentEquipments[equipmentIndex]
+////                    self.editorUseCase.fetchImageData(fromURLString: contentEquipment.paintingURLString) { imageData in
+////                        DispatchQueue.main.async {
+////                            self.imageSet[contentEquipment.name] = imageData
+////                        }
+////                    }
+////                }
+//            }
+//        }
+//    }
+//}
+//
