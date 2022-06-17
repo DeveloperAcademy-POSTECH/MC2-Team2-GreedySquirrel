@@ -17,23 +17,23 @@ struct CategoryButtonView: View {
     let title: Category
     let imageUrl: String
     var body: some View {
-            Button {
-                // ToDo : Enter dictionaryDetailView
-            } label: {
-                NavigationLink(destination: SelectingEquipmentView()) {
-                    VStack(spacing: 0) {
-                        Image(self.imageUrl)
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 72, height: 72)
-                            .padding(.bottom, 4)
-                        Text(self.title.korean)
-                            .font(.footnote)
-                    }
+        Button {
+            // TODO : Enter dictionaryDetailView
+        } label: {
+            NavigationLink(destination: SelectingEquipmentView()) {
+                VStack(spacing: 0) {
+                    Image(self.imageUrl)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 72, height: 72)
+                        .padding(.bottom, 4)
+                    Text(self.title.korean)
+                        .font(.footnote)
                 }
             }
         }
     }
+}
 
 struct DictionaryMainView: View {
     private let columns: [GridItem] = [
@@ -67,24 +67,20 @@ struct DictionaryMainView: View {
 
 struct TitleView: View {
     var body: some View {
-        ZStack {
-            VStack {
-                HStack {
-                    Text("여행의 시작은\n장비 준비부터")
-                        .font(.largeTitle)
-                        .fontWeight(.bold)
-                        .foregroundColor(Color.black)
-                        .multilineTextAlignment(.leading)
-                        .padding(.leading, 20.0)
-                        .padding(.top, 36.0)
-                    Spacer()
-                    Image("CategoryBackground")
-                        .frame(width: 150, height: 150, alignment: .center)
-                        .padding(.leading, 20.0)
-                }
-                Spacer()
-            }
+        HStack {
+            Text("여행의 시작은\n장비 준비부터")
+                .font(.largeTitle)
+                .fontWeight(.bold)
+                .foregroundColor(Color.black)
+                .multilineTextAlignment(.leading)
+                .padding(.leading, 20.0)
+                .padding(.top, 36.0)
+            Spacer()
+            Image("CategoryBackground")
+                .frame(width: 150, height: 150, alignment: .center)
+                .padding(.leading, 20.0)
         }
+        Spacer()
     }
 }
 
