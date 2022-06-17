@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct DictionaryContent {
+struct DictionaryEquipmentContent {
     let name: String
     let paintingName: String
     var paintingURL: String
@@ -15,7 +15,7 @@ struct DictionaryContent {
     let pros: [String]?
     let cons: [String]?
     let installationGuide: String?
-    init(name: String, paintingName: String, paintingURL: String, content: String, pros: [String]?, cons: [String]?, installationGuide: String?) {
+    init(name: String = "", paintingName: String = "임시이미지", paintingURL: String = "", content: String = "", pros: [String]? = nil, cons: [String]? = nil, installationGuide: String? = nil) {
         self.name = name
         self.paintingName = paintingName
         self.paintingURL = paintingURL
@@ -23,14 +23,5 @@ struct DictionaryContent {
         self.pros = pros
         self.cons = cons
         self.installationGuide = installationGuide
-    }
-    init() {
-        self.name = ""
-        self.paintingName = "임시이미지"
-        self.paintingURL = ""
-        self.content = ""
-        self.pros = nil
-        self.cons = nil
-        self.installationGuide = nil
     }
 }
