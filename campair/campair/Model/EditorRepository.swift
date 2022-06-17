@@ -83,15 +83,15 @@ struct EditorRepository: EditorcontentsFetchable {
         }
         editorDetailContent.openingSection.cardPaintingURLString = url.absoluteString
         // parsing & mapping fetch ContentEquipment's image url
-        for index in editorDetailContent.equipmentContents.indices {
-            var contentEquipment = editorDetailContent.equipmentContents[index]
-            for index in contentEquipment.recommendedEquipments.indices {
-                let imageName = contentEquipment.recommendedEquipments[index].paintingImageName
+        for equipmentContentIndex in editorDetailContent.equipmentContents.indices {
+            let contentEquipment = editorDetailContent.equipmentContents[equipmentContentIndex]
+            for recommendedEquipmentIndex in contentEquipment.recommendedEquipments.indices {
+                let imageName = contentEquipment.recommendedEquipments[recommendedEquipmentIndex].paintingImageName
                 guard let url = Bundle.main.url(forResource: imageName, withExtension: "png") else {
                     completion(.failure(DataFetchingError.unableToFindImage))
                     return
                 }
-                contentEquipment.recommendedEquipments[index].paintingURLString = url.absoluteString
+                editorDetailContent.equipmentContents[equipmentContentIndex].recommendedEquipments[recommendedEquipmentIndex].paintingURLString = url.absoluteString
             }
         }
         completion(.success(editorDetailContent))
