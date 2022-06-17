@@ -20,6 +20,7 @@
 		911841B9285C58D0004E7BB3 /* DictionaryMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911841B8285C58D0004E7BB3 /* DictionaryMainViewModel.swift */; };
 		911841BB285C5916004E7BB3 /* DictionaryUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911841BA285C5916004E7BB3 /* DictionaryUseCase.swift */; };
 		911841BD285C5965004E7BB3 /* DictionaryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911841BC285C5965004E7BB3 /* DictionaryRepository.swift */; };
+		911841C5285C6788004E7BB3 /* 임시이미지.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 911841C4285C6788004E7BB3 /* 임시이미지.jpg */; };
 		913DAD3D285B7591005FDA13 /* CampairApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A884D24B2852CD7B004871B1 /* CampairApp.swift */; };
 		915AE0F62856FB8100CAC50A /* OpeningSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915AE0F52856FB8100CAC50A /* OpeningSection.swift */; };
 		915AE0F82856FB9A00CAC50A /* EquipmentContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915AE0F72856FB9A00CAC50A /* EquipmentContent.swift */; };
@@ -72,6 +73,7 @@
 		911841B8285C58D0004E7BB3 /* DictionaryMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryMainViewModel.swift; sourceTree = "<group>"; };
 		911841BA285C5916004E7BB3 /* DictionaryUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryUseCase.swift; sourceTree = "<group>"; };
 		911841BC285C5965004E7BB3 /* DictionaryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryRepository.swift; sourceTree = "<group>"; };
+		911841C4285C6788004E7BB3 /* 임시이미지.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "임시이미지.jpg"; sourceTree = "<group>"; };
 		915AE0F52856FB8100CAC50A /* OpeningSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeningSection.swift; sourceTree = "<group>"; };
 		915AE0F72856FB9A00CAC50A /* EquipmentContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentContent.swift; sourceTree = "<group>"; };
 		91915AB6285AC55500003C7F /* ContentEquipment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentEquipment.swift; sourceTree = "<group>"; };
@@ -301,6 +303,7 @@
 		919EFA58285B2BF500F5ECEA /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				911841C4285C6788004E7BB3 /* 임시이미지.jpg */,
 				911841A8285C54B7004E7BB3 /* CardPainting */,
 				911841A7285C54A7004E7BB3 /* EquipmentGroup */,
 				911841A6285C5495004E7BB3 /* Equipment */,
@@ -534,6 +537,7 @@
 				91915AC0285AD52300003C7F /* EditorDetailContentData.json in Resources */,
 				91B8BC292855A8CB00786C2D /* EditorMainCollectionData.json in Resources */,
 				A884D2502852CD7C004871B1 /* Assets.xcassets in Resources */,
+				911841C5285C6788004E7BB3 /* 임시이미지.jpg in Resources */,
 				911841AA285C559D004E7BB3 /* 먹으러_가는_차박.svg in Resources */,
 				919EFA5C285B2D6100F5ECEA /* 차로_떠나는_피크닉.png in Resources */,
 			);

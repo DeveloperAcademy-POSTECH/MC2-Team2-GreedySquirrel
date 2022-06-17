@@ -9,4 +9,7 @@ import Foundation
 
 struct EditorMainCollection: Codable {
     var editorMainContents: [EditorMainContent]
+    init() {
+        self.editorMainContents = [EditorMainContent()]
+    }
 }

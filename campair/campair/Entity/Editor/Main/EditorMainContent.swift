@@ -16,4 +16,14 @@ struct EditorMainContent: Codable {
     var cardPaintingImageName: String
     var cardPaintingURLString: String
     var contentEquipments: [ContentEquipment]
+    init() {
+        self.contentID = ""
+        self.cardPaintingBackgroundColor = "FFFFFF"
+        self.cardPaintingSubTitleColor = "FFFFFF"
+        self.cardPaintingSubTitle = ""
+        self.cardPaintingTitle = ""
+        self.cardPaintingImageName = "임시이미지"
+        self.cardPaintingURLString = ""
+        self.contentEquipments = [ContentEquipment()]
+    }
 }

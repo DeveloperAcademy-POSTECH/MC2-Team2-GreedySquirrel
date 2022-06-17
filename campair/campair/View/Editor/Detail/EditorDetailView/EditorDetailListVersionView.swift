@@ -51,10 +51,10 @@ struct EditorDetailListVersionView_Previews: PreviewProvider {
                                                                             title: nil,
                                                                             upperContent: nil,
                                                                             recommendedEquipments: [
-                                                                                ContentEquipment(name: "경량의자2", paintingImageName: "경량의자", paintingURLString: "경량의자"),
-                                                                                ContentEquipment(name: "경량의자3", paintingImageName: "경량의자", paintingURLString: "경량의자"),
-                                                                                ContentEquipment(name: "경량의자4", paintingImageName: "경량의자", paintingURLString: "경량의자"),
-                                                                                ContentEquipment(name: "경량의자5", paintingImageName: "경량의자", paintingURLString: "경량의자")
+                                                                                ContentEquipment(),
+                                                                                ContentEquipment(),
+                                                                                ContentEquipment(),
+                                                                                ContentEquipment()
                                                                             ],
                                                                             lowerContent: nil
                                                                         )
