@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40610BD9285C5E3600CC7903 /* temp2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40610BD8285C5E3600CC7903 /* temp2.swift */; };
+		40610BDB285C5E4200CC7903 /* temp3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40610BDA285C5E4200CC7903 /* temp3.swift */; };
+		40610BDE285C5F3500CC7903 /* temp1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40610BDD285C5F3500CC7903 /* temp1.swift */; };
 		823A03E07B3007B9DB63E4CA /* Pods_campair.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEE262B177D80904B01C5D51 /* Pods_campair.framework */; };
 		911531CF28587B7000961E08 /* EditorEquipListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911531CE28587B7000961E08 /* EditorEquipListView.swift */; };
 		911841AA285C559D004E7BB3 /* 먹으러_가는_차박.svg in Resources */ = {isa = PBXBuildFile; fileRef = 911841A9285C559D004E7BB3 /* 먹으러_가는_차박.svg */; };
@@ -56,6 +59,9 @@
 
 /* Begin PBXFileReference section */
 		0A0ECEB268ACE01987E659A3 /* Pods-campair.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-campair.debug.xcconfig"; path = "Target Support Files/Pods-campair/Pods-campair.debug.xcconfig"; sourceTree = "<group>"; };
+		40610BD8285C5E3600CC7903 /* temp2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = temp2.swift; sourceTree = "<group>"; };
+		40610BDA285C5E4200CC7903 /* temp3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = temp3.swift; sourceTree = "<group>"; };
+		40610BDD285C5F3500CC7903 /* temp1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = temp1.swift; sourceTree = "<group>"; };
 		4467E420AFA70CB9D8286C7E /* Pods-campair.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-campair.release.xcconfig"; path = "Target Support Files/Pods-campair/Pods-campair.release.xcconfig"; sourceTree = "<group>"; };
 		911531CE28587B7000961E08 /* EditorEquipListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorEquipListView.swift; sourceTree = "<group>"; };
 		911841A9285C559D004E7BB3 /* 먹으러_가는_차박.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "먹으러_가는_차박.svg"; sourceTree = "<group>"; };
@@ -125,6 +131,30 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		40610BD3285C5DEA00CC7903 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				40610BD8285C5E3600CC7903 /* temp2.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		40610BD5285C5E0500CC7903 /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				40610BDA285C5E4200CC7903 /* temp3.swift */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
+		40610BDC285C5F2700CC7903 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				40610BDD285C5F3500CC7903 /* temp1.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		911841A6285C5495004E7BB3 /* Equipment */ = {
 			isa = PBXGroup;
 			children = (
@@ -192,27 +222,6 @@
 			path = Dictionary;
 			sourceTree = "<group>";
 		};
-		911841BE285C598A004E7BB3 /* Content */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Content;
-			sourceTree = "<group>";
-		};
-		911841BF285C599A004E7BB3 /* Main */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Main;
-			sourceTree = "<group>";
-		};
-		911841C0285C59A2004E7BB3 /* Detail */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Detail;
-			sourceTree = "<group>";
-		};
 		911841C1285C59F5004E7BB3 /* Json */ = {
 			isa = PBXGroup;
 			children = (
@@ -251,9 +260,9 @@
 		91915AB5285AC33D00003C7F /* Dictionary */ = {
 			isa = PBXGroup;
 			children = (
-				911841BF285C599A004E7BB3 /* Main */,
-				911841C0285C59A2004E7BB3 /* Detail */,
-				911841BE285C598A004E7BB3 /* Content */,
+				40610BDC285C5F2700CC7903 /* Main */,
+				40610BD3285C5DEA00CC7903 /* Detail */,
+				40610BD5285C5E0500CC7903 /* Content */,
 				CC9D1190285733A2000FEC81 /* Equipment.swift */,
 				CC434EBB285A250600EB487F /* EquipmentGroup.swift */,
 				CC434EBD285A257200EB487F /* EquipmentCollection.swift */,
@@ -591,9 +600,11 @@
 				911841AF285C5818004E7BB3 /* DictionaryContentView.swift in Sources */,
 				9194800728575DAE004F4BF5 /* EditorMainView.swift in Sources */,
 				CC396453285B338D005DC3F8 /* ViewExtension.swift in Sources */,
+				40610BDE285C5F3500CC7903 /* temp1.swift in Sources */,
 				CC434EBC285A250600EB487F /* EquipmentGroup.swift in Sources */,
 				911841B7285C58B9004E7BB3 /* DictionaryDetailViewModel.swift in Sources */,
 				915AE0F62856FB8100CAC50A /* OpeningSection.swift in Sources */,
+				40610BDB285C5E4200CC7903 /* temp3.swift in Sources */,
 				91B8BC2D2855A91300786C2D /* EditorMainCollection.swift in Sources */,
 				CC434EAA2859C80600EB487F /* ShareRecommendedEquipmentView.swift in Sources */,
 				911531CF28587B7000961E08 /* EditorEquipListView.swift in Sources */,
@@ -611,6 +622,7 @@
 				F62A6D1E2859BC4400755AF3 /* DictionaryMainView.swift in Sources */,
 				9194800928581E1C004F4BF5 /* EditorCardView.swift in Sources */,
 				911841BB285C5916004E7BB3 /* DictionaryUseCase.swift in Sources */,
+				40610BD9285C5E3600CC7903 /* temp2.swift in Sources */,
 				CC434EB72859D23700EB487F /* EditorDetailView.swift in Sources */,
 				91915ABC285AC72100003C7F /* EditorDetailContent.swift in Sources */,
 				CC434EBE285A257200EB487F /* EquipmentCollection.swift in Sources */,
