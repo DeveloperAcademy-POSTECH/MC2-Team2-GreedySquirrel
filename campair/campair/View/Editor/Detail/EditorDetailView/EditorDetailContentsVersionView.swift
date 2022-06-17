@@ -33,7 +33,6 @@ struct EditorDetailContentsVersionView: View {
         .ignoresSafeArea()
         .onAppear(perform: {
             viewModel.viewAppeared()
-            print(viewModel.imageSet)
         })
     }
 }
