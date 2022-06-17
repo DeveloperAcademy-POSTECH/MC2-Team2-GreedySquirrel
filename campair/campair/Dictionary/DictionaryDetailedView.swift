@@ -37,7 +37,6 @@ struct DictionaryDetailedView: View {
                             .padding(.bottom, 20)
                         }
                     }
-                
                 ScrollView {
                     EquipmentCategory()
                     EquipmentCategory()
@@ -51,11 +50,12 @@ struct DictionaryDetailedView: View {
                 .navigationBarBackButtonHidden(true)
                 .toolbar {
                     ToolbarItemGroup(placement: .navigationBarLeading) {
-                        Button(action: {self.mode.wrappedValue.dismiss()})
-                            {
-                                Image(systemName: "chevron.left")
-                                    .foregroundColor(Color.black)
-                            }
+                        Button(action: {
+                            self.mode.wrappedValue.dismiss()
+                        }, label: {
+                            Image(systemName: "chevron.left")
+                                .foregroundColor(Color.black)
+                        })
                     }
                 }
     }

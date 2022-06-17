@@ -81,8 +81,9 @@ struct EditorRepository: EditorcontentsFetchable {
             completion(.failure(ImageFetchingError.invalidURL))
             return
         }
-        // Because now on we only fetch local image, response is never used
         URLSession.shared.dataTask(with: url) { data, response, error in
+            // Because now on we only fetch local image, response is never used
+            _ = response
             if let error = error {
                 completion(.failure(error))
                 return

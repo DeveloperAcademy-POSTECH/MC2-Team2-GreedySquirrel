@@ -46,7 +46,7 @@ struct RecommendedEquipmentCardView_Previews: PreviewProvider {
     static var previews: some View {
         RecommendedEquipmentCardView(equipment:
                                         ContentEquipment(
-                                            name: "돗자리",
+                                            name: "돗자리", paintingImageName: "돗자리",
                                             paintingURLString: "주소"
                                         )
         )

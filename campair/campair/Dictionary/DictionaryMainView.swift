@@ -20,7 +20,7 @@ struct CategoryButtonView: View {
         Button {
             // TODO : Enter dictionaryDetailView
         } label: {
-            NavigationLink(destination: SelectingEquipmentView()) {
+            NavigationLink(destination: DictionaryDetailedView()) {
                 VStack(spacing: 0) {
                     Image(self.imageUrl)
                         .resizable()
