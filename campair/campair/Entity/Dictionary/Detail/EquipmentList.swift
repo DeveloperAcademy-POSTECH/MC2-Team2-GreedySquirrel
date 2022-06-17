@@ -11,6 +11,11 @@ struct EquipmentList {
     let name: String
     let paintingName: String
     var paintingURL: String
+    init(name: String, paintingName: String, paintingURL: String) {
+        self.name = name
+        self.paintingName = paintingName
+        self.paintingURL = paintingURL
+    }
     init() {
         self.name = ""
         self.paintingName = "임시이미지"

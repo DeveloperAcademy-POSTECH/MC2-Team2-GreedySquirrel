@@ -9,7 +9,10 @@ import Foundation
 
 struct DictionaryMainCollection {
     var dictionaryMainCategory: [DictionaryMainCategory]
+    init(dictionaryMainCategory: [DictionaryMainCategory]) {
+        self.dictionaryMainCategory = dictionaryMainCategory
+    }
     init() {
-        self.dictionaryMainCategory = [DictionaryMainCategory()]
+        dictionaryMainCategory = [DictionaryMainCategory()]
     }
 }
