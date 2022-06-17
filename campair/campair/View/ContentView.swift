@@ -8,14 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
-    @ObservedObject var viewModel = EditorDetailViewModel2()
+    @ObservedObject var viewModel = EditorDetailViewModel()
     var body: some View {
         VStack {
             Text("Fighting squerrels!")
                 .padding()
             // testcode
-            Button("test") {
-
+            Button {
+                viewModel.viewAppeared()
+            } label: {
+                Text(viewModel.editorDetailContent.openingSection.cardPaintingTitle)
             }
         }
     }

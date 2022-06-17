@@ -7,55 +7,36 @@
 
 import Foundation
 
-final class EditorDetailViewModel2: ObservableObject {
-    private let editorUseCase = EditorUseCase(repository: EditorRepository())
-    @Published var titleText = "test"
-    func testButtonTouched() {
-        self.editorUseCase.getEditorDetailContent { [weak self] editorDetailContents in
-            print(editorDetailContents)
-            // test code
-            guard let self = self else { return }
-            print(editorDetailContents.version)
-            self.titleText = editorDetailContents.equipmentContents[0].recommendedEquipments[0].paintingURLString
-        }
-    }
-}
-
 final class EditorDetailViewModel: ObservableObject {
-    @Published var content: EditorDetailContent
-    init(editorDetailContent: EditorDetailContent) {
-        self.content = editorDetailContent
+    private let useCase = EditorUseCase(repository: EditorRepository())
+    @Published var editorDetailContent: EditorDetailContent
+    @Published var imageSet: [String: Data] = [:]
+    init(editorDetailContent: EditorDetailContent = EditorDetailContent()) {
+        self.editorDetailContent = editorDetailContent
+    }
+    func viewAppeared() {
+        self.useCase.getEditorDetailContent(completion: { [weak self] editorContentData in
+            guard let self = self else { return }
+            self.editorDetailContent = editorContentData
+            // fetch cardPainting's Image
+            let openingSection = editorContentData.openingSection
+            self.useCase.fetchImageData(fromURLString: openingSection.cardPaintingURLString) { imageData in
+                DispatchQueue.main.async {
+                    self.imageSet[openingSection.cardPaintingImageName] = imageData
+                }
+            }
+            // fetch ContentEquipment's image
+            for equipmentContentindex in editorContentData.equipmentContents.indices {
+                let recommendedEquipments = editorContentData.equipmentContents[equipmentContentindex].recommendedEquipments
+                for recommendedEquipmentindex in recommendedEquipments.indices {
+                    let contentEquipment = recommendedEquipments[recommendedEquipmentindex]
+                    self.useCase.fetchImageData(fromURLString: contentEquipment.paintingURLString) { imageData in
+                        DispatchQueue.main.async {
+                            self.imageSet[contentEquipment.paintingImageName] = imageData
+                        }
+                    }
+                }
+            }
+        })
     }
 }
-
-
-//final class EditorDetailViewModel: ObservableObject {
-//    private let editorUseCase = EditorUseCase(repository: EditorRepository())
-//    @Published var editorDetailContent: EditorDetailContent = EditorDetailContent()
-//    @Published var imageSet: [String: Data] = [:]
-//    func viewAppeared() {
-//        self.editorUseCase.getEditorDetailContent { [weak self] editorDetailContent in
-//            guard let self = self else { return }
-//            self.editorDetailContent = editorDetailContent
-//            for contentsIndex in editorDetailContent.equipmentContents.indices {
-////                // fetch editorDetailContent's image
-////                let editorMainContent = editorDetailContent.equipmentContents[contentsIndex]
-////                self.editorUseCase.fetchImageData(fromURLString: editorMainContent.cardPaintingURLString) { imageData in
-////                    DispatchQueue.main.async {
-////                        self.imageSet[editorMainContent.cardPaintingTitle] = imageData
-////                    }
-////                }
-////                // fetch ContentEquipment's image
-////                for equipmentIndex in editorMainContent.contentEquipments.indices {
-////                    let contentEquipment = editorMainContent.contentEquipments[equipmentIndex]
-////                    self.editorUseCase.fetchImageData(fromURLString: contentEquipment.paintingURLString) { imageData in
-////                        DispatchQueue.main.async {
-////                            self.imageSet[contentEquipment.name] = imageData
-////                        }
-////                    }
-////                }
-//            }
-//        }
-//    }
-//}
-//

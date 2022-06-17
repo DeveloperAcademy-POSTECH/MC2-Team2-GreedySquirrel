@@ -26,7 +26,7 @@ struct EditorRecommendEquipmentView: View {
                                 .padding(.bottom, 20)
                         }
                         let recommendedEquipments = self.equipmentContent.recommendedEquipments
-                        ForEach(recommendedEquipments.indices) { index in
+                        ForEach(recommendedEquipments.indices, id: \.self) { index in
                             RecommendedEquipmentCardView(equipment: recommendedEquipments[index])
                                 .padding(.top, index > 0 ? 6 : 0)
                         }

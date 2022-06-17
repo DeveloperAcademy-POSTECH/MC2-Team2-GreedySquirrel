@@ -14,8 +14,8 @@ enum EditorVersion: String, Codable {
 
 struct EditorDetailContent: Codable {
     let version: EditorVersion
-    let openingSection: OpeningSection
-    let equipmentContents: [EquipmentContent]
+    var openingSection: OpeningSection
+    var equipmentContents: [EquipmentContent]
     init(version: EditorVersion = EditorVersion.contents, openingSection: OpeningSection = OpeningSection(), equipmentContents: [EquipmentContent] = []) {
         self.version = version
         self.openingSection = openingSection

@@ -226,7 +226,6 @@
 			isa = PBXGroup;
 			children = (
 				911841C2285C5A08004E7BB3 /* Editor */,
-				911841C3285C5A12004E7BB3 /* Dictionary */,
 			);
 			path = Json;
 			sourceTree = "<group>";
@@ -238,13 +237,6 @@
 				91915ABF285AD52300003C7F /* EditorDetailContentData.json */,
 			);
 			path = Editor;
-			sourceTree = "<group>";
-		};
-		911841C3285C5A12004E7BB3 /* Dictionary */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Dictionary;
 			sourceTree = "<group>";
 		};
 		91915AB4285AC33400003C7F /* Editor */ = {

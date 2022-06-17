@@ -37,7 +37,6 @@ struct DictionaryDetailedView: View {
                             .padding(.bottom, 20)
                         }
                     }
-                
                 ScrollView {
                     EquipmentCategory()
                     EquipmentCategory()

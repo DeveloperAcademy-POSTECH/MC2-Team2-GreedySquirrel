@@ -14,7 +14,7 @@ struct EditorUseCase {
         self.repository = repository
     }
     func getEditorCollection(completion: @escaping (EditorMainCollection) -> Void) {
-        repository.fetchEditorCollection { result in
+        self.repository.fetchEditorCollection { result in
             switch result {
             case .success(let editorCollection) :
                 completion(editorCollection)
@@ -24,7 +24,7 @@ struct EditorUseCase {
         }
     }
     func getEditorDetailContent(completion: @escaping (EditorDetailContent) -> Void) {
-        repository.fetchEditorDetailContent { result in
+        self.repository.fetchEditorDetailContent { result in
             switch result {
             case .success(let editorDetailContent) :
                 completion(editorDetailContent)
@@ -34,12 +34,12 @@ struct EditorUseCase {
         }
     }
     func fetchImageData(fromURLString urlString: String, completion: @escaping (Data) -> Void) {
-        repository.fetchImage(urlString: urlString) { result in
+        self.repository.fetchImage(urlString: urlString) { result in
             switch result {
             case .success(let data):
                 completion(data)
             case .failure(let error):
-                print(error)
+                os_log(.error, log: .default, "\(error.localizedDescription)")
             }
         }
     }

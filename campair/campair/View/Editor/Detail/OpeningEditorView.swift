@@ -58,6 +58,7 @@ struct OpeningEditorView_Previews: PreviewProvider {
                                 cardPaintingSubTitleColor: "EAA496",
                                 cardPaintingSubTitle: "초보차크닉",
                                 cardPaintingTitle: "차로 떠나는 피크닉",
+                                cardPaintingImageName: "차로_떠나는_피크닉",
                                 cardPaintingURLString: "주소",
                                 titleColor: "D98E7F",
                                 title: "최소한으로 차크닉을 떠날 때.",

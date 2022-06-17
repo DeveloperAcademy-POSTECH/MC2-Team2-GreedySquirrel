@@ -53,7 +53,6 @@ struct DictionaryMainView: View {
             }
                 .navigationTitle("SDFWER")
                 //.navigationBarHidden(true)
-            
         }
     }
 }

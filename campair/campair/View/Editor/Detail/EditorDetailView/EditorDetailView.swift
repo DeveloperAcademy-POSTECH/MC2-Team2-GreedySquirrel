@@ -8,20 +8,20 @@
 import SwiftUI
 
 struct EditorDetailView: View {
-    @StateObject var editorDetailContent: EditorDetailViewModel
+    @StateObject var viewModel: EditorDetailViewModel = EditorDetailViewModel()
     var body: some View {
-        switch self.editorDetailContent.content.version {
+        switch self.viewModel.editorDetailContent.version {
         case .contents :
-            EditorDetailContentsVersionView(editorDetailContent: self.editorDetailContent)
+                EditorDetailContentsVersionView(viewModel: self.viewModel)
         case .list :
-            EditorDetailListVersionView(editorDetailContent: self.editorDetailContent)
+                EditorDetailListVersionView(viewModel: self.viewModel)
         }
     }
 }
 
 struct EditorDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        EditorDetailView(editorDetailContent:
+        EditorDetailView(viewModel:
                             EditorDetailViewModel(
                                 editorDetailContent: EditorDetailContent(
                                     version: .contents,

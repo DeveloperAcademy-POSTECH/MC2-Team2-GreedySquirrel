@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct EditorDetailContentsVersionView: View {
-    @ObservedObject var editorDetailContent: EditorDetailViewModel
+    @ObservedObject var viewModel : EditorDetailViewModel
     var body: some View {
         ScrollView {
-            OpeningEditorView(openingSection: self.editorDetailContent.content.openingSection)
+            OpeningEditorView(openingSection: self.viewModel.editorDetailContent.openingSection)
             VStack(alignment: .leading, spacing: 0) {
                 VStack(alignment: .leading, spacing: 0) {
-                    let equipmentContents = self.editorDetailContent.content.equipmentContents
-                    ForEach(equipmentContents.indices) { index in
+                    let equipmentContents = self.viewModel.editorDetailContent.equipmentContents
+                    ForEach(equipmentContents.indices, id: \.self) { index in
                         let equipmentContent = equipmentContents[index]
                         EditorRecommendEquipmentView(equipmentContent: equipmentContent)
                         let lastIndexOfEquipmentContents = equipmentContents.count - 1
@@ -31,12 +31,15 @@ struct EditorDetailContentsVersionView: View {
             ShareRecommendedEquipmentView()
         }
         .ignoresSafeArea()
+        .onAppear(perform: {
+            viewModel.viewAppeared()
+        })
     }
 }
 
 struct EditorDetailContentsVersionView_Previews: PreviewProvider {
     static var previews: some View {
-        EditorDetailListVersionView(editorDetailContent:
+        EditorDetailListVersionView(viewModel:
                                         EditorDetailViewModel(editorDetailContent:
                                                                 EditorDetailContent(
                                                                     version: .contents,
