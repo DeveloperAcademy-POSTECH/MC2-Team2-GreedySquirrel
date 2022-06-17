@@ -49,6 +49,7 @@ struct EditorRecommendEquipmentView: View {
         }
     }
 }
+
 struct EditorRecommendEquipmentView_Previews: PreviewProvider {
     static var previews: some View {
         EditorRecommendEquipmentView(equipmentContent:

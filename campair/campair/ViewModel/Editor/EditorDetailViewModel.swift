@@ -19,11 +19,14 @@ final class EditorDetailViewModel: ObservableObject {
             self.editorDetailContent = editorContentData
             // fetch cardPainting's Image
             let openingSection = editorContentData.openingSection
+            print("1")
             self.useCase.fetchImageData(fromURLString: openingSection.cardPaintingURLString) { imageData in
                 DispatchQueue.main.async {
                     self.imageSet[openingSection.cardPaintingImageName] = imageData
+                    print("2")
                 }
             }
+            print("3")
             // fetch ContentEquipment's image
             for equipmentContentindex in editorContentData.equipmentContents.indices {
                 let recommendedEquipments = editorContentData.equipmentContents[equipmentContentindex].recommendedEquipments
