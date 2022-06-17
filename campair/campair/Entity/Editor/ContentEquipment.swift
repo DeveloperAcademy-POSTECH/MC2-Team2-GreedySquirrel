@@ -11,14 +11,9 @@ struct ContentEquipment: Codable {
     let name: String
     var paintingImageName: String
     var paintingURLString: String
-    init(name: String, paintingImageName: String, paintingURLString: String) {
+    init(name: String = "", paintingImageName: String = "임시이미지", paintingURLString: String = "") {
             self.name = name
             self.paintingImageName = paintingImageName
             self.paintingURLString = paintingURLString
-    }
-    init() {
-        self.name = ""
-        self.paintingImageName = "임시이미지"
-        self.paintingURLString = ""
     }
 }
