@@ -11,19 +11,19 @@ struct EditorDetailListVersionView: View {
     @ObservedObject var viewModel: EditorDetailViewModel
     var body: some View {
         ScrollView {
-            OpeningEditorView(openingSection: self.viewModel.editorDetailContent.openingSection)
-            VStack(alignment: .leading, spacing: 0) {
-                VStack(alignment: .leading, spacing: 0) {
-                    let equipmentContents = self.viewModel.editorDetailContent.equipmentContents
-                    ForEach(equipmentContents.indices, id: \.self) { index in
-                        let equipmentContent = equipmentContents[index]
-                        EditorRecommendEquipmentView(equipmentContent: equipmentContent)
-                            .padding(.bottom, 36)
-                    }
-                }
-            }
-            .font(.system(size: 17))
-            ShareRecommendedEquipmentView()
+//            OpeningEditorView(openingSection: self.viewModel.editorDetailContent.openingSection, imageSet: viewModel.imageSet)
+//            VStack(alignment: .leading, spacing: 0) {
+//                VStack(alignment: .leading, spacing: 0) {
+//                    let equipmentContents = self.viewModel.editorDetailContent.equipmentContents
+//                    ForEach(equipmentContents.indices, id: \.self) { index in
+//                        let equipmentContent = equipmentContents[index]
+//                        EditorRecommendEquipmentView(equipmentContent: equipmentContent, imageSet: viewModel.imageSet)
+//                            .padding(.bottom, 36)
+//                    }
+//                }
+//            }
+//            .font(.system(size: 17))
+//            ShareRecommendedEquipmentView()
         }
         .ignoresSafeArea()
         .onAppear {

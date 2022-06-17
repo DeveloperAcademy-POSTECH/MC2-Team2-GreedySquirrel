@@ -50,8 +50,7 @@ struct DictionaryDetailedView: View {
                 .navigationBarBackButtonHidden(true)
                 .toolbar {
                     ToolbarItemGroup(placement: .navigationBarLeading) {
-                        Button(action: {self.mode.wrappedValue.dismiss()})
-                            {
+                        Button(action: {self.mode.wrappedValue.dismiss()}) {
                                 Image(systemName: "chevron.left")
                                     .foregroundColor(Color.black)
                             }

@@ -11,13 +11,13 @@ struct EditorDetailContentsVersionView: View {
     @ObservedObject var viewModel : EditorDetailViewModel
     var body: some View {
         ScrollView {
-            OpeningEditorView(openingSection: self.viewModel.editorDetailContent.openingSection)
+            OpeningEditorView(openingSection: self.viewModel.editorDetailContent.openingSection, imageSet: $viewModel.imageSet)
             VStack(alignment: .leading, spacing: 0) {
                 VStack(alignment: .leading, spacing: 0) {
                     let equipmentContents = self.viewModel.editorDetailContent.equipmentContents
                     ForEach(equipmentContents.indices, id: \.self) { index in
                         let equipmentContent = equipmentContents[index]
-                        EditorRecommendEquipmentView(equipmentContent: equipmentContent)
+                        EditorRecommendEquipmentView(equipmentContent: equipmentContent, imageSet: $viewModel.imageSet)
                         let lastIndexOfEquipmentContents = equipmentContents.count - 1
                         if index != lastIndexOfEquipmentContents {
                             Rectangle()
@@ -33,6 +33,7 @@ struct EditorDetailContentsVersionView: View {
         .ignoresSafeArea()
         .onAppear(perform: {
             viewModel.viewAppeared()
+            print(viewModel.imageSet)
         })
     }
 }
