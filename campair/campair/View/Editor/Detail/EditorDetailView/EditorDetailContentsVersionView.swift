@@ -22,7 +22,7 @@ struct EditorDetailContentsVersionView: View {
                         if index != lastIndexOfEquipmentContents {
                             Rectangle()
                                 .frame(height: 8)
-                                .foregroundColor(Color(#colorLiteral(red: 0.9960784314, green: 0.9882352941, blue: 0.9843137255, alpha: 1)))
+                                .foregroundColor(Color(hex: "FEFCFB"))
                         }
                     }
                 }
