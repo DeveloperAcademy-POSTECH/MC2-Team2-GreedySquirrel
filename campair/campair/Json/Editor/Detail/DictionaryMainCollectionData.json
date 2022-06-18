@@ -1,0 +1,85 @@
+
+{
+    "dictionaryMainCategory" : [
+        {
+            "categoryName" : "텐트",
+            "paintingName" : "텐트",
+            "paintingURL" : ""
+        },
+        {
+            "categoryName" : "타프",
+            "paintingName" : "타프",
+            "paintingURL" : ""
+        },
+        {
+            "categoryName" : "시트",
+            "paintingName" : "시트",
+            "paintingURL" : ""
+        },
+        {
+            "categoryName" : "부품",
+            "paintingName" : "부품",
+            "paintingURL" : ""
+        },
+        {
+            "categoryName" : "폴대",
+            "paintingName" : "폴대",
+            "paintingURL" : ""
+        },
+        {
+            "categoryName" : "테이블",
+            "paintingName" : "테이블",
+            "paintingURL" : ""
+        },
+        {
+            "categoryName" : "의자",
+            "paintingName" : "의자",
+            "paintingURL" : ""
+        },
+        {
+            "categoryName" : "해먹",
+            "paintingName" : "해먹",
+            "paintingURL" : ""
+        },
+        {
+            "categoryName" : "침낭",
+            "paintingName" : "침낭",
+            "paintingURL" : ""
+        },
+        {
+            "categoryName" : "식기",
+            "paintingName" : "식기",
+            "paintingURL" : ""
+        },
+        {
+            "categoryName" : "매트",
+            "paintingName" : "매트",
+            "paintingURL" : ""
+        },
+        {
+            "categoryName" : "수납",
+            "paintingName" : "수납",
+            "paintingURL" : ""
+        },
+        {
+            "categoryName" : "조명",
+            "paintingName" : "조명",
+            "paintingURL" : ""
+        },
+        {
+            "categoryName" : "캠핑공구",
+            "paintingName" : "캠핑공구",
+            "paintingURL" : ""
+        },
+        {
+            "categoryName" : "응급/안전",
+            "paintingName" : "응급_안전",
+            "paintingURL" : ""
+        },
+        {
+            "categoryName" : "위생",
+            "paintingName" : "위생",
+            "paintingURL" : ""
+        }
+    ]
+}

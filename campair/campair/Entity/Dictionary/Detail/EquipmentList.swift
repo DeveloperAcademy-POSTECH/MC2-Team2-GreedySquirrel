@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct EquipmentList {
+struct EquipmentList: Codable{
     let name: String
     let paintingName: String
     var paintingURL: String

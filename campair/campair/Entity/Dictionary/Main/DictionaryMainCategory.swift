@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct DictionaryMainCategory {
+struct DictionaryMainCategory: Codable{
     let categoryName: String
     let paintingName: String
     var paintingURL: String

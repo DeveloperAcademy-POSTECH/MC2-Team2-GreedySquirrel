@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct DictionaryMainCollection {
+struct DictionaryMainCollection: Codable{
     var dictionaryMainCategory: [DictionaryMainCategory]
     init(dictionaryMainCategory: [DictionaryMainCategory] = [DictionaryMainCategory()]) {
         self.dictionaryMainCategory = dictionaryMainCategory
