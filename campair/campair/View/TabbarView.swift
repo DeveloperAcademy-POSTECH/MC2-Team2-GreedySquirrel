@@ -23,6 +23,7 @@ struct TabbarView: View {
                     Text("장비사전")
                 }
         }
+        .accentColor(Color(hex: "4F4F4F"))
     }
 }
 
