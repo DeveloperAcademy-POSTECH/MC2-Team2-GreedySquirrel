@@ -1,0 +1,9 @@
+{
+    "name" : "경량 의자",
+    "paintingName" : "경량_의자",
+    "paintingURL" : "",
+    "content" : "sometext",
+    "pros" : ["some"],
+    "cons" : ["some"],
+    "installationGuide" : "some"
+}

@@ -31,6 +31,7 @@
 		9127D647285DEE0000C2B369 /* 어닝_사이드월.png in Resources */ = {isa = PBXBuildFile; fileRef = 9127D646285DEE0000C2B369 /* 어닝_사이드월.png */; };
 		9127D649285DEE0A00C2B369 /* 자충_매트.png in Resources */ = {isa = PBXBuildFile; fileRef = 9127D648285DEE0A00C2B369 /* 자충_매트.png */; };
 		9127D64B285DEE2A00C2B369 /* 숯_연료_연료통.png in Resources */ = {isa = PBXBuildFile; fileRef = 9127D64A285DEE2A00C2B369 /* 숯_연료_연료통.png */; };
+		9127D64D285E032600C2B369 /* 경량_의자.json in Resources */ = {isa = PBXBuildFile; fileRef = 9127D64C285E032600C2B369 /* 경량_의자.json */; };
 		913DAD3D285B7591005FDA13 /* CampairApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A884D24B2852CD7B004871B1 /* CampairApp.swift */; };
 		915AE0F62856FB8100CAC50A /* OpeningSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915AE0F52856FB8100CAC50A /* OpeningSection.swift */; };
 		915AE0F82856FB9A00CAC50A /* EquipmentContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915AE0F72856FB9A00CAC50A /* EquipmentContent.swift */; };
@@ -182,6 +183,7 @@
 		9127D646285DEE0000C2B369 /* 어닝_사이드월.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "어닝_사이드월.png"; sourceTree = "<group>"; };
 		9127D648285DEE0A00C2B369 /* 자충_매트.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "자충_매트.png"; sourceTree = "<group>"; };
 		9127D64A285DEE2A00C2B369 /* 숯_연료_연료통.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "숯_연료_연료통.png"; sourceTree = "<group>"; };
+		9127D64C285E032600C2B369 /* 경량_의자.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "경량_의자.json"; sourceTree = "<group>"; };
 		915AE0F52856FB8100CAC50A /* OpeningSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeningSection.swift; sourceTree = "<group>"; };
 		915AE0F72856FB9A00CAC50A /* EquipmentContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentContent.swift; sourceTree = "<group>"; };
 		91915AB6285AC55500003C7F /* ContentEquipment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentEquipment.swift; sourceTree = "<group>"; };
@@ -538,6 +540,7 @@
 				CC215E3C285DB6E900B5DBDA /* DictionaryMainCollectionData.json */,
 				F6AC5584285DD0B3008CA2E4 /* DictionaryDetailCategoryData.json */,
 				F6AC5586285DD0C2008CA2E4 /* DictionaryEquipmentContentData.json */,
+				9127D64C285E032600C2B369 /* 경량_의자.json */,
 			);
 			path = Dictionary;
 			sourceTree = "<group>";
@@ -859,6 +862,7 @@
 				CC215E14285D7F4B00B5DBDA /* 자연_속_즐거운_나의_집.png in Resources */,
 				CC215E05285D7D1000B5DBDA /* 멀티툴_캠핑공구 세트.png in Resources */,
 				CC215DC1285D7D1000B5DBDA /* TPU_패널.png in Resources */,
+				9127D64D285E032600C2B369 /* 경량_의자.json in Resources */,
 				CC215E2A285D922F00B5DBDA /* 해먹.png in Resources */,
 				CC215DDC285D7D1000B5DBDA /* 전기연장선_릴선.png in Resources */,
 				CC215E11285D7F4B00B5DBDA /* 차로_떠나는_피크닉.png in Resources */,

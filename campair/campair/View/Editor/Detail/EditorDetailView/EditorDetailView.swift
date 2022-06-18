@@ -14,14 +14,14 @@ struct EditorDetailView: View {
     var body: some View {
         ZStack(alignment: .topTrailing) {
             NavigationView {
-            switch self.viewModel.editorDetailContent.version {
-            case .contents :
-                EditorDetailContentsVersionView(viewModel: self.viewModel, fileName: self.filename)
-                    .navigationBarHidden(true)
-            case .list :
-                EditorDetailListVersionView(viewModel: self.viewModel)
-                    .navigationBarHidden(true)
-            }
+                switch self.viewModel.editorDetailContent.version {
+                case .contents :
+                    EditorDetailContentsVersionView(viewModel: self.viewModel, fileName: self.filename)
+                        .navigationBarHidden(true)
+                case .list :
+                    EditorDetailListVersionView(viewModel: self.viewModel)
+                        .navigationBarHidden(true)
+                }
             }
             Button {
                 showModal.toggle()

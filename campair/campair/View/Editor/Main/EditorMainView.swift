@@ -39,6 +39,7 @@ struct EditorMainView: View {
                         }
                     }
                 }
+                .padding(.bottom, 50)
             }
             .navigationBarHidden(true)
             .onAppear(perform: {
