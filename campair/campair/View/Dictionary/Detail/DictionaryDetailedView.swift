@@ -117,7 +117,9 @@ struct EquipmentCategory: View {
                 .padding(.bottom, 14)
                 .padding(.top, 41)
             ForEach(1...5, id:\.self) { index in
-                NavigationLink(destination: EditorMainView()) {
+                NavigationLink(destination: DictionaryContentView(fileName: "경량_의자")
+                    .navigationBarTitle("텐트", displayMode: .inline)
+                ) {
                     EquipmentBox()
                 }
                 .padding(.bottom, index != 5 ? 6 : 40)

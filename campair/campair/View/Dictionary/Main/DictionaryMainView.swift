@@ -19,6 +19,7 @@ struct DictionaryMainView: View {
         NavigationView {
             VStack(spacing: 0) {
                 contentMainTitleView
+                    .padding(.top, 20.0)
                 LazyVGrid(columns: self.columns, spacing: 23) {
                     ForEach(self.viewModel.dictionaryMainCollection.dictionaryMainCategory.indices, id: \.self) { index in
                         let equipmentName = self.viewModel.dictionaryMainCollection.dictionaryMainCategory[index]
@@ -26,8 +27,9 @@ struct DictionaryMainView: View {
                     }
                     .foregroundColor(Color(red: 0.361, green: 0.361, blue: 0.361))
                 }
-                .padding(.horizontal, 30.0)
-                .padding(.top, 70.0)
+                .padding(.top, 30.0)
+                .padding(.horizontal, 40.0)
+                Spacer()
             }
             .padding(.top, UIDevice.current.getSafeAreaTopValue)
             .background(Color(red: 254/255, green: 252/255, blue: 251/255))
