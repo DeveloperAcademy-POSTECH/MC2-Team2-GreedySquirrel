@@ -47,7 +47,7 @@ struct DictionaryRepository: DictionaryEquipmentsFetchable {
                 completion(.failure(DataFetchingError.unableToFindImage))
                 return
             }
-            dictionaryMainCollection.dictionaryMainCategory[groupIndex].paintingURL = equipmentGroupPaintingURL.absoluteString
+            dictionaryMainCollection.dictionaryMainCategory[groupIndex].paintingURLString = equipmentGroupPaintingURL.absoluteString
         }
         completion(.success(dictionaryMainCollection))
     }

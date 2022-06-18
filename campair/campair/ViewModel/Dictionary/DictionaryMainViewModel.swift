@@ -18,7 +18,7 @@ final class DictionaryMainViewModel: ObservableObject {
             for groupIndex in equipmentGroupData.dictionaryMainCategory.indices {
                 // fetch 장비군
                 let dictionaryGroup = equipmentGroupData.dictionaryMainCategory[groupIndex]
-                self.useCase.fetchImageData(fromURLString: dictionaryGroup.paintingURL) { imageData in
+                self.useCase.fetchImageData(fromURLString: dictionaryGroup.paintingURLString) { imageData in
                     DispatchQueue.main.async {
                         self.imageSet[dictionaryGroup.paintingName] = imageData
                     }

@@ -4,82 +4,82 @@
         {
             "categoryName" : "텐트",
             "paintingName" : "텐트",
-            "paintingURL" : ""
+            "paintingURLString" : ""
         },
         {
             "categoryName" : "타프",
             "paintingName" : "타프",
-            "paintingURL" : ""
+            "paintingURLString" : ""
         },
         {
             "categoryName" : "시트",
             "paintingName" : "시트",
-            "paintingURL" : ""
+            "paintingURLString" : ""
         },
         {
             "categoryName" : "부품",
             "paintingName" : "부품",
-            "paintingURL" : ""
+            "paintingURLString" : ""
         },
         {
             "categoryName" : "폴대",
             "paintingName" : "폴대",
-            "paintingURL" : ""
+            "paintingURLString" : ""
         },
         {
             "categoryName" : "테이블",
             "paintingName" : "테이블",
-            "paintingURL" : ""
+            "paintingURLString" : ""
         },
         {
             "categoryName" : "의자",
             "paintingName" : "의자",
-            "paintingURL" : ""
+            "paintingURLString" : ""
         },
         {
             "categoryName" : "해먹",
             "paintingName" : "해먹",
-            "paintingURL" : ""
+            "paintingURLString" : ""
         },
         {
             "categoryName" : "침낭",
             "paintingName" : "침낭",
-            "paintingURL" : ""
+            "paintingURLString" : ""
         },
         {
             "categoryName" : "식기",
             "paintingName" : "식기",
-            "paintingURL" : ""
+            "paintingURLString" : ""
         },
         {
             "categoryName" : "매트",
             "paintingName" : "매트",
-            "paintingURL" : ""
+            "paintingURLString" : ""
         },
         {
             "categoryName" : "수납",
             "paintingName" : "수납",
-            "paintingURL" : ""
+            "paintingURLString" : ""
         },
         {
             "categoryName" : "조명",
             "paintingName" : "조명",
-            "paintingURL" : ""
+            "paintingURLString" : ""
         },
         {
             "categoryName" : "캠핑공구",
             "paintingName" : "캠핑공구",
-            "paintingURL" : ""
+            "paintingURLString" : ""
         },
         {
             "categoryName" : "응급/안전",
             "paintingName" : "응급_안전",
-            "paintingURL" : ""
+            "paintingURLString" : ""
         },
         {
             "categoryName" : "위생",
             "paintingName" : "위생",
-            "paintingURL" : ""
+            "paintingURLString" : ""
         }
     ]
 }

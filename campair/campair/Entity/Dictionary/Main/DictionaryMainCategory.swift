@@ -10,10 +10,10 @@ import Foundation
 struct DictionaryMainCategory: Codable{
     let categoryName: String
     let paintingName: String
-    var paintingURL: String
-    init(categoryName: String = "", paintingName: String = "임시이미지", paintingURL: String = "") {
+    var paintingURLString: String
+    init(categoryName: String = "", paintingName: String = "임시이미지", paintingURLString: String = "") {
         self.categoryName = categoryName
         self.paintingName = paintingName
-        self.paintingURL = paintingURL
+        self.paintingURLString = paintingURLString
     }
 }
