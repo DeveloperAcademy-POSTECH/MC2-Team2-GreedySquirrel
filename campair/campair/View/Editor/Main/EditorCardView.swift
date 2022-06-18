@@ -11,6 +11,7 @@ struct EditorCardView: View {
     let cardPaintingBackgroundColor: String
     let cardPaintingSubTitleColor: String
     let cardPaintingSubTitle: String
+    let cardPaintingTitleColor: String
     let cardPaintingTitle: String
     let cardPaintingImage: Data
     var body: some View {
@@ -21,7 +22,7 @@ struct EditorCardView: View {
                     .font(.subheadline)
                     .fontWeight(.semibold)
                 Text(cardPaintingTitle)
-                    .foregroundColor(.white)
+                    .foregroundColor(Color(hex: cardPaintingTitleColor))
                     .font(.title)
                     .fontWeight(.bold)
             }

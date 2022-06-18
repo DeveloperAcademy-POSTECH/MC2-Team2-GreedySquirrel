@@ -24,7 +24,7 @@ struct OpeningEditorView: View {
                     Text("\(self.openingSection.cardPaintingTitle)")
                         .font(.system(.title2))
                         .fontWeight(.bold)
-                        .foregroundColor(Color.white)
+                        .foregroundColor(Color(hex: self.openingSection.cardPaintingTitleColor))
                     if let uiImage = UIImage(data: imageSet[openingSection.cardPaintingImageName] ?? imageSet["none"]! ) {
                         Image(uiImage: uiImage)
                             .resizable()
@@ -64,6 +64,7 @@ struct OpeningEditorView_Previews: PreviewProvider {
                                 cardPaintingBackgroundColor: "E9DFD4",
                                 cardPaintingSubTitleColor: "EAA496",
                                 cardPaintingSubTitle: "초보차크닉",
+                                cardPaintingTitleColor: "FFFFFF",
                                 cardPaintingTitle: "차로 떠나는 피크닉",
                                 cardPaintingURLString: "주소",
                                 titleColor: "D98E7F",

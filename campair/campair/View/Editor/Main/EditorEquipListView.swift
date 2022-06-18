@@ -10,16 +10,16 @@ import SwiftUI
 struct EditorEquipListView: View {
     let name: String
     let paintingImage: Data
+    let cardPaintingBackgroundColor: String
     var body: some View {
         VStack {
             Image(uiImage: UIImage(data: paintingImage) ?? UIImage(systemName: "xmark")!)
                 .resizable()
                 .scaledToFit()
-                .padding(.horizontal, 23)
-                .padding(.vertical, 20)
+                .padding(5)
                 .background(
                     RoundedRectangle(cornerRadius: 18)
-                        .foregroundColor(Color(#colorLiteral(red: 0.9317113757, green: 0.8984663486, blue: 0.8601023555, alpha: 1)))
+                        .foregroundColor(Color(hex: cardPaintingBackgroundColor))
                 )
             Text(name)
                 .foregroundColor(Color(#colorLiteral(red: 0.3014614582, green: 0.3024801612, blue: 0.332264483, alpha: 0.8470588235)))

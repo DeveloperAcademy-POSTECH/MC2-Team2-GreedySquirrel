@@ -1,0 +1,86 @@
+{
+    "version" : "contents",
+    "openingSection" : {
+        "cardPaintingBackgroundColor" : "574F38",
+        "cardPaintingSubTitleColor" : "D1D1D6",
+        "cardPaintingSubTitle" : "초보차박",
+        "cardPaintingTitleColor" : "FFFFFF",
+        "cardPaintingTitle" : "차에서 보내는 하루",
+        "cardPaintingImageName" : "차에서_보내는_하루",
+        "cardPaintingURLString" : "",
+        "titleColor" : "574F38",
+        "title" : "최소한으로 차박을 떠날 때",
+        "content" : "몇가지 장비로 차박을 떠나보세요. 지친 일상에서 벗어나 자연에 둘러싸인 차 안에서 하루를 보내보세요."
+    },
+    "equipmentContents" : [
+        {
+            "title" : "자충 매트",
+            "upperContent" : "울퉁불퉁한 자동차 바닥에서 자려면 '평탄화' 작업이 필요해요. 의자를 접은 자동차 바닥 위에 푹신푹신한 자충 매트를 이용해서 편안한 잠자리를 마련해보세요. 마개만 열어두면 공기 유입으로 스스로 충전이 되어요.",
+            "recommendedEquipments" : [
+                {
+                    "name" : "자충 매트",
+                    "paintingImageName" : "자충_매트",
+                    "paintingURLString" : ""
+                }
+            ],
+            "lowerContent" : "자충 매트는 공기를 빼면 부피가 줄어들어서 보관과 수납이 용이해요. 자충 매트와 함께 차에서 보내는 밤을 편안하게 만들어보세요."
+        },
+        {
+            "title" : "경량 테이블",
+            "upperContent" : "커피 한 잔에 책을 보는 것, 밥을 먹고 모여 앉아 시간을 나누는 것. 모든 이야기는 테이블에서 시작돼요. 혼자 또 같이 차박의 이야기를 시작해보세요.",
+            "recommendedEquipments" : [
+                {
+                    "name" : "경량 테이블",
+                    "paintingImageName" : "경량_테이블",
+                    "paintingURLString" : ""
+                }
+            ],
+            "lowerContent" : "차 안에서도 밖에서도 테이블은 필요해요. 수납도, 무게도 부담 없는 경량 테이블과 함께 가벼운 차박을 시작해보세요."
+        },
+        {
+            "title" : "경량 의자",
+            "upperContent" : "드넓은 초원과 끝없이 이어지는 바다를 바라보면서 차박의 힐링을 시작해보세요. 앉아서 즐기는 모든 것들에 경량 의자를 더해보세요.",
+            "recommendedEquipments" : [
+                {
+                    "name" : "경량 의자",
+                    "paintingImageName" : "경량_의자",
+                    "paintingURLString" : ""
+                }
+            ],
+            "lowerContent" : "작지만 확실한 행복을 경량 의자에서 느껴보세요. 경량 테이블과 함께라면 가벼운 식탁 혹은 담소가 오가는 거실이 될 수도 있어요."
+        },
+        {
+            "title" : "조명 용품",
+            "upperContent" : "자연 속에서의 어둠은 우리에게 조금 더 깊게 다가와요. 깜깜한 저녁을 대비해 조명 용품을 준비해보세요. 감성과 안전을 조명과 함께 챙겨보세요.",
+            "recommendedEquipments" : [
+                {
+                    "name" : "조명 용품",
+                    "paintingImageName" : "조명_용품",
+                    "paintingURLString" : ""
+                }
+            ],
+            "lowerContent" : "밤의 감성은 조명이 책임져요. 불을 보며 멍하니 앉아있을 수 있는 가스 랜턴이나 텐트 주변을 밝히는 이동용 랜턴을 챙겨보세요."
+        },
+        {
+            "title" : "이런 장비도 있으면 좋아요.",
+            "upperContent" : "계절에 따라 차박에 필요한 장비가 늘어나기도 해요. 신선한 음식을 보관할 수 있는 아이스박스와 차 밖의 풍경을 즐길 수 있는 경량 의자로 차박에 다양함을 더해보세요.",
+            "recommendedEquipments" : [
+                {
+                    "name" : "아이스박스",
+                    "paintingImageName" : "아이스박스",
+                    "paintingURLString" : ""
+                },
+                {
+                    "name" : "어닝/사이드월",
+                    "paintingImageName" : "어닝_사이드월",
+                    "paintingURLString" : ""
+                },
+                {
+                    "name" : "렉타 타프",
+                    "paintingImageName" : "렉타_타프",
+                    "paintingURLString" : ""
+                }
+            ]
+        },
+    ]
+}

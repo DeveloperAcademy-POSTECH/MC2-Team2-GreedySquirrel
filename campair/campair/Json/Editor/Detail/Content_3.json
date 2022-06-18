@@ -1,0 +1,103 @@
+{
+    "version" : "contents",
+    "openingSection" : {
+        "cardPaintingBackgroundColor" : "FFE7D4",
+        "cardPaintingSubTitleColor" : "E79219",
+        "cardPaintingSubTitle" : "초보오토캠핑",
+        "cardPaintingTitleColor" : "000000",
+        "cardPaintingTitle" : "자연 속 즐거운 나의 집 ",
+        "cardPaintingImageName" : "자연_속_즐거운_나의_집",
+        "cardPaintingURLString" : "",
+        "titleColor" : "574F38",
+        "title" : "최소한으로 오토캠핑을 떠날 때.",
+        "content" : "지저귀는 새소리와 자연의 향기를 가장 가까이에서 느껴보세요. 소소한 장비로 자연 속의 즐거운 우리집 만들기를 시작해보세요."
+    },
+    "equipmentContents" : [
+        {
+            "title" : "터널형 텐트",
+            "upperContent" : "오토캠핑은 텐트에서 시작돼요. 텐트를 중심으로 자연 속 나만의 공간을 만들어보세요. 집의 종류만큼이나 텐트의 종류도 다양해요. 햇빛을 피할 수 있는 그늘막 텐트부터 거실까지 있는 터널형 텐트까지 탐색해보세요.",
+            "recommendedEquipments" : [
+                {
+                    "name" : "터널형 텐트",
+                    "paintingImageName" : "터널형_텐트",
+                    "paintingURLString" : ""
+                }
+            ],
+            "lowerContent" : "날씨, 계절, 인원수를 고려해서 텐트를 선택해보세요. 가볍고 설치가 쉬운 팝업 텐트로 시작해봐도 좋겠어요."
+        },
+        {
+            "title" : "이너매트",
+            "upperContent" : "텐트만으로는 앉거나 누워있기 힘들 수 있어요. 이너매트는 텐트 안에 깔아놓는 매트에요. 텐트를 설치하는 곳의 바닥이 딱딱하거나 혹은 울퉁불퉁할 때, 이너매트는 푹신한 바닥을 만들어줄 수 있어요. ",
+            "recommendedEquipments" : [
+                {
+                    "name" : "이너매트",
+                    "paintingImageName" : "이너매트",
+                    "paintingURLString" : ""
+                }
+            ],
+            "lowerContent" : "매트는 텐트뿐만 아니라 차에서도 활용할 수 있어요. 텐트의 바닥 사이즈를 고려하는게 중요해요. 겨울에는 핫팩과 담욜 보온력을 높여보세요."
+        },
+        {
+            "title" : "미라형 침낭",
+            "upperContent" : "따뜻한 잠자리를 마련하는 것은 캠핑 준비의 첫번째에요. 집 밖에서 잠을 자려면 냉기와 습기로부터 보호하는 것이 우선이에요. 가볍고 보온력이 높은 소재의 침낭으로 자연으로부터 하나의 보호막을 형성해보세요.",
+            "recommendedEquipments" : [
+                {
+                    "name" : "미라형 침낭",
+                    "paintingImageName" : "미라형_침낭",
+                    "paintingURLString" : ""
+                }
+            ],
+            "lowerContent" : "침낭은 가볍고 보온력이 높은 소재를 선택하는 것이 중요해요. 침낭의 길이는 키보다 30cm 정도 길어야 편해요. 계절에 따라 다양한 침낭을 살펴보세요."
+        },
+        {
+            "title" : "폴딩 테이블",
+            "upperContent" : "커피 한 잔에 책을 보는 것, 밥을 먹고 모여 앉아 시간을 나누는 것. 모든 이야기는 테이블에서 시작돼요. 접고 펼칠 수 있는 폴딩 테이블과 함께 캠핑의 이야기를 시작해보세요.",
+            "recommendedEquipments" : [
+                {
+                    "name" : "폴딩 테이블",
+                    "paintingImageName" : "폴딩_테이블",
+                    "paintingURLString" : ""
+                }
+            ],
+            "lowerContent" : "혼자 또 같이 사용할 테이블이라면 인원수와 높이, 부피를 고려해보세요. 의자와 함께라면 식탁이 되기도 하고, 대화의 장이 되기도 해요."
+        },
+        {
+            "title" : "릴렉스 체어",
+            "upperContent" : "몸을 감싸는 릴렉스 체어로 캠핑의 시작에 편안함을 더해보세요. 텐트를 치는 중간에도, 쏟아지는 별을 볼 때도, 릴렉스 체어와 함께라면 여유로운 자연 속에서의 하루를 보낼 수 있어요.",
+            "recommendedEquipments" : [
+                {
+                    "name" : "릴렉스 체어",
+                    "paintingImageName" : "릴렉스_체어",
+                    "paintingURLString" : ""
+                }
+            ],
+            "lowerContent" : "몸을 감싸는 만큼 부피가 큰 편이에요. 부피가 중요하다면 경량 의자를 고려해보세요."
+        },
+        {
+            "title" : "이런 장비도 있으면 좋아요.",
+            "upperContent" : "텐트의 연장선인 어닝과 사이드월, 텐트와 별개의 지붕이 될 렉타 타프를 더해보세요. 밤에는 조명 용품과 함께 안전뿐만 아니라 감성까지 챙겨보세요.",
+            "recommendedEquipments" : [
+                {
+                    "name" : "어닝/사이드월",
+                    "paintingImageName" : "어닝_사이드월",
+                    "paintingURLString" : ""
+                },
+                {
+                    "name" : "렉타 타프",
+                    "paintingImageName" : "렉타_타프",
+                    "paintingURLString" : ""
+                },
+                {
+                    "name" : "아이스박스",
+                    "paintingImageName" : "아이스박스",
+                    "paintingURLString" : ""
+                },
+                {
+                    "name" : "조명 용품",
+                    "paintingImageName" : "조명_용품",
+                    "paintingURLString" : ""
+                }
+            ]
+        },
+    ]
+}

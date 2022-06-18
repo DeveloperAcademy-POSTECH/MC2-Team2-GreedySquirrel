@@ -4,6 +4,7 @@
         "cardPaintingBackgroundColor" : "405738",
         "cardPaintingSubTitleColor" : "D9DCD8",
         "cardPaintingSubTitle" : "초보차박",
+        "cardPaintingTitleColor" : "FFFFFF",
         "cardPaintingTitle" : "먹으러 가는 차박",
         "cardPaintingImageName" : "먹으러_가는_차박",
         "cardPaintingURLString" : "",
@@ -15,8 +16,8 @@
         {
             "recommendedEquipments" : [
                 {
-                    "name" : "그릴 스토브",
-                    "paintingImageName" : "그릴_스토브",
+                    "name" : "그릴 오븐",
+                    "paintingImageName" : "그릴_오븐",
                     "paintingURLString" : ""
                 },
                 {
@@ -30,8 +31,8 @@
                     "paintingURLString" : ""
                 },
                 {
-                    "name" : "식기/용기/커트러리",
-                    "paintingImageName" : "식기_용기_커트러리",
+                    "name" : "식기/용기",
+                    "paintingImageName" : "식기_용기",
                     "paintingURLString" : ""
                 },
                 {
@@ -53,4 +54,3 @@
         }
     ]
 }
-

@@ -5,90 +5,125 @@
             "cardPaintingBackgroundColor" : "E9DFD3",
             "cardPaintingSubTitleColor" : "D98E7F",
             "cardPaintingSubTitle" : "초보차크닉",
+            "cardPaintingTitleColor" : "FFFFFF",
             "cardPaintingTitle" : "차로 떠나는 피크닉",
             "cardPaintingImageName" : "차로_떠나는_피크닉",
             "cardPaintingURLString" : "",
             "contentEquipments" : [
                 {
-                    "name" : "경량 체어",
-                    "paintingImageName" : "경량_체어",
+                    "name" : "경량 의자",
+                    "paintingImageName" : "경량_의자",
                     "paintingURLString" : ""
                 },
                 {
                     "name" : "돗자리",
-                    "paintingImageName" : "경량_체어",
+                    "paintingImageName" : "돗자리",
                     "paintingURLString" : ""
                 },
                 {
                     "name" : "어닝/사이드월",
-                    "paintingImageName" : "경량_체어",
+                    "paintingImageName" : "어닝_사이드월",
                     "paintingURLString" : ""
                 },
                 {
-                    "name" : "타프",
-                    "paintingImageName" : "경량_체어",
+                    "name" : "렉타 타프",
+                    "paintingImageName" : "렉타_타프",
                     "paintingURLString" : ""
                 }
             ]
         },
         {
             "contentID" : "Content_2",
-            "cardPaintingBackgroundColor" : "E9DFD3",
-            "cardPaintingSubTitleColor" : "D98E7F",
-            "cardPaintingSubTitle" : "초보차크닉2",
-            "cardPaintingTitle" : "차로 떠나는 피크닉2",
-            "cardPaintingImageName" : "차로_떠나는_피크닉",
+            "cardPaintingBackgroundColor" : "3F5738",
+            "cardPaintingSubTitleColor" : "FFFFFF",
+            "cardPaintingSubTitle" : "초보차박",
+            "cardPaintingTitleColor" : "FFFFFF",
+            "cardPaintingTitle" : "먹으러 가는 차박",
+            "cardPaintingImageName" : "먹으러_가는_차박",
             "cardPaintingURLString" : "",
             "contentEquipments" : [
                 {
-                    "name" : "경량 체어",
-                    "paintingImageName" : "경량_체어",
+                    "name" : "그릴/오븐",
+                    "paintingImageName" : "그릴_오븐",
                     "paintingURLString" : ""
                 },
                 {
-                    "name" : "타프",
-                    "paintingImageName" : "경량_체어",
+                    "name" : "버너/스토브",
+                    "paintingImageName" : "버너_스토브",
                     "paintingURLString" : ""
                 },
                 {
-                    "name" : "돗자리",
-                    "paintingImageName" : "경량_체어",
+                    "name" : "숯/연료/연료통",
+                    "paintingImageName" : "숯_연료_연료통",
                     "paintingURLString" : ""
                 },
                 {
-                    "name" : "어닝/사이드월",
-                    "paintingImageName" : "경량_체어",
+                    "name" : "식기/용기",
+                    "paintingImageName" : "식기_용기",
                     "paintingURLString" : ""
                 }
             ]
         },
         {
             "contentID" : "Content_3",
-            "cardPaintingBackgroundColor" : "E9DFD3",
-            "cardPaintingSubTitleColor" : "D98E7F",
-            "cardPaintingSubTitle" : "초보차크닉3",
-            "cardPaintingTitle" : "차로 떠나는 피크닉3",
-            "cardPaintingImageName" : "차로_떠나는_피크닉",
+            "cardPaintingBackgroundColor" : "FEE7D4",
+            "cardPaintingSubTitleColor" : "E79219",
+            "cardPaintingSubTitle" : "초보오토캠핑",
+            "cardPaintingTitleColor" : "111111",
+            "cardPaintingTitle" : "자연 속 즐거운 나의 집",
+            "cardPaintingImageName" : "자연_속_즐거운_나의_집",
             "cardPaintingURLString" : "",
             "contentEquipments" : [
                 {
-                    "name" : "어닝/사이드월",
-                    "paintingImageName" : "경량_체어",
+                    "name" : "터널형 텐트",
+                    "paintingImageName" : "터널형_텐트",
                     "paintingURLString" : ""
                 },
                 {
-                    "name" : "타프",
-                    "paintingImageName" : "경량_체어",
+                    "name" : "이너매트",
+                    "paintingImageName" : "이너매트",
                     "paintingURLString" : ""
                 },
                 {
-                    "name" : "경량 체어",
-                    "paintingImageName" : "경량_체어",
+                    "name" : "미라형 침낭",
+                    "paintingImageName" : "미라형_침낭",
                     "paintingURLString" : ""
                 },
                 {
-                    "name" : "돗자리",
-                    "paintingImageName" : "경량_체어",
+                    "name" : "폴딩 테이블",
+                    "paintingImageName" : "폴딩_테이블",
+                    "paintingURLString" : ""
+                }
+            ]
+        },
+        {
+            "contentID" : "Content_4",
+            "cardPaintingBackgroundColor" : "574F38",
+            "cardPaintingSubTitleColor" : "FFFFFF",
+            "cardPaintingSubTitle" : "초보차크닉",
+            "cardPaintingTitleColor" : "FFFFFF",
+            "cardPaintingTitle" : "차에서 보내는 하루",
+            "cardPaintingImageName" : "차에서_보내는_하루",
+            "cardPaintingURLString" : "",
+            "contentEquipments" : [
+                {
+                    "name" : "자충 매트",
+                    "paintingImageName" : "자충_매트",
+                    "paintingURLString" : ""
+                },
+                {
+                    "name" : "경량 테이블",
+                    "paintingImageName" : "경량_테이블",
+                    "paintingURLString" : ""
+                },
+                {
+                    "name" : "경량 의자",
+                    "paintingImageName" : "경량_의자",
+                    "paintingURLString" : ""
+                },
+                {
+                    "name" : "조명 용품",
+                    "paintingImageName" : "조명_용품",
                     "paintingURLString" : ""
                 }
             ]

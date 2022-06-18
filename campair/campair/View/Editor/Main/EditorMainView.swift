@@ -27,11 +27,11 @@ struct EditorMainView: View {
                         ForEach(viewModel.editorMainCollection.editorMainContents.indices, id: \.self) { contentsIndex in
                             let editorMainContent = viewModel.editorMainCollection.editorMainContents[contentsIndex]
                             VStack(spacing: 10) {
-                                EditorCardView(cardPaintingBackgroundColor: editorMainContent.cardPaintingBackgroundColor, cardPaintingSubTitleColor: editorMainContent.cardPaintingSubTitleColor, cardPaintingSubTitle: editorMainContent.cardPaintingSubTitle, cardPaintingTitle: editorMainContent.cardPaintingTitle, cardPaintingImage: viewModel.imageSet[editorMainContent.cardPaintingTitle] ?? viewModel.imageSet["none"]!)
+                                EditorCardView(cardPaintingBackgroundColor: editorMainContent.cardPaintingBackgroundColor, cardPaintingSubTitleColor: editorMainContent.cardPaintingSubTitleColor, cardPaintingSubTitle: editorMainContent.cardPaintingSubTitle,cardPaintingTitleColor: editorMainContent.cardPaintingTitleColor, cardPaintingTitle: editorMainContent.cardPaintingTitle, cardPaintingImage: viewModel.imageSet[editorMainContent.cardPaintingTitle] ?? viewModel.imageSet["none"]!)
                                 HStack(spacing: 6) {
                                     ForEach(editorMainContent.contentEquipments.indices, id: \.self) { equipmentIndex in
                                         let contentEquipment = editorMainContent.contentEquipments[equipmentIndex]
-                                        EditorEquipListView(name: contentEquipment.name, paintingImage: viewModel.imageSet[contentEquipment.name] ?? viewModel.imageSet["none"]!)
+                                        EditorEquipListView(name: contentEquipment.name, paintingImage: viewModel.imageSet[contentEquipment.name] ?? viewModel.imageSet["none"]!, cardPaintingBackgroundColor: editorMainContent.cardPaintingBackgroundColor)
                                     }
                                 }
                             }
