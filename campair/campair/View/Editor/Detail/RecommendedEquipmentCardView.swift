@@ -11,42 +11,46 @@ struct RecommendedEquipmentCardView: View {
     let equipment: ContentEquipment
     @Binding var imageSet: [String: Data]
     var body: some View {
-        HStack(spacing: 0) {
-            if let uiImage = UIImage(data: imageSet[equipment.paintingImageName] ?? imageSet["none"]! ) {
-                Image(uiImage: uiImage)
+        NavigationLink {
+            DictionaryContentView(jsonFileName: "경량_의자")
+        } label: {
+            HStack(spacing: 0) {
+                if let uiImage = UIImage(data: imageSet[equipment.paintingImageName] ?? imageSet["none"]! ) {
+                    Image(uiImage: uiImage)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 66, height: 66)
+                        .padding(.horizontal, 10)
+                } else {
+                    Text("Image loading ...")
+                        .font(.system(.footnote))
+                        .frame(width: 66, height: 66)
+                        .foregroundColor(.customBlack)
+                }
+                VStack(alignment: .leading, spacing: 5) {
+                    Text("\(self.equipment.name)")
+                        .headlineDefaultBlack()
+                        .padding(.bottom, 4)
+                        .padding(.top, 22)
+                    Text("장비사전 읽어보기")
+                        .caption1DefaultDarkGray()
+                        .padding(.bottom, 22)
+                }
+                Spacer()
+                Image("buttonArrow")
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 66, height: 66)
-                    .padding(.horizontal, 10)
-            } else {
-               Text("Image loading ...")
-                    .font(.system(.footnote))
-                    .frame(width: 66, height: 66)
-                    .foregroundColor(.customBlack)
+                    .frame(width: 34, height: 34)
+                    .foregroundColor(Color(hex: "D1D1D6"))
+                    .foregroundColor(Color.red)
+                    .padding(.trailing, 14)
             }
-            VStack(alignment: .leading, spacing: 5) {
-                Text("\(self.equipment.name)")
-                    .headlineDefaultBlack()
-                    .padding(.bottom, 4)
-                    .padding(.top, 22)
-                Text("장비사전 읽어보기")
-                    .caption1DefaultDarkGray()
-                    .padding(.bottom, 22)
-            }
-            Spacer()
-            Image("buttonArrow")
-                .resizable()
-                .scaledToFit()
-                .frame(width: 34, height: 34)
-                .foregroundColor(Color(hex: "D1D1D6"))
-                .foregroundColor(Color.red)
-                .padding(.trailing, 14)
+            .background(
+                RoundedRectangle(cornerRadius: 20)
+                    .stroke(lineWidth: 1)
+                    .foregroundColor(Color.customLightGray)
+            )
         }
-        .background(
-            RoundedRectangle(cornerRadius: 20)
-                .stroke(lineWidth: 1)
-                .foregroundColor(Color.customLightGray)
-        )
     }
 }
 

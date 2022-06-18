@@ -9,7 +9,8 @@ import SwiftUI
 
 struct DictionaryContentView: View {
     @ObservedObject var viewModel = DictionaryContentViewModel()
-    var fileName: String
+    @Environment(\.presentationMode) var mode: Binding<PresentationMode>
+    var jsonFileName: String
     var body: some View {
         ScrollView {
         VStack(alignment: .leading, spacing: 0) {
@@ -68,12 +69,24 @@ struct DictionaryContentView: View {
         .padding(.horizontal, 20)
         }
         .onAppear(perform: {
-            self.viewModel.viewAppeared(fileName: fileName)
+            self.viewModel.viewAppeared(fileName: jsonFileName)
         })
+        .navigationBarBackButtonHidden(true)
+        .navigationBarTitle("", displayMode: .inline)
+        .toolbar {
+            ToolbarItemGroup(placement: .navigationBarLeading) {
+                Button(action: {
+                    self.mode.wrappedValue.dismiss()
+                }, label: {
+                    Image(systemName: "chevron.left")
+                        .foregroundColor(Color(hex: "4F4F4F"))
+                })
+            }
+        }
     }
 }
 struct DictionaryContentView_Previews: PreviewProvider {
     static var previews: some View {
-        DictionaryContentView(fileName: "경량_의자")
+        DictionaryContentView(jsonFileName: "경량_의자")
     }
 }

@@ -43,7 +43,8 @@ struct DictionaryDetailedView: View {
                             .padding(.bottom, 20)
                         }
                     }
-
+                .padding(.top, 16)
+                Divider()
                 ScrollView {
                     ScrollViewReader { proxy in
                         ForEach(1...10, id: \.self) { index in
@@ -59,13 +60,14 @@ struct DictionaryDetailedView: View {
 
             }
                 .navigationBarBackButtonHidden(true)
+                .navigationBarTitle("", displayMode: .inline)
                 .toolbar {
                     ToolbarItemGroup(placement: .navigationBarLeading) {
                         Button(action: {
                             self.mode.wrappedValue.dismiss()
                         }, label: {
                             Image(systemName: "chevron.left")
-                                .foregroundColor(Color.black)
+                                .foregroundColor(Color(hex: "4F4F4F"))
                         })
                     }
                 }
@@ -117,8 +119,7 @@ struct EquipmentCategory: View {
                 .padding(.bottom, 14)
                 .padding(.top, 41)
             ForEach(1..<6) { index in
-                NavigationLink(destination: DictionaryContentView(fileName: "경량_의자")
-                    .navigationBarTitle("텐트", displayMode: .inline)
+                NavigationLink(destination: DictionaryContentView(jsonFileName:"경량_의자")
                 ) {
                     EquipmentBox()
                 }
