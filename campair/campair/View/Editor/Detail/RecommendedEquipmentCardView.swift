@@ -12,11 +12,18 @@ struct RecommendedEquipmentCardView: View {
     @Binding var imageSet: [String: Data]
     var body: some View {
         HStack(spacing: 0) {
-            Image(uiImage: UIImage(data: imageSet[equipment.paintingImageName] ?? imageSet["none"]! ) ?? UIImage(systemName: "xmark")!)
-                .resizable()
-                .scaledToFit()
-                .frame(width: 66, height: 66)
-                .padding(.horizontal, 10)
+            if let uiImage = UIImage(data: imageSet[equipment.paintingImageName] ?? imageSet["none"]! ) {
+                Image(uiImage: uiImage)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 66, height: 66)
+                    .padding(.horizontal, 10)
+            } else {
+               Text("Image loading ...")
+                    .font(.system(.footnote))
+                    .frame(width: 66, height: 66)
+                    .foregroundColor(.customBlack)
+            }
             VStack(alignment: .leading, spacing: 5) {
                 Text("\(self.equipment.name)")
                     .headlineDefaultBlack()

@@ -25,10 +25,16 @@ struct OpeningEditorView: View {
                         .font(.system(.title2))
                         .fontWeight(.bold)
                         .foregroundColor(Color.white)
-                    Image(uiImage: UIImage(data: imageSet[openingSection.cardPaintingImageName] ?? imageSet["none"]! ) ?? UIImage(systemName: "xmark")!)
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 350, height: 300)
+                    if let uiImage = UIImage(data: imageSet[openingSection.cardPaintingImageName] ?? imageSet["none"]! ) {
+                        Image(uiImage: uiImage)
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 350, height: 300)
+                    } else {
+                       Text("Image loading ...")
+                            .frame(width: 350, height: 300)
+                            .foregroundColor(.customBlack)
+                    }
                 }
                 .padding(.horizontal, 20)
                 .padding(.bottom, 20)
