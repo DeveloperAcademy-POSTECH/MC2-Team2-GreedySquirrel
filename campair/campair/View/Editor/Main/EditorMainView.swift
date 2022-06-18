@@ -14,20 +14,26 @@ struct EditorMainView: View {
             ScrollView(.vertical) {
                 VStack(alignment: .leading, spacing: 20) {
                     VStack(alignment: .leading) {
-                        Text(viewModel.editorMainCollection?.editorMainContents[0].cardPaintingTitle ?? "some")
+                        Text("가볍게 떠나는")
                             .font(.largeTitle)
                             .fontWeight(.bold)
-                        Text("새 여행을 준비해요")
+                        Text("금요일 오후")
                             .font(.largeTitle)
                             .fontWeight(.bold)
                     }
                     .padding(.top, 45)
                     .padding(.leading, 20)
                     VStack(spacing: 50) {
-                        ForEach(0..<3) { _ in
+                        ForEach(viewModel.editorMainCollection.editorMainContents.indices, id: \.self) { contentsIndex in
+                            let editorMainContent = viewModel.editorMainCollection.editorMainContents[contentsIndex]
                             VStack(spacing: 10) {
-                                EditorCardView()
-                                EditorEquipListView()
+                                EditorCardView(cardPaintingBackgroundColor: editorMainContent.cardPaintingBackgroundColor, cardPaintingSubTitleColor: editorMainContent.cardPaintingSubTitleColor, cardPaintingSubTitle: editorMainContent.cardPaintingSubTitle, cardPaintingTitle: editorMainContent.cardPaintingTitle, cardPaintingImage: viewModel.imageSet[editorMainContent.cardPaintingTitle] ?? viewModel.imageSet["none"]!)
+                                HStack(spacing: 6) {
+                                    ForEach(editorMainContent.contentEquipments.indices, id: \.self) { equipmentIndex in
+                                        let contentEquipment = editorMainContent.contentEquipments[equipmentIndex]
+                                        EditorEquipListView(name: contentEquipment.name, paintingImage: viewModel.imageSet[contentEquipment.name] ?? viewModel.imageSet["none"]!)
+                                    }
+                                }
                             }
                             .padding(.horizontal, 20)
                         }

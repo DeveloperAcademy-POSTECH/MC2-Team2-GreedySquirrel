@@ -10,8 +10,8 @@ import Foundation
 
 final class EditorMainViewModel: ObservableObject {
     private let editorUseCase = EditorUseCase(repository: EditorRepository())
-    @Published var editorMainCollection: EditorMainCollection?
-    @Published var imageSet: [String: Data] = [:]
+    @Published var editorMainCollection: EditorMainCollection = EditorMainCollection()
+    @Published var imageSet: [String: Data] = ["none": Data()]
     func viewAppeared() {
         self.editorUseCase.getEditorCollection { [weak self] editorCollectionData in
             guard let self = self else { return }
