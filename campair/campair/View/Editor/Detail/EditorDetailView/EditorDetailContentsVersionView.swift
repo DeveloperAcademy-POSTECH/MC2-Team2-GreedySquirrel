@@ -65,7 +65,7 @@ struct EditorDetailContentsVersionView_Previews: PreviewProvider {
                                                                         )
                                                                     ]
                                                                 )
-                                                             )
+                                                             ), fileName: "Content_1"
         )
     }
 }

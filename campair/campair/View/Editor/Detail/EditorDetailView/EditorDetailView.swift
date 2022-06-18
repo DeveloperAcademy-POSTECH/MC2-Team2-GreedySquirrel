@@ -19,7 +19,7 @@ struct EditorDetailView: View {
                     EditorDetailContentsVersionView(viewModel: self.viewModel, fileName: self.filename)
                         .navigationBarHidden(true)
                 case .list :
-                    EditorDetailListVersionView(viewModel: self.viewModel)
+                        EditorDetailListVersionView(viewModel: self.viewModel, fileName: self.filename)
                         .navigationBarHidden(true)
                 }
             }
