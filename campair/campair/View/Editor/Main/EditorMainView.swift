@@ -24,14 +24,18 @@ struct EditorMainView: View {
                     .padding(.top, 45)
                     .padding(.leading, 20)
                     VStack(spacing: 50) {
-                        ForEach(viewModel.editorMainCollection.editorMainContents.indices, id: \.self) { contentsIndex in
-                            let editorMainContent = viewModel.editorMainCollection.editorMainContents[contentsIndex]
+                        ForEach(self.viewModel.editorMainCollection.editorMainContents.indices, id: \.self) { contentsIndex in
+                            let editorMainContent = self.viewModel.editorMainCollection.editorMainContents[contentsIndex]
                             VStack(spacing: 10) {
-                                EditorCardView(editorMainContent: self.$viewModel.editorMainCollection.editorMainContents[contentsIndex], cardPaintingImage: viewModel.imageSet[editorMainContent.cardPaintingTitle] ?? viewModel.imageSet["none"]!)
+                                EditorCardView(editorMainContent: self.$viewModel.editorMainCollection.editorMainContents[contentsIndex], cardPaintingImage: self.viewModel.imageSet[editorMainContent.cardPaintingTitle] ?? self.viewModel.imageSet["none"]!)
                                 HStack(spacing: 6) {
                                     ForEach(editorMainContent.contentEquipments.indices, id: \.self) { equipmentIndex in
                                         let contentEquipment = editorMainContent.contentEquipments[equipmentIndex]
-                                        EditorEquipListView(name: contentEquipment.name, paintingImage: viewModel.imageSet[contentEquipment.name] ?? viewModel.imageSet["none"]!, cardPaintingBackgroundColor: editorMainContent.cardPaintingBackgroundColor)
+                                        NavigationLink {
+                                            DictionaryContentView(fileName: self.viewModel.editorMainCollection.editorMainContents[contentsIndex].contentEquipments[equipmentIndex].paintingImageName)
+                                        } label: {
+                                            EditorEquipListView(name: contentEquipment.name, paintingImage: self.viewModel.imageSet[contentEquipment.name] ?? self.viewModel.imageSet["none"]!, cardPaintingBackgroundColor: editorMainContent.cardPaintingBackgroundColor)
+                                        }
                                     }
                                 }
                             }
