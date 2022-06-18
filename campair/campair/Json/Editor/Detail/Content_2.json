@@ -1,0 +1,56 @@
+{
+    "version" : "contents",
+    "openingSection" : {
+        "cardPaintingBackgroundColor" : "405738",
+        "cardPaintingSubTitleColor" : "D9DCD8",
+        "cardPaintingSubTitle" : "초보차박",
+        "cardPaintingTitle" : "먹으러 가는 차박",
+        "cardPaintingImageName" : "먹으러_가는_차박",
+        "cardPaintingURLString" : "",
+        "titleColor" : "405738",
+        "title" : "먹는 것에 누구보다 진심인 차박러들을 위해",
+        "content" : "먹방을 잇는 먹박의 세계로 초대합니다. 따뜻한 커피 한 잔부터 이슬과 함께 즐기는 아침 라면까지 먹박의 재미를 느껴보세요. 어디든 훌륭한 주방이 될 수 있어요."
+    },
+    "equipmentContents" : [
+        {
+            "recommendedEquipments" : [
+                {
+                    "name" : "그릴 스토브",
+                    "paintingImageName" : "그릴_스토브",
+                    "paintingURLString" : ""
+                },
+                {
+                    "name" : "버너/스토브",
+                    "paintingImageName" : "버너_스토브",
+                    "paintingURLString" : ""
+                },
+                {
+                    "name" : "숯/연료/연료통",
+                    "paintingImageName" : "숯_연료_연료통",
+                    "paintingURLString" : ""
+                },
+                {
+                    "name" : "식기/용기/커트러리",
+                    "paintingImageName" : "식기_용기_커트러리",
+                    "paintingURLString" : ""
+                },
+                {
+                    "name" : "코펠/조리도구",
+                    "paintingImageName" : "코펠_조리도구",
+                    "paintingURLString" : ""
+                },
+                {
+                    "name" : "설거지통",
+                    "paintingImageName" : "설거지통",
+                    "paintingURLString" : ""
+                },
+                {
+                    "name" : "아이스박스/쿨러",
+                    "paintingImageName" : "아이스박스_쿨러",
+                    "paintingURLString" : ""
+                }
+            ]
+        }
+    ]
+}
+

@@ -23,7 +23,7 @@ private enum ImageFetchingError: Error {
 
 protocol EditorcontentsFetchable {
     func fetchEditorCollection(completion: @escaping (Result<EditorMainCollection, Error>) -> Void )
-    func fetchEditorDetailContent(completion: @escaping (Result<EditorDetailContent, Error>) -> Void )
+    func fetchEditorDetailContent(fileName: String, completion: @escaping (Result<EditorDetailContent, Error>) -> Void )
     func fetchImage(urlString: String, completion: @escaping (Result<Data, Error>) -> Void)
 }
 
@@ -61,8 +61,8 @@ struct EditorRepository: EditorcontentsFetchable {
         }
         completion(.success(editorMainCollection))
     }
-    func fetchEditorDetailContent(completion: @escaping (Result<EditorDetailContent, Error>) -> Void ) {
-        guard let fileURL = Bundle.main.url(forResource: "EditorDetailContentData", withExtension: "json") else {
+    func fetchEditorDetailContent(fileName: String, completion: @escaping (Result<EditorDetailContent, Error>) -> Void ) {
+        guard let fileURL = Bundle.main.url(forResource: fileName, withExtension: "json") else {
             completion(.failure(DataFetchingError.invalidURL))
             return
         }
@@ -87,6 +87,7 @@ struct EditorRepository: EditorcontentsFetchable {
             for recommendedEquipmentIndex in contentEquipment.recommendedEquipments.indices {
                 let imageName = contentEquipment.recommendedEquipments[recommendedEquipmentIndex].paintingImageName
                 guard let url = Bundle.main.url(forResource: imageName, withExtension: "png") else {
+                    print(imageName)
                     completion(.failure(DataFetchingError.unableToFindImage))
                     return
                 }

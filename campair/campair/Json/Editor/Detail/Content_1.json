@@ -1,0 +1,56 @@
+{
+    "version" : "contents",
+    "openingSection" : {
+        "cardPaintingBackgroundColor" : "E9DFD3",
+        "cardPaintingSubTitleColor" : "D98E7F",
+        "cardPaintingSubTitle" : "초보차크닉",
+        "cardPaintingTitle" : "차로 떠나는 피크닉",
+        "cardPaintingImageName" : "차로_떠나는_피크닉",
+        "cardPaintingURLString" : "",
+        "titleColor" : "EAA496",
+        "title" : "최소한으로 차크닉을 떠날 때",
+        "content" : "떠나는 여행이 돌아왔어요. 간단한 장비들로 시작할 수 있는 차로 떠나는 피크닉, 차크닉을 떠나보세요!"
+    },
+    "equipmentContents" : [
+        {
+            "title" : "경량의자",
+            "upperContent" : "산에서도 바다에서도 의자만 있다면 그곳이 여러분의 차크닉 장소예요. 드넓은 초원과 끝없이 이어지는 바다를 바라보는 것에서 차크닉의 힐링이 시작돼요. 앉아서 즐기는 모든 것들을 경량 의자와 함께하세요.",
+            "recommendedEquipments" : [
+                {
+                    "name" : "경량 체어",
+                    "paintingImageName" : "경량_체어",
+                    "paintingURLString" : ""
+                }
+            ],
+            "lowerContent" : "평범한 자동차 여행에서 작지만 확실한 행복을 경량 의자에서 느낄 수 있어요. 혼자 또 같이 소소한 힐링을 느껴보세요. 용도에 따라 취향에 따라 부피에 따라 다양한 의자를 사용해보세요. 처음에는 등받이가 있는 캠핑용 경량 의자를 추천해요. 의자에 앉아서 행복한 차크닉을 즐겨보세요."
+        },
+        {
+            "title" : "돗자리",
+            "upperContent" : "차크닉을 제대로 즐기기 위해서는 돗자리는 필수에요. 음식을 먹고 싶은데 테이블이 부담스러울 때, 돗자리와 함께 간편하게 차크닉을 완성해보세요.",
+            "recommendedEquipments" : [
+                {
+                    "name" : "돗자리",
+                    "paintingImageName" : "돗자리",
+                    "paintingURLString" : ""
+                }
+            ],
+            "lowerContent" : "돗자리 하나만으로도 차크닉 온 기분을 한껏 느낄 수 있어요. 겨울에는 담요 하나를 더해보세요."
+        },
+        {
+            "title" : "이런 장비도 있으면 좋아요.",
+            "upperContent" : "그늘이 없는 곳으로 차크닉을 떠나면 햇빛의 공격을 받을 수 있어요. 햇빛을 가릴 수 있는 어닝이나 타프 혹은 그늘막텐트를 구비하면 오랜 시간 차크닉을 즐길 수 있을 거에요.",
+            "recommendedEquipments" : [
+                {
+                    "name" : "렉사 타프",
+                    "paintingImageName" : "렉사_타프",
+                    "paintingURLString" : ""
+                },
+                {
+                    "name" : "어닝/ 사이드월",
+                    "paintingImageName" : "어닝_사이드월",
+                    "paintingURLString" : ""
+                }
+            ],
+        },
+    ]
+}

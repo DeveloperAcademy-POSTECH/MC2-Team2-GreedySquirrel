@@ -23,8 +23,8 @@ struct EditorUseCase {
             }
         }
     }
-    func getEditorDetailContent(completion: @escaping (EditorDetailContent) -> Void) {
-        self.repository.fetchEditorDetailContent { result in
+    func getEditorDetailContent(fileName: String, completion: @escaping (EditorDetailContent) -> Void) {
+        self.repository.fetchEditorDetailContent(fileName: fileName) { result in
             switch result {
             case .success(let editorDetailContent) :
                 completion(editorDetailContent)

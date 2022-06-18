@@ -27,7 +27,7 @@ struct EditorDetailListVersionView: View {
         }
         .ignoresSafeArea()
         .onAppear {
-            viewModel.viewAppeared()
+            viewModel.viewAppeared(fileName: "EditorDetailContentData")
         }
     }
 }

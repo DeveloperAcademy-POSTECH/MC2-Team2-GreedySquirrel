@@ -9,10 +9,11 @@ import SwiftUI
 
 struct EditorDetailView: View {
     @StateObject var viewModel: EditorDetailViewModel = EditorDetailViewModel()
+    let filename: String
     var body: some View {
         switch self.viewModel.editorDetailContent.version {
         case .contents :
-                EditorDetailContentsVersionView(viewModel: self.viewModel)
+                EditorDetailContentsVersionView(viewModel: self.viewModel, fileName: self.filename)
         case .list :
                 EditorDetailListVersionView(viewModel: self.viewModel)
         }
@@ -46,7 +47,7 @@ struct EditorDetailView_Previews: PreviewProvider {
                                         )
                                     ]
                                 )
-                            )
+                            ), filename: "Content_1"
         )
     }
 }

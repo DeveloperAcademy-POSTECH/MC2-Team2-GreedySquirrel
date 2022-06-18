@@ -9,6 +9,7 @@ import SwiftUI
 
 struct EditorDetailContentsVersionView: View {
     @ObservedObject var viewModel: EditorDetailViewModel
+    let fileName: String
     var body: some View {
         ScrollView {
             OpeningEditorView(openingSection: self.viewModel.editorDetailContent.openingSection, imageSet: $viewModel.imageSet)
@@ -32,7 +33,7 @@ struct EditorDetailContentsVersionView: View {
         }
         .ignoresSafeArea()
         .onAppear(perform: {
-            viewModel.viewAppeared()
+            viewModel.viewAppeared(fileName: fileName)
         })
     }
 }

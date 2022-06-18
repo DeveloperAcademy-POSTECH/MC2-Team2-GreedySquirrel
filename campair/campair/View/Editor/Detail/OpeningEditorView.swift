@@ -43,7 +43,7 @@ struct OpeningEditorView: View {
             .background(Color(hex: self.openingSection.cardPaintingBackgroundColor))
             VStack(alignment: .leading, spacing: 10) {
                 Text("\(self.openingSection.title)")
-                    .foregroundColor(Color(hex: self.openingSection.cardPaintingSubTitleColor))
+                    .foregroundColor(Color(hex: self.openingSection.titleColor))
                     .font(.system(.headline, design: .default))
                 Text("\(self.openingSection.content)")
                     .bodyDefaultDarkGray()

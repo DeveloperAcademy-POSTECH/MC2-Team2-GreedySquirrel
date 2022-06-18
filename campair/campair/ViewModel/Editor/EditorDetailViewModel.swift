@@ -14,8 +14,8 @@ final class EditorDetailViewModel: ObservableObject {
     init(editorDetailContent: EditorDetailContent = EditorDetailContent()) {
         self.editorDetailContent = editorDetailContent
     }
-    func viewAppeared() {
-        self.useCase.getEditorDetailContent(completion: { [weak self] editorContentData in
+    func viewAppeared(fileName: String) {
+        self.useCase.getEditorDetailContent(fileName: fileName, completion: { [weak self] editorContentData in
             guard let self = self else { return }
             self.editorDetailContent = editorContentData
             // fetch cardPainting's Image
