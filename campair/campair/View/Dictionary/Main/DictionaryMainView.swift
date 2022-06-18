@@ -20,8 +20,8 @@ struct DictionaryMainView: View {
             VStack(spacing: 0) {
                 contentMainTitleView
                 LazyVGrid(columns: self.columns, spacing: 23) {
-                    ForEach(viewModel.dictionaryMainCollection.dictionaryMainCategory.indices, id: \.self) { index in
-                        let equipmentName = viewModel.dictionaryMainCollection.dictionaryMainCategory[index]
+                    ForEach(self.viewModel.dictionaryMainCollection.dictionaryMainCategory.indices, id: \.self) { index in
+                        let equipmentName = self.viewModel.dictionaryMainCollection.dictionaryMainCategory[index]
                         CategoryButtonView(imageSet: self.$viewModel.imageSet, imageName: equipmentName.paintingName, catagoryName: equipmentName.categoryName)
                     }
                     .foregroundColor(Color(red: 0.361, green: 0.361, blue: 0.361))
@@ -61,7 +61,7 @@ struct CategoryButtonView: View {
     var body: some View {
         NavigationLink(destination: DictionaryDetailedView()) {
             VStack(spacing: 0) {
-                if let uiImage = UIImage(data: imageSet[imageName] ?? imageSet["none"]! ) {
+                if let uiImage = UIImage(data: imageSet[self.imageName] ?? imageSet["none"]! ) {
                     Image(uiImage: uiImage)
                         .resizable()
                         .scaledToFit()
@@ -72,7 +72,7 @@ struct CategoryButtonView: View {
                         .frame(width: 72, height: 72)
                         .foregroundColor(.customBlack)
                 }
-                Text(catagoryName.korean)
+                Text(self.catagoryName.korean)
                     .font(.footnote)
             }
         }
