@@ -15,8 +15,9 @@ struct ContentView: View {
                 .padding()
             // testcode
             Button("test") {
-                viewModel.viewAppeared()
+                viewModel.viewAppeared(fileName: "경량_의자")
             }
+            Text(viewModel.dictionaryEquipmentContent.name)
         }
     }
 }

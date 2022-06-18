@@ -24,7 +24,7 @@ private enum ImageFetchingError: Error {
 protocol DictionaryEquipmentsFetchable {
     func fetchDictionaryMainCollection(completion: @escaping (Result<DictionaryMainCollection, Error>) -> Void )
     func fetchDictionaryCategory(completion: @escaping (Result<DictionaryDetailCategory, Error>) -> Void )
-    func fetchDictionaryContent(completion: @escaping (Result<DictionaryEquipmentContent, Error>) -> Void )
+    func fetchDictionaryEquipmentContent(fileName: String, completion: @escaping (Result<DictionaryEquipmentContent, Error>) -> Void )
     func fetchImage(urlString: String, completion: @escaping (Result<Data, Error>) -> Void)
 }
 
@@ -53,7 +53,6 @@ struct DictionaryRepository: DictionaryEquipmentsFetchable {
         }
         completion(.success(dictionaryMainCollection))
     }
-    
     func fetchDictionaryCategory(completion: @escaping (Result<DictionaryDetailCategory, Error>) -> Void ) {
             guard let fileURL = Bundle.main.url(forResource: "DictionaryDetailCategoryData", withExtension: "json") else {
                 completion(.failure(DataFetchingError.invalidURL))
@@ -78,12 +77,8 @@ struct DictionaryRepository: DictionaryEquipmentsFetchable {
             }
             completion(.success(dictionaryDetailCategory))
         }
-
-
-
-
-    func fetchDictionaryContent(completion: @escaping (Result<DictionaryEquipmentContent, Error>) -> Void ) {
-        guard let fileURL = Bundle.main.url(forResource: "DictionaryEquipmentContentData", withExtension: "json") else {
+    func fetchDictionaryEquipmentContent(fileName: String, completion: @escaping (Result<DictionaryEquipmentContent, Error>) -> Void ) {
+        guard let fileURL = Bundle.main.url(forResource: fileName, withExtension: "json") else {
             completion(.failure(DataFetchingError.invalidURL))
             return
         }
@@ -91,14 +86,17 @@ struct DictionaryRepository: DictionaryEquipmentsFetchable {
             completion(.failure(DataFetchingError.urlNotConvertedToData))
             return
         }
-        guard let dictionaryEquipmentContent = try? JSONDecoder().decode(DictionaryEquipmentContent.self, from: data) else {
+        guard var dictionaryEquipmentContent = try? JSONDecoder().decode(DictionaryEquipmentContent.self, from: data) else {
             completion(.failure(DataFetchingError.unableToDecode))
             return
         }
+        guard let paintingURLString = Bundle.main.url(forResource: dictionaryEquipmentContent.paintingName, withExtension: "png") else {
+            completion(.failure(DataFetchingError.unableToFindImage))
+            return
+        }
+        dictionaryEquipmentContent.paintingURLString = paintingURLString.absoluteString
         completion(.success(dictionaryEquipmentContent))
-    }
-
-    
+        }
     func fetchImage(urlString: String, completion: @escaping (Result<Data, Error>) -> Void) {
         guard let url = URL(string: urlString) else {
             completion(.failure(ImageFetchingError.invalidURL))

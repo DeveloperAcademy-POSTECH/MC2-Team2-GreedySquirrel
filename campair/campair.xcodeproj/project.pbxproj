@@ -537,12 +537,20 @@
 		911841C3285C5A12004E7BB3 /* Dictionary */ = {
 			isa = PBXGroup;
 			children = (
+				9127D64E285E0BC600C2B369 /* Equipment */,
 				CC215E3C285DB6E900B5DBDA /* DictionaryMainCollectionData.json */,
 				F6AC5584285DD0B3008CA2E4 /* DictionaryDetailCategoryData.json */,
 				F6AC5586285DD0C2008CA2E4 /* DictionaryEquipmentContentData.json */,
-				9127D64C285E032600C2B369 /* 경량_의자.json */,
 			);
 			path = Dictionary;
+			sourceTree = "<group>";
+		};
+		9127D64E285E0BC600C2B369 /* Equipment */ = {
+			isa = PBXGroup;
+			children = (
+				9127D64C285E032600C2B369 /* 경량_의자.json */,
+			);
+			path = Equipment;
 			sourceTree = "<group>";
 		};
 		91915AB4285AC33400003C7F /* Editor */ = {

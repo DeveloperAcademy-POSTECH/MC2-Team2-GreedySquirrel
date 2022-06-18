@@ -34,8 +34,8 @@ struct DictionaryUseCase {
            }
        }
 
-    func getDictionaryEquipmentContent(completion: @escaping (DictionaryEquipmentContent) -> Void) {
-        repository.fetchDictionaryContent { result in
+    func getDictionaryEquipmentContent(fileName: String, completion: @escaping (DictionaryEquipmentContent) -> Void) {
+        repository.fetchDictionaryEquipmentContent(fileName: fileName) { result in
             switch result {
             case .success(let dictionaryContent) : completion(dictionaryContent)
             case .failure(let error) :

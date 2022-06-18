@@ -28,7 +28,7 @@ struct EditorDetailView: View {
             } label: {
                 Image(systemName: "xmark.circle.fill")
                     .font(.title)
-                    .foregroundColor(Color(hex: self.viewModel.editorDetailContent.openingSection.cardPaintingTitleColor))
+                    .foregroundColor(Color(hex: "EAA496"))
                     .padding(20)
             }
         }

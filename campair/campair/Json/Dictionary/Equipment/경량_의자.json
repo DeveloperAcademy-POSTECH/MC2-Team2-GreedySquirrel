@@ -1,0 +1,9 @@
+{
+    "name" : "경량 의자",
+    "paintingName" : "폴딩_테이블",
+    "paintingURLString" : "",
+    "content" : "sometext",
+    "pros" : ["some", "some2", "some3"],
+    "cons" : ["some", "some2", "some3"],
+    "installationGuide" : "some"
+}
