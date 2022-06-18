@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct EditorCardView: View {
+    @State private var showModal = false
+    let contentID: String
     let cardPaintingBackgroundColor: String
     let cardPaintingSubTitleColor: String
     let cardPaintingSubTitle: String
@@ -15,28 +17,32 @@ struct EditorCardView: View {
     let cardPaintingTitle: String
     let cardPaintingImage: Data
     var body: some View {
-        VStack(alignment: .leading, spacing: 10) {
-            VStack(alignment: .leading, spacing: 6) {
-                Text(cardPaintingSubTitle)
-                    .foregroundColor(Color(hex: cardPaintingSubTitleColor))
-                    .font(.subheadline)
-                    .fontWeight(.semibold)
-                Text(cardPaintingTitle)
-                    .foregroundColor(Color(hex: cardPaintingTitleColor))
-                    .font(.title)
-                    .fontWeight(.bold)
+        Button(action: {
+            showModal.toggle()
+        }, label: {
+            VStack(alignment: .leading, spacing: 10) {
+                VStack(alignment: .leading, spacing: 6) {
+                    Text(cardPaintingSubTitle)
+                        .foregroundColor(Color(hex: cardPaintingSubTitleColor))
+                        .font(.subheadline)
+                        .fontWeight(.semibold)
+                    Text(cardPaintingTitle)
+                        .foregroundColor(.white)
+                        .font(.title)
+                        .fontWeight(.bold)
+                }
+                .padding(.top, 34)
+                .padding(.leading, 20)
+                Image(uiImage: UIImage(data: cardPaintingImage) ?? UIImage(systemName: "xmark")!)
+                    .resizable()
+                    .scaledToFit()
+                    .padding(20)
             }
-            .padding(.top, 34)
-            .padding(.leading, 20)
-            Image(uiImage: UIImage(data: cardPaintingImage) ?? UIImage(systemName: "xmark")!)
-                .resizable()
-                .scaledToFit()
-                .padding(20)
-        }
-        .background(
-            RoundedRectangle(cornerRadius: 30)
-                .foregroundColor(Color(hex: cardPaintingBackgroundColor))
-        )
+            .background(
+                RoundedRectangle(cornerRadius: 30)
+                    .foregroundColor(Color(hex: cardPaintingBackgroundColor))
+            )
+        })
     }
 }
 //
