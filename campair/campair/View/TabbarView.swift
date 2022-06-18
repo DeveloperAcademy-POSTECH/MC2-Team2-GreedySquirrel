@@ -1,0 +1,33 @@
+//
+//  tabbarView.swift
+//  campair
+//
+//  Created by Lee Myeonghwan on 2022/06/18.
+//
+
+import SwiftUI
+
+struct TabbarView: View {
+    let editorIcon = UIImage(named: "EditorTabbarImage")
+    let dictionaryIcon = UIImage(named: "DictionaryTabbarImage")
+    var body: some View {
+        TabView {
+            EditorMainView()
+                .tabItem {
+                    Image(uiImage: editorIcon!)
+                    Text("에디터")
+                }
+            DictionaryMainView()
+                .tabItem {
+                    Image(uiImage: dictionaryIcon!)
+                    Text("장비사전")
+                }
+        }
+    }
+}
+
+struct TabbarView_Previews: PreviewProvider {
+    static var previews: some View {
+        TabbarView()
+    }
+}

@@ -11,7 +11,7 @@ import SwiftUI
 struct CampairApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabbarView()
         }
     }
 }
