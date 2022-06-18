@@ -10,6 +10,12 @@ import Foundation
 struct EquipmentContent: Codable {
     let title: String?
     let upperContent: String?
-    let recommendedEquipments: [ContentEquipment]
+    var recommendedEquipments: [ContentEquipment]
     let lowerContent: String?
+    init(title: String? = nil, upperContent: String? = nil, recommendedEquipments: [ContentEquipment] = [], lowerContent: String? = nil) {
+        self.title = title
+        self.upperContent = upperContent
+        self.recommendedEquipments = recommendedEquipments
+        self.lowerContent = lowerContent
+    }
 }

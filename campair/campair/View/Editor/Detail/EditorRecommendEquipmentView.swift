@@ -9,6 +9,7 @@ import SwiftUI
 
 struct EditorRecommendEquipmentView: View {
     let equipmentContent: EquipmentContent
+    @Binding var imageSet: [String: Data]
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
             VStack(alignment: .leading, spacing: 0) {
@@ -26,8 +27,8 @@ struct EditorRecommendEquipmentView: View {
                                 .padding(.bottom, 20)
                         }
                         let recommendedEquipments = self.equipmentContent.recommendedEquipments
-                        ForEach(recommendedEquipments.indices) { index in
-                            RecommendedEquipmentCardView(equipment: recommendedEquipments[index])
+                        ForEach(recommendedEquipments.indices, id: \.self) { index in
+                            RecommendedEquipmentCardView(equipment: recommendedEquipments[index], imageSet: $imageSet)
                                 .padding(.top, index > 0 ? 6 : 0)
                         }
                         if let lowerContent = self.equipmentContent.lowerContent {
@@ -57,7 +58,7 @@ struct EditorRecommendEquipmentView_Previews: PreviewProvider {
                                                 ContentEquipment()
                                             ],
                                             lowerContent: "평범한 자동차 여행에서 작지만 확실한 행복을 경량 의자에서 느낄 수 있어요. 혼자 또 같이 소소한 힐링을 느껴보세요."
-                                        )
+                                        ), imageSet: .constant(["none": Data()])
         )
     }
 }

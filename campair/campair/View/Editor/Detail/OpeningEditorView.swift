@@ -9,6 +9,7 @@ import SwiftUI
 
 struct OpeningEditorView: View {
     let openingSection: OpeningSection
+    @Binding var imageSet: [String: Data]
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
             ZStack(alignment: .topLeading) {
@@ -24,7 +25,7 @@ struct OpeningEditorView: View {
                         .font(.system(.title2))
                         .fontWeight(.bold)
                         .foregroundColor(Color.white)
-                    Image("contentCard2")
+                    Image(uiImage: UIImage(data: imageSet[openingSection.cardPaintingImageName] ?? imageSet["none"]! ) ?? UIImage(systemName: "xmark")!)
                         .resizable()
                         .scaledToFit()
                         .frame(width: 350, height: 300)
@@ -62,7 +63,7 @@ struct OpeningEditorView_Previews: PreviewProvider {
                                 titleColor: "D98E7F",
                                 title: "최소한으로 차크닉을 떠날 때.",
                                 content: "떠나는 여행이 돌아왔어요. 간단한 장비들로 시작할 수 있는 차로 떠나는 피크닉, 차크닉을 떠나보세요!"
-                            )
+                            ), imageSet: .constant(["none": Data()])
         )
     }
 }

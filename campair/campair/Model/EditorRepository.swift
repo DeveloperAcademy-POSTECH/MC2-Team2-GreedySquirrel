@@ -62,7 +62,7 @@ struct EditorRepository: EditorcontentsFetchable {
         completion(.success(editorMainCollection))
     }
     func fetchEditorDetailContent(completion: @escaping (Result<EditorDetailContent, Error>) -> Void ) {
-        guard let fileURL = Bundle.main.url(forResource: "EditorDetailCollectionData", withExtension: "json") else {
+        guard let fileURL = Bundle.main.url(forResource: "EditorDetailContentData", withExtension: "json") else {
             completion(.failure(DataFetchingError.invalidURL))
             return
         }
@@ -70,9 +70,28 @@ struct EditorRepository: EditorcontentsFetchable {
             completion(.failure(DataFetchingError.urlNotConvertedToData))
             return
         }
-        guard let editorDetailContent = try? JSONDecoder().decode(EditorDetailContent.self, from: data) else {
+        guard var editorDetailContent = try? JSONDecoder().decode(EditorDetailContent.self, from: data) else {
             completion(.failure(DataFetchingError.unableToDecode))
             return
+        }
+        // parsing & mapping fetch cardPainting image url
+        let openingSection = editorDetailContent.openingSection
+        guard let url = Bundle.main.url(forResource: openingSection.cardPaintingImageName, withExtension: "png") else {
+            completion(.failure(DataFetchingError.unableToFindImage))
+            return
+        }
+        editorDetailContent.openingSection.cardPaintingURLString = url.absoluteString
+        // parsing & mapping fetch ContentEquipment's image url
+        for equipmentContentIndex in editorDetailContent.equipmentContents.indices {
+            let contentEquipment = editorDetailContent.equipmentContents[equipmentContentIndex]
+            for recommendedEquipmentIndex in contentEquipment.recommendedEquipments.indices {
+                let imageName = contentEquipment.recommendedEquipments[recommendedEquipmentIndex].paintingImageName
+                guard let url = Bundle.main.url(forResource: imageName, withExtension: "png") else {
+                    completion(.failure(DataFetchingError.unableToFindImage))
+                    return
+                }
+                editorDetailContent.equipmentContents[equipmentContentIndex].recommendedEquipments[recommendedEquipmentIndex].paintingURLString = url.absoluteString
+            }
         }
         completion(.success(editorDetailContent))
     }

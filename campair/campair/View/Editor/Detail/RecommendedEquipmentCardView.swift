@@ -9,9 +9,10 @@ import SwiftUI
 
 struct RecommendedEquipmentCardView: View {
     let equipment: ContentEquipment
+    @Binding var imageSet: [String: Data]
     var body: some View {
         HStack(spacing: 0) {
-            Image("exampleEquipment")
+            Image(uiImage: UIImage(data: imageSet[equipment.paintingImageName] ?? imageSet["none"]! ) ?? UIImage(systemName: "xmark")!)
                 .resizable()
                 .scaledToFit()
                 .frame(width: 66, height: 66)
@@ -44,6 +45,6 @@ struct RecommendedEquipmentCardView: View {
 
 struct RecommendedEquipmentCardView_Previews: PreviewProvider {
     static var previews: some View {
-        RecommendedEquipmentCardView(equipment: ContentEquipment())
+        RecommendedEquipmentCardView(equipment: ContentEquipment(), imageSet: .constant(["none": Data()]))
     }
 }

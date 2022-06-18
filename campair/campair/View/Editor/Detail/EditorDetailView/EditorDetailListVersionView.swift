@@ -8,30 +8,32 @@
 import SwiftUI
 
 struct EditorDetailListVersionView: View {
-    @ObservedObject var editorDetailContent: EditorDetailViewModel
+    @ObservedObject var viewModel: EditorDetailViewModel
     var body: some View {
         ScrollView {
-            OpeningEditorView(openingSection: self.editorDetailContent.content.openingSection)
-                        VStack(alignment: .leading, spacing: 0) {
-                            VStack(alignment: .leading, spacing: 0) {
-                                let equipmentContents = self.editorDetailContent.content.equipmentContents
-                                ForEach(equipmentContents.indices) { index in
-                                    let equipmentContent = equipmentContents[index]
-                                    EditorRecommendEquipmentView(equipmentContent: equipmentContent)
-                                        .padding(.bottom, 36)
-                                }
-                            }
-                        }
-                        .font(.system(size: 17))
-                        ShareRecommendedEquipmentView()
+//            OpeningEditorView(openingSection: self.viewModel.editorDetailContent.openingSection, imageSet: viewModel.imageSet)
+//            VStack(alignment: .leading, spacing: 0) {
+//                VStack(alignment: .leading, spacing: 0) {
+//                    let equipmentContents = self.viewModel.editorDetailContent.equipmentContents
+//                    ForEach(equipmentContents.indices, id: \.self) { index in
+//                        let equipmentContent = equipmentContents[index]
+//                        EditorRecommendEquipmentView(equipmentContent: equipmentContent, imageSet: viewModel.imageSet)
+//                            .padding(.bottom, 36)
+//                    }
+//                }
+//            }
+//            .font(.system(size: 17))
+//            ShareRecommendedEquipmentView()
         }
         .ignoresSafeArea()
+        .onAppear {
+            viewModel.viewAppeared()
+        }
     }
 }
-
 struct EditorDetailListVersionView_Previews: PreviewProvider {
     static var previews: some View {
-        EditorDetailListVersionView(editorDetailContent:
+        EditorDetailListVersionView(viewModel:
                                         EditorDetailViewModel(editorDetailContent:
                                                                 EditorDetailContent(
                                                                     version: .contents,
