@@ -18,7 +18,7 @@ struct DictionaryDetailedView: View {
                 ScrollView(.horizontal, showsIndicators: false) {
                     ScrollViewReader { proxy in
                         HStack(spacing: 0) {
-                            ForEach(1...10, id:\.self) { index in
+                            ForEach(1...10, id: \.self) { index in
                                 Button {
                                     selectedEquipmentNumber = index
                                     scrollIndex = index
@@ -46,7 +46,7 @@ struct DictionaryDetailedView: View {
 
                 ScrollView {
                     ScrollViewReader { proxy in
-                        ForEach(1...10, id:\.self) { index in
+                        ForEach(1...10, id:\ .self) { index in
                             EquipmentCategory()
                         }
                         .onChange(of: scrollIndex, perform: { value in
@@ -116,7 +116,7 @@ struct EquipmentCategory: View {
                 .frame(maxWidth: 350, alignment: .leading)
                 .padding(.bottom, 14)
                 .padding(.top, 41)
-            ForEach(1...5, id:\.self) { index in
+            ForEach(1..<6) { index in
                 NavigationLink(destination: DictionaryContentView(fileName: "경량_의자")
                     .navigationBarTitle("텐트", displayMode: .inline)
                 ) {

@@ -23,7 +23,11 @@ struct EditorDetailListVersionView: View {
                 }
             }
             .font(.system(size: 17))
-            ShareRecommendedEquipmentView()
+            NavigationLink {
+                DictionaryDetailedView()
+            } label: {
+                ShareRecommendedEquipmentView()
+            }
         }
         .ignoresSafeArea()
         .onAppear {

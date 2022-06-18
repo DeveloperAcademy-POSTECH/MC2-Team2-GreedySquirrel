@@ -12,24 +12,34 @@ struct EditorDetailView: View {
     @Binding var showModal: Bool
     let filename: String
     var body: some View {
-        ZStack(alignment: .topTrailing) {
-            NavigationView {
-                switch self.viewModel.editorDetailContent.version {
-                case .contents :
+        NavigationView {
+            switch self.viewModel.editorDetailContent.version {
+            case .contents :
+                ZStack(alignment: .topTrailing) {
                     EditorDetailContentsVersionView(viewModel: self.viewModel, fileName: self.filename)
                         .navigationBarHidden(true)
-                case .list :
-                        EditorDetailListVersionView(viewModel: self.viewModel, fileName: self.filename)
-                        .navigationBarHidden(true)
+                Button {
+                    showModal.toggle()
+                } label: {
+                    Image(systemName: "xmark.circle.fill")
+                        .font(.title)
+                        .foregroundColor(Color(hex: "EAA496"))
+                        .padding(20)
                 }
-            }
-            Button {
-                showModal.toggle()
-            } label: {
-                Image(systemName: "xmark.circle.fill")
-                    .font(.title)
-                    .foregroundColor(Color(hex: "EAA496"))
-                    .padding(20)
+                }
+            case .list :
+                ZStack(alignment: .topTrailing) {
+                    EditorDetailListVersionView(viewModel: self.viewModel, fileName: self.filename)
+                        .navigationBarHidden(true)
+                    Button {
+                        showModal.toggle()
+                    } label: {
+                        Image(systemName: "xmark.circle.fill")
+                            .font(.title)
+                            .foregroundColor(Color(hex: "EAA496"))
+                            .padding(20)
+                    }
+                }
             }
         }
     }

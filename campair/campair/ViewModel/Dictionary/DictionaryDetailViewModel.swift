@@ -13,16 +13,13 @@ final class DictionaryDetailedViewModel: ObservableObject {
     @Published var dictionaryDetailCategory: DictionaryDetailCategory?
     @Published var imageSet: [String: Data] = [:]
     func viewAppeared() {
-        self.dictionaryUseCase.getDictionaryDetailCategory {
-            [weak self]
-                dictionaryDetailCategoryData in
+        self.dictionaryUseCase.getDictionaryDetailCategory { [weak self] dictionaryDetailCategoryData in
             guard let self = self else { return }
             self.dictionaryDetailCategory = dictionaryDetailCategoryData
             for categoryIndex in
                     dictionaryDetailCategoryData.equipmentList.indices {
                 let dictionaryCategory = dictionaryDetailCategoryData.equipmentList[categoryIndex]
-                self.dictionaryUseCase.fetchImageData(fromURLString: dictionaryCategory.paintingURLString) {
-                    imageData in
+                self.dictionaryUseCase.fetchImageData(fromURLString: dictionaryCategory.paintingURLString) { imageData in
                     DispatchQueue.main.async {
                         self.imageSet[dictionaryCategory.paintingName] = imageData
                     }
