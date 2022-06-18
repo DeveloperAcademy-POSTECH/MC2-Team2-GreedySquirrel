@@ -36,6 +36,7 @@ struct CategoryButtonView: View {
 }
 
 struct DictionaryMainView: View {
+    @StateObject var viewModel = DictionaryMainViewModel()
     private let columns: [GridItem] = [
         GridItem(.flexible(), spacing: 12, alignment: nil),
         GridItem(.flexible(), spacing: 12, alignment: nil),
@@ -48,6 +49,14 @@ struct DictionaryMainView: View {
             ScrollView {
                 TitleView()
                 LazyVGrid(columns: self.columns, spacing: 23) {
+// temp 
+//                    ForEach(viewModel.dictionaryMainCollection.dictionaryMainCategory.indices, id: \.self) { index in
+//                        let equipment = viewModel.dictionaryMainCollection.dictionaryMainCategory[index]
+//                        let imageName = equipment.paintingName
+//                        Text(imageName)
+//                            .padding()
+//                        EquipmentImageView(imageSet: $viewModel.imageSet, imageName: imageName)
+//                    }
                     ForEach(self.buttons) { button in
                         CategoryButtonView(
                             title: button.categoryEnum,
@@ -61,6 +70,9 @@ struct DictionaryMainView: View {
             .padding(.top, UIDevice.current.getSafeAreaTopValue)
             .background(Color(red: 254/255, green: 252/255, blue: 251/255))
             .ignoresSafeArea()
+        }
+        .onAppear{
+            viewModel.viewAppeared()
         }
     }
 }
@@ -147,6 +159,23 @@ enum Category: Int, Codable {
         case .campingTool: return "캠핑공구"
         case .emergencyKit: return "응급/안전"
         case .toilet: return "위생"
+        }
+    }
+}
+
+struct EquipmentImageView: View {
+    @Binding var imageSet: [String: Data]
+    let imageName: String
+    var body: some View {
+        if let uiImage = UIImage(data: imageSet[imageName] ?? imageSet["none"]! ) {
+            Image(uiImage: uiImage)
+                .resizable()
+                .scaledToFit()
+                .frame(width: 350, height: 300)
+        } else {
+           Text("Image loading ...")
+                .frame(width: 350, height: 300)
+                .foregroundColor(.customBlack)
         }
     }
 }

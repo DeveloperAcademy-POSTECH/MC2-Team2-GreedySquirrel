@@ -22,12 +22,12 @@ private enum ImageFetchingError: Error {
 }
 
 protocol DictionaryEquipmentsFetchable {
-    func fetchEditorCollection(completion: @escaping (Result<DictionaryMainCollection, Error>) -> Void )
+    func fetchDictionaryMainCollection(completion: @escaping (Result<DictionaryMainCollection, Error>) -> Void )
     func fetchImage(urlString: String, completion: @escaping (Result<Data, Error>) -> Void)
 }
 
 struct DictionaryRepository: DictionaryEquipmentsFetchable {
-    func fetchEditorCollection(completion: @escaping (Result<DictionaryMainCollection, Error>) -> Void ) {
+    func fetchDictionaryMainCollection(completion: @escaping (Result<DictionaryMainCollection, Error>) -> Void ) {
         guard let fileURL = Bundle.main.url(forResource: "DictionaryMainCollectionData", withExtension: "json") else {
             completion(.failure(DataFetchingError.invalidURL))
             return

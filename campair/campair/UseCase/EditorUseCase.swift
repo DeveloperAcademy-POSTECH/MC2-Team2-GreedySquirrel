@@ -39,7 +39,7 @@ struct EditorUseCase {
             case .success(let data):
                 completion(data)
             case .failure(let error):
-                print(error)
+                os_log(.error, log: .default, "\(error.localizedDescription)")
             }
         }
     }

@@ -14,10 +14,10 @@ struct DictionaryUseCase {
         self.repository = repository
     }
     func getDictionaryMainCollection(completion: @escaping (DictionaryMainCollection) -> Void) {
-        repository.fetchEditorCollection { result in
+        repository.fetchDictionaryMainCollection { result in
             switch result {
-            case .success(let editorCollection) :
-                completion(editorCollection)
+            case .success(let dictionaryMainCollectio) :
+                completion(dictionaryMainCollectio)
             case .failure(let error) :
                 os_log(.error, log: .default, "\(error.localizedDescription)")
             }
@@ -29,7 +29,7 @@ struct DictionaryUseCase {
             case .success(let data):
                 completion(data)
             case .failure(let error):
-                print(error)
+                os_log(.error, log: .default, "\(error.localizedDescription)")
             }
         }
     }
