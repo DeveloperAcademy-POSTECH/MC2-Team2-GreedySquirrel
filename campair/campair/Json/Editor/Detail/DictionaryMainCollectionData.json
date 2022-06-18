@@ -2,82 +2,82 @@
 {
     "dictionaryMainCategory" : [
         {
-            "categoryName" : "텐트",
+            "categoryName" : "tent",
             "paintingName" : "텐트",
             "paintingURLString" : ""
         },
         {
-            "categoryName" : "타프",
+            "categoryName" : "tarp",
             "paintingName" : "타프",
             "paintingURLString" : ""
         },
         {
-            "categoryName" : "시트",
+            "categoryName" : "campingSheet",
             "paintingName" : "시트",
             "paintingURLString" : ""
         },
         {
-            "categoryName" : "부품",
+            "categoryName" : "multiTool",
             "paintingName" : "부품",
             "paintingURLString" : ""
         },
         {
-            "categoryName" : "폴대",
+            "categoryName" : "pole",
             "paintingName" : "폴대",
             "paintingURLString" : ""
         },
         {
-            "categoryName" : "테이블",
+            "categoryName" : "campingTable",
             "paintingName" : "테이블",
             "paintingURLString" : ""
         },
         {
-            "categoryName" : "의자",
+            "categoryName" : "campingChair",
             "paintingName" : "의자",
             "paintingURLString" : ""
         },
         {
-            "categoryName" : "해먹",
+            "categoryName" : "hammock",
             "paintingName" : "해먹",
             "paintingURLString" : ""
         },
         {
-            "categoryName" : "침낭",
+            "categoryName" : "sleepingBag",
             "paintingName" : "침낭",
             "paintingURLString" : ""
         },
         {
-            "categoryName" : "식기",
+            "categoryName" : "cutlery",
             "paintingName" : "식기",
             "paintingURLString" : ""
         },
         {
-            "categoryName" : "매트",
+            "categoryName" : "mat",
             "paintingName" : "매트",
             "paintingURLString" : ""
         },
         {
-            "categoryName" : "수납",
+            "categoryName" : "campingBox",
             "paintingName" : "수납",
             "paintingURLString" : ""
         },
         {
-            "categoryName" : "조명",
+            "categoryName" : "campingLight",
             "paintingName" : "조명",
             "paintingURLString" : ""
         },
         {
-            "categoryName" : "캠핑공구",
+            "categoryName" : "campingTool",
             "paintingName" : "캠핑공구",
             "paintingURLString" : ""
         },
         {
-            "categoryName" : "응급/안전",
+            "categoryName" : "emergencyKit",
             "paintingName" : "응급_안전",
             "paintingURLString" : ""
         },
         {
-            "categoryName" : "위생",
+            "categoryName" : "hygiene",
             "paintingName" : "위생",
             "paintingURLString" : ""
         }

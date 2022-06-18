@@ -11,7 +11,7 @@ import SwiftUI
 struct CampairApp: App {
     var body: some Scene {
         WindowGroup {
-           EditorDetailView(filename: "Content_4")
+           DictionaryMainView()
         }
     }
 }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct DictionaryEquipmentContent: Codable{
+struct DictionaryEquipmentContent: Codable {
     let name: String
     let paintingName: String
     var paintingURL: String

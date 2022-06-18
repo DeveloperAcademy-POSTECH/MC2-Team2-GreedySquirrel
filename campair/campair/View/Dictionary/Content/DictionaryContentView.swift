@@ -1,4 +1,3 @@
-
 //
 //  DictionaryContentView.swift
 //  campair

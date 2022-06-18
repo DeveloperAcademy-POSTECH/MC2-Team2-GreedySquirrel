@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct DictionaryDetailCategory: Codable{
+struct DictionaryDetailCategory: Codable {
     let name: String
     var equipmentList: [EquipmentList]
     init(name: String = "", equipmentList: [EquipmentList] = [EquipmentList()]) {
