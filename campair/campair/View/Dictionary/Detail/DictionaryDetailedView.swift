@@ -46,7 +46,7 @@ struct DictionaryDetailedView: View {
 
                 ScrollView {
                     ScrollViewReader { proxy in
-                        ForEach(1...10, id:\ .self) { index in
+                        ForEach(1...10, id: \.self) { index in
                             EquipmentCategory()
                         }
                         .onChange(of: scrollIndex, perform: { value in

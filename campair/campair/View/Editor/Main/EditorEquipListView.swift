@@ -18,7 +18,7 @@ struct EditorEquipListView: View {
                 .scaledToFit()
                 .padding(5)
                 .background(
-                    RoundedRectangle(cornerRadius: 18)
+                    RoundedRectangle(cornerRadius: 20)
                         .foregroundColor(Color(hex: cardPaintingBackgroundColor))
                 )
             Text(name)
