@@ -87,6 +87,7 @@ struct EditorRepository: EditorcontentsFetchable {
             for recommendedEquipmentIndex in contentEquipment.recommendedEquipments.indices {
                 let imageName = contentEquipment.recommendedEquipments[recommendedEquipmentIndex].paintingImageName
                 guard let url = Bundle.main.url(forResource: imageName, withExtension: "png") else {
+                    print(imageName)
                     completion(.failure(DataFetchingError.unableToFindImage))
                     return
                 }

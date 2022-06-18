@@ -9,12 +9,7 @@ import SwiftUI
 
 struct EditorCardView: View {
     @State private var showModal = false
-    let contentID: String
-    let cardPaintingBackgroundColor: String
-    let cardPaintingSubTitleColor: String
-    let cardPaintingSubTitle: String
-    let cardPaintingTitleColor: String
-    let cardPaintingTitle: String
+    @Binding var editorMainContent: EditorMainContent
     let cardPaintingImage: Data
     var body: some View {
         Button(action: {
@@ -22,11 +17,11 @@ struct EditorCardView: View {
         }, label: {
             VStack(alignment: .leading, spacing: 10) {
                 VStack(alignment: .leading, spacing: 6) {
-                    Text(cardPaintingSubTitle)
-                        .foregroundColor(Color(hex: cardPaintingSubTitleColor))
+                    Text(editorMainContent.cardPaintingSubTitle)
+                        .foregroundColor(Color(hex: editorMainContent.cardPaintingSubTitleColor))
                         .font(.subheadline)
                         .fontWeight(.semibold)
-                    Text(cardPaintingTitle)
+                    Text(editorMainContent.cardPaintingTitle)
                         .foregroundColor(.white)
                         .font(.title)
                         .fontWeight(.bold)
@@ -40,9 +35,12 @@ struct EditorCardView: View {
             }
             .background(
                 RoundedRectangle(cornerRadius: 30)
-                    .foregroundColor(Color(hex: cardPaintingBackgroundColor))
+                    .foregroundColor(Color(hex: editorMainContent.cardPaintingBackgroundColor))
             )
         })
+        .fullScreenCover(isPresented: $showModal) {
+            EditorDetailView(showModal: self.$showModal, filename: editorMainContent.contentID)
+        }
     }
 }
 //

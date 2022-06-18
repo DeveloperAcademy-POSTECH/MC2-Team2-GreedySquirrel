@@ -9,13 +9,28 @@ import SwiftUI
 
 struct EditorDetailView: View {
     @StateObject var viewModel: EditorDetailViewModel = EditorDetailViewModel()
+    @Binding var showModal: Bool
     let filename: String
     var body: some View {
-        switch self.viewModel.editorDetailContent.version {
-        case .contents :
+        ZStack(alignment: .topTrailing) {
+            NavigationView {
+            switch self.viewModel.editorDetailContent.version {
+            case .contents :
                 EditorDetailContentsVersionView(viewModel: self.viewModel, fileName: self.filename)
-        case .list :
+                    .navigationBarHidden(true)
+            case .list :
                 EditorDetailListVersionView(viewModel: self.viewModel)
+                    .navigationBarHidden(true)
+            }
+            }
+            Button {
+                showModal.toggle()
+            } label: {
+                Image(systemName: "xmark.circle.fill")
+                    .font(.title)
+                    .foregroundColor(Color(hex: self.viewModel.editorDetailContent.openingSection.cardPaintingTitleColor))
+                    .padding(20)
+            }
         }
     }
 }
@@ -47,7 +62,7 @@ struct EditorDetailView_Previews: PreviewProvider {
                                         )
                                     ]
                                 )
-                            ), filename: "Content_1"
+                            ), showModal: .constant(false), filename: "Content_1"
         )
     }
 }
