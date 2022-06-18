@@ -9,6 +9,7 @@ import SwiftUI
 
 struct EditorMainView: View {
     @ObservedObject var viewModel = EditorMainViewModel()
+    private let todayPhase = Date().getTodayPhase()
     var body: some View {
         NavigationView {
             ScrollView(.vertical) {
@@ -17,7 +18,7 @@ struct EditorMainView: View {
                         Text("가볍게 떠나는")
                             .font(.largeTitle)
                             .fontWeight(.bold)
-                        Text("금요일 오후")
+                        Text(todayPhase)
                             .font(.largeTitle)
                             .fontWeight(.bold)
                     }

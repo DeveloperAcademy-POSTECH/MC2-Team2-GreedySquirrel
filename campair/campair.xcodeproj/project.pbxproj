@@ -32,6 +32,7 @@
 		9127D649285DEE0A00C2B369 /* 자충_매트.png in Resources */ = {isa = PBXBuildFile; fileRef = 9127D648285DEE0A00C2B369 /* 자충_매트.png */; };
 		9127D64B285DEE2A00C2B369 /* 숯_연료_연료통.png in Resources */ = {isa = PBXBuildFile; fileRef = 9127D64A285DEE2A00C2B369 /* 숯_연료_연료통.png */; };
 		9127D64D285E032600C2B369 /* 경량_의자.json in Resources */ = {isa = PBXBuildFile; fileRef = 9127D64C285E032600C2B369 /* 경량_의자.json */; };
+		9127D650285E39CD00C2B369 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9127D64F285E39CD00C2B369 /* DateExtension.swift */; };
 		913DAD3D285B7591005FDA13 /* CampairApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A884D24B2852CD7B004871B1 /* CampairApp.swift */; };
 		915AE0F62856FB8100CAC50A /* OpeningSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915AE0F52856FB8100CAC50A /* OpeningSection.swift */; };
 		915AE0F82856FB9A00CAC50A /* EquipmentContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915AE0F72856FB9A00CAC50A /* EquipmentContent.swift */; };
@@ -184,6 +185,7 @@
 		9127D648285DEE0A00C2B369 /* 자충_매트.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "자충_매트.png"; sourceTree = "<group>"; };
 		9127D64A285DEE2A00C2B369 /* 숯_연료_연료통.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "숯_연료_연료통.png"; sourceTree = "<group>"; };
 		9127D64C285E032600C2B369 /* 경량_의자.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "경량_의자.json"; sourceTree = "<group>"; };
+		9127D64F285E39CD00C2B369 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		915AE0F52856FB8100CAC50A /* OpeningSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeningSection.swift; sourceTree = "<group>"; };
 		915AE0F72856FB9A00CAC50A /* EquipmentContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentContent.swift; sourceTree = "<group>"; };
 		91915AB6285AC55500003C7F /* ContentEquipment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentEquipment.swift; sourceTree = "<group>"; };
@@ -671,6 +673,7 @@
 				CC00FAD928581E8E00BA8549 /* ColorExtension.swift */,
 				CC00FADB28583B1F00BA8549 /* SafeAreaPadding.swift */,
 				CC396452285B338D005DC3F8 /* ViewExtension.swift */,
+				9127D64F285E39CD00C2B369 /* DateExtension.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -1005,6 +1008,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				913DAD3D285B7591005FDA13 /* CampairApp.swift in Sources */,
+				9127D650285E39CD00C2B369 /* DateExtension.swift in Sources */,
 				CC00FAD428574F5F00BA8549 /* EditorDetailContentsVersionView.swift in Sources */,
 				911841B5285C58A4004E7BB3 /* DictionaryContentViewModel.swift in Sources */,
 				CC434EAC2859C82300EB487F /* RecommendedEquipmentCardView.swift in Sources */,
