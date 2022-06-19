@@ -15,10 +15,10 @@ struct EditorMainView: View {
             ScrollView(.vertical) {
                 VStack(alignment: .leading, spacing: 20) {
                     VStack(alignment: .leading) {
-                        Text("가볍게 떠나는")
+                        Text(todayPhase[0])
                             .font(.largeTitle)
                             .fontWeight(.bold)
-                        Text(todayPhase)
+                        Text(todayPhase[1])
                             .font(.largeTitle)
                             .fontWeight(.bold)
                     }
