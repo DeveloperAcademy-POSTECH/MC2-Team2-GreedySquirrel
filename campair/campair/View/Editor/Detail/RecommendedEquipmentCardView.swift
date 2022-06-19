@@ -22,7 +22,7 @@ struct RecommendedEquipmentCardView: View {
                         .frame(width: 66, height: 66)
                         .padding(.horizontal, 10)
                 } else {
-                    Text("Image loading ...")
+                        ProgressView()
                         .font(.system(.footnote))
                         .frame(width: 66, height: 66)
                         .foregroundColor(.customBlack)

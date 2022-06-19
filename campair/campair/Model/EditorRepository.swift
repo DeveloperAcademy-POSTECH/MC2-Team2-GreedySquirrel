@@ -45,7 +45,6 @@ struct EditorRepository: EditorcontentsFetchable {
             // parsing & mapping fetch EditorMainContent's image url
             let editorMainContent = editorMainCollection.editorMainContents[contentsIndex]
             guard let cardPaintingURL = Bundle.main.url(forResource: editorMainContent.cardPaintingImageName, withExtension: "png") else {
-                print(editorMainContent.cardPaintingImageName)
                 completion(.failure(DataFetchingError.unableToFindImage))
                 return
             }
@@ -54,7 +53,6 @@ struct EditorRepository: EditorcontentsFetchable {
             for equipmentIndex in editorMainContent.contentEquipments.indices {
                 let contentEquipment = editorMainContent.contentEquipments[equipmentIndex]
                 guard let paintingURLString = Bundle.main.url(forResource: contentEquipment.paintingImageName, withExtension: "png") else {
-                    print(contentEquipment.paintingImageName)
                     completion(.failure(DataFetchingError.unableToFindImage))
                     return
                 }
@@ -65,7 +63,6 @@ struct EditorRepository: EditorcontentsFetchable {
     }
     func fetchEditorDetailContent(fileName: String, completion: @escaping (Result<EditorDetailContent, Error>) -> Void ) {
         guard let fileURL = Bundle.main.url(forResource: fileName, withExtension: "json") else {
-            print(fileName)
             completion(.failure(DataFetchingError.invalidURL))
             return
         }
@@ -80,7 +77,6 @@ struct EditorRepository: EditorcontentsFetchable {
         // parsing & mapping fetch cardPainting image url
         let openingSection = editorDetailContent.openingSection
         guard let url = Bundle.main.url(forResource: openingSection.cardPaintingImageName, withExtension: "png") else {
-            print(openingSection.cardPaintingImageName)
             completion(.failure(DataFetchingError.unableToFindImage))
             return
         }
@@ -91,8 +87,6 @@ struct EditorRepository: EditorcontentsFetchable {
             for recommendedEquipmentIndex in contentEquipment.recommendedEquipments.indices {
                 let imageName = contentEquipment.recommendedEquipments[recommendedEquipmentIndex].paintingImageName
                 guard let url = Bundle.main.url(forResource: imageName, withExtension: "png") else {
-                    print(imageName)
-                    print(imageName)
                     completion(.failure(DataFetchingError.unableToFindImage))
                     return
                 }

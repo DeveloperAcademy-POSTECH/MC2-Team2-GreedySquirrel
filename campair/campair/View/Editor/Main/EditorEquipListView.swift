@@ -13,14 +13,19 @@ struct EditorEquipListView: View {
     let cardPaintingBackgroundColor: String
     var body: some View {
         VStack {
-            Image(uiImage: UIImage(data: paintingImage) ?? UIImage(systemName: "xmark")!)
-                .resizable()
-                .scaledToFit()
-                .padding(5)
-                .background(
-                    RoundedRectangle(cornerRadius: 20)
-                        .foregroundColor(Color(hex: cardPaintingBackgroundColor))
-                )
+            if let uiImage = UIImage(data: paintingImage) {
+                Image(uiImage: uiImage)
+                    .resizable()
+                    .scaledToFit()
+                    .padding(5)
+                    .background(
+                        RoundedRectangle(cornerRadius: 20)
+                            .foregroundColor(Color(hex: cardPaintingBackgroundColor))
+                    )
+            } else {
+                ProgressView()
+                    .frame(width: 83, height: 83)
+            }
             Text(name)
                 .foregroundColor(Color(#colorLiteral(red: 0.3014614582, green: 0.3024801612, blue: 0.332264483, alpha: 0.8470588235)))
                 .font(.footnote)

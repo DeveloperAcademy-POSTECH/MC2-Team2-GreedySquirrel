@@ -28,10 +28,15 @@ struct EditorCardView: View {
                 }
                 .padding(.top, 34)
                 .padding(.leading, 20)
-                Image(uiImage: UIImage(data: cardPaintingImage) ?? UIImage(systemName: "xmark")!)
-                    .resizable()
-                    .scaledToFit()
-                    .padding(20)
+                if let uiImage = UIImage(data: cardPaintingImage) {
+                    Image(uiImage: uiImage)
+                        .resizable()
+                        .scaledToFit()
+                        .padding(20)
+                } else {
+                    ProgressView()
+                        .frame(width: 350, height: 300)
+                }
             }
             .background(
                 RoundedRectangle(cornerRadius: 30)

@@ -29,11 +29,9 @@ struct OpeningEditorView: View {
                         Image(uiImage: uiImage)
                             .resizable()
                             .scaledToFit()
-                            .frame(width: 350, height: 300)
                     } else {
-                       Text("Image loading ...")
+                        ProgressView()
                             .frame(width: 350, height: 300)
-                            .foregroundColor(.customBlack)
                     }
                 }
                 .padding(.horizontal, 20)

@@ -70,9 +70,8 @@ struct CategoryButtonView: View {
                         .frame(width: 72, height: 72)
                         .padding(.bottom, 4)
                 } else {
-                    Text("Image loading ...")
+                    ProgressView()
                         .frame(width: 72, height: 72)
-                        .foregroundColor(.customBlack)
                 }
                 Text(self.catagoryName.korean)
                     .font(.footnote)
