@@ -28,7 +28,7 @@ struct EditorEquipListView: View {
             }
             Text(name)
                 .foregroundColor(Color(#colorLiteral(red: 0.3014614582, green: 0.3024801612, blue: 0.332264483, alpha: 0.8470588235)))
-                .font(.footnote)
+                .font(.system(size: 13))
                 .fontWeight(.semibold)
         }
     }

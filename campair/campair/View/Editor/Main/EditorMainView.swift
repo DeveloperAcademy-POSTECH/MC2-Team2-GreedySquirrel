@@ -34,7 +34,7 @@ struct EditorMainView: View {
                                     ForEach(editorMainContent.contentEquipments.indices, id: \.self) { equipmentIndex in
                                         let contentEquipment = editorMainContent.contentEquipments[equipmentIndex]
                                         NavigationLink {
-                                            DictionaryContentView( jsonFileName: self.viewModel.editorMainCollection.editorMainContents[contentsIndex].contentEquipments[equipmentIndex].paintingImageName)
+                                            DictionaryContentView(jsonFileName: self.viewModel.editorMainCollection.editorMainContents[contentsIndex].contentEquipments[equipmentIndex].paintingImageName)
                                         } label: {
                                             EditorEquipListView(name: contentEquipment.name, paintingImage: self.viewModel.imageSet[contentEquipment.name] ?? self.viewModel.imageSet["none"]!, cardPaintingBackgroundColor: editorMainContent.cardPaintingBackgroundColor)
                                         }

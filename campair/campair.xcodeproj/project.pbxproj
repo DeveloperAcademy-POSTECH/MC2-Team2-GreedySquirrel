@@ -31,6 +31,7 @@
 		913DAD3D285B7591005FDA13 /* CampairApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A884D24B2852CD7B004871B1 /* CampairApp.swift */; };
 		915AE0F62856FB8100CAC50A /* OpeningSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915AE0F52856FB8100CAC50A /* OpeningSection.swift */; };
 		915AE0F82856FB9A00CAC50A /* EquipmentContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915AE0F72856FB9A00CAC50A /* EquipmentContent.swift */; };
+		916D36FB285F4C70007A42E8 /* 돗자리.png in Resources */ = {isa = PBXBuildFile; fileRef = 916D36FA285F4C70007A42E8 /* 돗자리.png */; };
 		91915AB7285AC55500003C7F /* ContentEquipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91915AB6285AC55500003C7F /* ContentEquipment.swift */; };
 		91915ABC285AC72100003C7F /* EditorDetailContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91915ABB285AC72100003C7F /* EditorDetailContent.swift */; };
 		91915AC0285AD52300003C7F /* Content_1.json in Resources */ = {isa = PBXBuildFile; fileRef = 91915ABF285AD52300003C7F /* Content_1.json */; };
@@ -129,7 +130,6 @@
 		CC215E32285D922F00B5DBDA /* 위생.png in Resources */ = {isa = PBXBuildFile; fileRef = CC215E22285D922F00B5DBDA /* 위생.png */; };
 		CC215E33285D922F00B5DBDA /* 부품.png in Resources */ = {isa = PBXBuildFile; fileRef = CC215E23285D922F00B5DBDA /* 부품.png */; };
 		CC215E34285D922F00B5DBDA /* 테이블.png in Resources */ = {isa = PBXBuildFile; fileRef = CC215E24285D922F00B5DBDA /* 테이블.png */; };
-		CC215E37285DAAEC00B5DBDA /* 돗자리.png in Resources */ = {isa = PBXBuildFile; fileRef = CC215E36285DAAEC00B5DBDA /* 돗자리.png */; };
 		CC215E3B285DAD5C00B5DBDA /* Content_2.json in Resources */ = {isa = PBXBuildFile; fileRef = CC215E3A285DAD5C00B5DBDA /* Content_2.json */; };
 		CC215E3D285DB6E900B5DBDA /* DictionaryMainCollectionData.json in Resources */ = {isa = PBXBuildFile; fileRef = CC215E3C285DB6E900B5DBDA /* DictionaryMainCollectionData.json */; };
 		CC396453285B338D005DC3F8 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC396452285B338D005DC3F8 /* ViewExtension.swift */; };
@@ -257,6 +257,7 @@
 		9127D64F285E39CD00C2B369 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		915AE0F52856FB8100CAC50A /* OpeningSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeningSection.swift; sourceTree = "<group>"; };
 		915AE0F72856FB9A00CAC50A /* EquipmentContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentContent.swift; sourceTree = "<group>"; };
+		916D36FA285F4C70007A42E8 /* 돗자리.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "돗자리.png"; sourceTree = "<group>"; };
 		91915AB6285AC55500003C7F /* ContentEquipment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentEquipment.swift; sourceTree = "<group>"; };
 		91915ABB285AC72100003C7F /* EditorDetailContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorDetailContent.swift; sourceTree = "<group>"; };
 		91915ABF285AD52300003C7F /* Content_1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Content_1.json; sourceTree = "<group>"; };
@@ -357,7 +358,6 @@
 		CC215E22285D922F00B5DBDA /* 위생.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "위생.png"; sourceTree = "<group>"; };
 		CC215E23285D922F00B5DBDA /* 부품.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "부품.png"; sourceTree = "<group>"; };
 		CC215E24285D922F00B5DBDA /* 테이블.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "테이블.png"; sourceTree = "<group>"; };
-		CC215E36285DAAEC00B5DBDA /* 돗자리.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "돗자리.png"; sourceTree = "<group>"; };
 		CC215E3A285DAD5C00B5DBDA /* Content_2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Content_2.json; sourceTree = "<group>"; };
 		CC215E3C285DB6E900B5DBDA /* DictionaryMainCollectionData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = DictionaryMainCollectionData.json; path = campair/Json/Editor/Detail/DictionaryMainCollectionData.json; sourceTree = SOURCE_ROOT; };
 		CC396452285B338D005DC3F8 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
@@ -574,7 +574,7 @@
 				CC631935285EFBE200D05AED /* 담요.png */,
 				CC215D91285D7D0F00B5DBDA /* 조난신호용품.png */,
 				CC215DBB285D7D1000B5DBDA /* 파이어스타터.png */,
-				CC215E36285DAAEC00B5DBDA /* 돗자리.png */,
+				916D36FA285F4C70007A42E8 /* 돗자리.png */,
 				CC631937285EFBEF00D05AED /* 간이화장실.png */,
 				CC215DA4285D7D0F00B5DBDA /* 세면기.png */,
 				CC215D84285D7D0F00B5DBDA /* 샤워기.png */,
@@ -1197,7 +1197,6 @@
 				CC215E04285D7D1000B5DBDA /* 돔형_텐트.png in Resources */,
 				CC63192E285EFB8300D05AED /* 자충_매트.png in Resources */,
 				CC215DE3285D7D1000B5DBDA /* 식기_용기.png in Resources */,
-				CC215E37285DAAEC00B5DBDA /* 돗자리.png in Resources */,
 				CC63187A285E3F3000D05AED /* 윙_타프.json in Resources */,
 				CC6318E7285EA66400D05AED /* 캠핑_트레일러.json in Resources */,
 				CC215DF6285D7D1000B5DBDA /* 폴딩_테이블.png in Resources */,
@@ -1265,6 +1264,7 @@
 				CC6318E5285EA64800D05AED /* 캠핑카_루프백.json in Resources */,
 				CC215DD5285D7D1000B5DBDA /* 티피_텐트.png in Resources */,
 				CC6318A3285E437700D05AED /* 스트레치_코드.json in Resources */,
+				916D36FB285F4C70007A42E8 /* 돗자리.png in Resources */,
 				CC6318CD285E46B000D05AED /* 에어매트.json in Resources */,
 				CC6318C1285E460400D05AED /* 마야_해먹.json in Resources */,
 				CC6318E1285E48B000D05AED /* 캠핑용_건조대.json in Resources */,

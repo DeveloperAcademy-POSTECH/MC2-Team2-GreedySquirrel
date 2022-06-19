@@ -74,7 +74,7 @@ struct CategoryButtonView: View {
                         .frame(width: 72, height: 72)
                 }
                 Text(self.catagoryName.korean)
-                    .font(.footnote)
+                    .font(.system(size: 13))
             }
         }
     }
