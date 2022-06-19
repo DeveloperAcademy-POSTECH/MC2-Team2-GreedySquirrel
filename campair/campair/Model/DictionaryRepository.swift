@@ -69,7 +69,7 @@ struct DictionaryRepository: DictionaryEquipmentsFetchable {
             }
 
             for preDictionaryIndex in dictionaryPreDetailCategory.dictionaryDetailCategory.indices {
-                var dictionaryDetailCategory = dictionaryPreDetailCategory.dictionaryDetailCategory[preDictionaryIndex]
+                let dictionaryDetailCategory = dictionaryPreDetailCategory.dictionaryDetailCategory[preDictionaryIndex]
                 for dictionaryIndex in dictionaryDetailCategory.equipmentList.indices {
                     let equipmentList = dictionaryDetailCategory.equipmentList[dictionaryIndex]
                     guard let paintingURL = Bundle.main.url(forResource: equipmentList.paintingName, withExtension: "png") else {

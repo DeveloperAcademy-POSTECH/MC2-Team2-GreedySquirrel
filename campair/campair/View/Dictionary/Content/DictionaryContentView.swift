@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct DictionaryContentView: View {
-    let equipmentCategory: String
     @ObservedObject var viewModel = DictionaryContentViewModel()
     @Environment(\.presentationMode) var mode: Binding<PresentationMode>
     var jsonFileName: String
@@ -29,14 +28,14 @@ struct DictionaryContentView: View {
                     })
                     .padding(.leading, 8)
                     Spacer()
-                    Text(equipmentCategory)
+                    Text(self.viewModel.dictionaryEquipmentContent.categoryName)
                         .padding(.trailing, 179)
                 }
                 .padding(.bottom, 10)
                 .background(Color(hex: "FEFCFB"))
                 Rectangle()
-                    .frame(height:1)
-                    .foregroundColor(Color(hex:"E8E8E8"))
+                    .frame(height: 1)
+                    .foregroundColor(Color(hex: "E8E8E8"))
             }
         ScrollView {
         VStack(alignment: .leading, spacing: 0) {
@@ -113,6 +112,6 @@ struct DictionaryContentView: View {
 
 struct DictionaryContentView_Previews: PreviewProvider {
     static var previews: some View {
-        DictionaryContentView(equipmentCategory: "HI", jsonFileName: "경량_의자")
+        DictionaryContentView(jsonFileName: "경량_의자")
     }
 }

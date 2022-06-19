@@ -53,7 +53,7 @@ struct DictionaryDetailedView: View {
                                         .padding(.horizontal, 15)
                                         .padding(.vertical, self.selectedEquipmentNumber == index ? 4 : 0)
                                         .background(RoundedRectangle(cornerRadius: 17.5)
-                                            .foregroundColor(self.selectedEquipmentNumber == index ? Color(#colorLiteral(red: 0.3830943704, green: 0.3830943704, blue: 0.3830943704, alpha: 1)) : Color(hex:"FEFCFB"))
+                                            .foregroundColor(self.selectedEquipmentNumber == index ? Color(#colorLiteral(red: 0.3830943704, green: 0.3830943704, blue: 0.3830943704, alpha: 1)) : Color(hex: "FEFCFB"))
                                                      )
                                     }
                                 }
@@ -67,11 +67,11 @@ struct DictionaryDetailedView: View {
                     }
                     .padding(.horizontal, 20)
                     .padding(.bottom, 19)
-                    .background(Color(hex:"FEFCFB"))
+                    .background(Color(hex: "FEFCFB"))
 
                 Rectangle()
-                    .frame(height:1)
-                    .foregroundColor(Color(hex:"E8E8E8"))
+                    .frame(height: 1)
+                    .foregroundColor(Color(hex: "E8E8E8"))
 
                 ScrollView {
                     ScrollViewReader { proxy in
@@ -107,7 +107,7 @@ struct DictionaryDetailedView: View {
                 .navigationBarBackButtonHidden(true)
                 .onAppear {
                     viewModel.viewAppeared()
-                    //scrollIndex = 1
+                    // scrollIndex = 1
                 }
     }
 }
