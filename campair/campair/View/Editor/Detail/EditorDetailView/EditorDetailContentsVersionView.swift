@@ -11,7 +11,7 @@ struct EditorDetailContentsVersionView: View {
     @ObservedObject var viewModel: EditorDetailViewModel
     let fileName: String
     var body: some View {
-        ScrollView {
+        VStack(alignment: .leading, spacing: 0) {
             OpeningEditorView(openingSection: self.viewModel.editorDetailContent.openingSection, imageSet: $viewModel.imageSet)
             VStack(alignment: .leading, spacing: 0) {
                 VStack(alignment: .leading, spacing: 0) {
@@ -27,15 +27,14 @@ struct EditorDetailContentsVersionView: View {
                         }
                     }
                 }
-            }
-            .font(.system(size: 17))
-            NavigationLink {
-                DictionaryDetailedView()
-            } label: {
-                ShareRecommendedEquipmentView()
+                .font(.system(size: 17))
+                NavigationLink {
+                    DictionaryDetailedView()
+                } label: {
+                    ShareRecommendedEquipmentView()
+                }
             }
         }
-        .ignoresSafeArea()
         .onAppear(perform: {
             viewModel.viewAppeared(fileName: fileName)
         })

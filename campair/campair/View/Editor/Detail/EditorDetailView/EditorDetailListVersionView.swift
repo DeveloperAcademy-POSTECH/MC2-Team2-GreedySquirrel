@@ -11,7 +11,7 @@ struct EditorDetailListVersionView: View {
     @ObservedObject var viewModel: EditorDetailViewModel
     let fileName: String
     var body: some View {
-        ScrollView {
+        VStack(alignment: .leading, spacing: 0) {
             OpeningEditorView(openingSection: self.viewModel.editorDetailContent.openingSection, imageSet: $viewModel.imageSet)
             VStack(alignment: .leading, spacing: 0) {
                 VStack(alignment: .leading, spacing: 0) {
@@ -29,7 +29,6 @@ struct EditorDetailListVersionView: View {
                 ShareRecommendedEquipmentView()
             }
         }
-        .ignoresSafeArea()
         .onAppear {
             viewModel.viewAppeared(fileName: fileName)
         }

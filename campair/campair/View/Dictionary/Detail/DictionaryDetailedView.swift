@@ -47,7 +47,7 @@ struct DictionaryDetailedView: View {
                 Divider()
                 ScrollView {
                     ScrollViewReader { proxy in
-                        ForEach(1...10, id: \.self) { index in
+                        ForEach(1...10, id: \.self) { _ in
                             EquipmentCategory()
                         }
                         .onChange(of: scrollIndex, perform: { value in
@@ -119,7 +119,7 @@ struct EquipmentCategory: View {
                 .padding(.bottom, 14)
                 .padding(.top, 41)
             ForEach(1..<6) { index in
-                NavigationLink(destination: DictionaryContentView(jsonFileName:"경량_의자")
+                NavigationLink(destination: DictionaryContentView(jsonFileName: "경량_의자")
                 ) {
                     EquipmentBox()
                 }

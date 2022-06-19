@@ -7,40 +7,78 @@
 
 import SwiftUI
 
+private struct OffsetPreferenceKey: PreferenceKey {
+    static var defaultValue: CGFloat = .zero
+    static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) {}
+}
 struct EditorDetailView: View {
     @StateObject var viewModel: EditorDetailViewModel = EditorDetailViewModel()
     @Binding var showModal: Bool
     let filename: String
+    @State var scrollOffset: CGFloat = .zero
     var body: some View {
         NavigationView {
-            switch self.viewModel.editorDetailContent.version {
-            case .contents :
-                ZStack(alignment: .topTrailing) {
-                    EditorDetailContentsVersionView(viewModel: self.viewModel, fileName: self.filename)
-                        .navigationBarHidden(true)
+            ZStack(alignment: .topTrailing) {
+                ScrollViewOffset(color: viewModel.editorDetailContent.openingSection.cardPaintingBackgroundColor) {
+                    switch self.viewModel.editorDetailContent.version {
+                    case .contents :
+                            EditorDetailContentsVersionView(viewModel: self.viewModel, fileName: self.filename)
+                                .navigationBarHidden(true)
+                    case .list :
+                            EditorDetailListVersionView(viewModel: self.viewModel, fileName: self.filename)
+                                .navigationBarHidden(true)
+                    }
+                } onOffsetChange: {
+                    scrollOffset = $0
+                }
                 Button {
                     showModal.toggle()
                 } label: {
+                    let topColor = Color(hex: viewModel.editorDetailContent.openingSection.cardPaintingTitleColor)
+                    let bottomColor = Color(hex: viewModel.editorDetailContent.openingSection.titleColor)
                     Image(systemName: "xmark.circle.fill")
                         .font(.title)
-                        .foregroundColor(Color(hex: "EAA496"))
+                        .foregroundColor( scrollOffset > -380.0 ? topColor : bottomColor)
+                        .animation(.default, value: scrollOffset)
                         .padding(20)
                 }
-                }
-            case .list :
-                ZStack(alignment: .topTrailing) {
-                    EditorDetailListVersionView(viewModel: self.viewModel, fileName: self.filename)
-                        .navigationBarHidden(true)
-                    Button {
-                        showModal.toggle()
-                    } label: {
-                        Image(systemName: "xmark.circle.fill")
-                            .font(.title)
-                            .foregroundColor(Color(hex: "EAA496"))
-                            .padding(20)
-                    }
-                }
+                .padding(.top, UIDevice.current.getSafeAreaTopValue)
             }
+            .ignoresSafeArea()
+        }
+    }
+}
+
+struct ScrollViewOffset<Content: View>: View {
+    let color: String
+    let content: () -> Content
+    let onOffsetChange: (CGFloat) -> Void
+    init(
+        color: String,
+        @ViewBuilder content: @escaping () -> Content,
+        onOffsetChange: @escaping (CGFloat) -> Void
+    ) {
+        self.color = color
+        self.content = content
+        self.onOffsetChange = onOffsetChange
+    }
+    var body: some View {
+        ScrollView {
+            offsetReader
+            content()
+                .padding(.top, -8)
+        }
+        .coordinateSpace(name: "frameLayer")
+        .coordinateSpace(name: "frameLayer")
+        .onPreferenceChange(OffsetPreferenceKey.self, perform: onOffsetChange)
+    }
+    var offsetReader: some View {
+        GeometryReader { proxy in
+            Color(hex: color)
+                .preference(
+                    key: OffsetPreferenceKey.self,
+                    value: proxy.frame(in: .named("frameLayer")).minY
+                )
         }
     }
 }
