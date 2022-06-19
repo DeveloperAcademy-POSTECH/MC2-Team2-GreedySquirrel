@@ -23,7 +23,9 @@ struct DictionaryMainView: View {
                 LazyVGrid(columns: self.columns, spacing: 23) {
                     ForEach(self.viewModel.dictionaryMainCollection.dictionaryMainCategory.indices, id: \.self) { index in
                         let equipmentName = self.viewModel.dictionaryMainCollection.dictionaryMainCategory[index]
-                        CategoryButtonView(imageSet: self.$viewModel.imageSet, imageName: equipmentName.paintingName, catagoryName: equipmentName.categoryName)
+                        NavigationLink(destination: DictionaryDetailedView(), label: {
+                            CategoryButtonView(imageSet: self.$viewModel.imageSet, imageName: equipmentName.paintingName, catagoryName: equipmentName.categoryName)
+                        })
                     }
                     .foregroundColor(Color(red: 0.361, green: 0.361, blue: 0.361))
                 }
@@ -34,6 +36,7 @@ struct DictionaryMainView: View {
             .padding(.top, UIDevice.current.getSafeAreaTopValue)
             .background(Color(red: 254/255, green: 252/255, blue: 251/255))
             .ignoresSafeArea()
+            .navigationTitle("")
         }
         .onAppear {
             viewModel.viewAppeared()
@@ -61,7 +64,6 @@ struct CategoryButtonView: View {
     let imageName: String
     let catagoryName: EquipmentGroup
     var body: some View {
-        NavigationLink(destination: DictionaryDetailedView()) {
             VStack(spacing: 0) {
                 if let uiImage = UIImage(data: imageSet[self.imageName] ?? imageSet["none"]! ) {
                     Image(uiImage: uiImage)
@@ -76,7 +78,6 @@ struct CategoryButtonView: View {
                 Text(self.catagoryName.korean)
                     .font(.system(size: 13))
             }
-        }
     }
 }
 

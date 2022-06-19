@@ -52,6 +52,7 @@ struct EditorDetailView: View {
             }
             .ignoresSafeArea()
         }
+        .accentColor(Color(hex: "4F4F4F"))
     }
 }
 

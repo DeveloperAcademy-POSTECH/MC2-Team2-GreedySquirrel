@@ -8,38 +8,40 @@
 import SwiftUI
 
 private struct OffsetPreferenceKey: PreferenceKey {
-  static var defaultValue: CGFloat = .zero
-  static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) {}
+    static var defaultValue: CGFloat = .zero
+    static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) {}
 }
 
 struct DictionaryDetailedView: View {
-    @Environment(\.presentationMode) var mode: Binding<PresentationMode>
+    //    @Environment(\.presentationMode) var mode: Binding<PresentationMode>
     @State var selectedEquipmentNumber: Int = 0
     @State var scrollIndex: Int = 1
-    @ObservedObject var viewModel = DictionaryDetailedViewModel()
-
+    @StateObject var viewModel = DictionaryDetailedViewModel()
     var body: some View {
+        ZStack {
+            Rectangle()
+                 .fill(Color(hex: "FEFCFB")!)
+                 .edgesIgnoringSafeArea(.top)
             VStack(spacing: 0) {
-                Rectangle()
-                    .ignoresSafeArea()
-                    .frame(height: 0)
-                    .foregroundColor(Color(hex: "FEFCFB"))
-                HStack {
-                    Button(action: {
-                        self.mode.wrappedValue.dismiss()
-                        selectedEquipmentNumber = 0
-                    }, label: {
-                        Image(systemName: "chevron.left")
-                            .frame(width: 40, height: 40)
-                            .foregroundColor(Color.black)
-                    })
-                    .padding(.leading, 8)
-                    Spacer()
-                    Text(viewModel.dictionaryPreDetailCategory.dictionaryDetailCategory[selectedEquipmentNumber].name)
-                        .padding(.trailing, 179)
-                }
-                .padding(.bottom, 25)
-                .background(Color(hex: "FEFCFB"))
+                //                Rectangle()
+                //                    .ignoresSafeArea()
+                //                    .frame(height: 0)
+                //                    .foregroundColor(Color(hex: "FEFCFB"))
+                //                HStack {
+                //                    Button(action: {
+                //                        self.mode.wrappedValue.dismiss()
+                //                    }, label: {
+                //                        Image(systemName: "chevron.left")
+                //                            .frame(width: 40, height: 40)
+                //                            .foregroundColor(Color.black)
+                //                    })
+                //                    .padding(.leading, 8)
+                //                    Spacer()
+                //                    Text(viewModel.dictionaryPreDetailCategory.dictionaryDetailCategory[selectedEquipmentNumber].name)
+                //                        .padding(.trailing, 179)
+                //                }
+                //                .padding(.bottom, 25)
+                //                .background(Color(hex: "FEFCFB"))
                 ScrollView(.horizontal, showsIndicators: false) {
                     ScrollViewReader { proxy in
                         HStack(spacing: 0) {
@@ -56,25 +58,24 @@ struct DictionaryDetailedView: View {
                                         .padding(.vertical, self.selectedEquipmentNumber == index ? 4 : 0)
                                         .background(RoundedRectangle(cornerRadius: 17.5)
                                             .foregroundColor(self.selectedEquipmentNumber == index ? Color(#colorLiteral(red: 0.3830943704, green: 0.3830943704, blue: 0.3830943704, alpha: 1)) : Color(hex: "FEFCFB"))
-                                                     )
-                                    }
+                                        )
                                 }
-                                .onChange(of: scrollIndex, perform: { value in
-                                    withAnimation(.spring()) {
-                                        proxy.scrollTo(value, anchor: .center)
-                                    }
-                                })
                             }
+                            .onChange(of: scrollIndex, perform: { value in
+                                withAnimation(.spring()) {
+                                    proxy.scrollTo(value, anchor: .center)
+                                }
+                                selectedEquipmentNumber = value
+                            })
                         }
                     }
-                    .padding(.horizontal, 20)
-                    .padding(.bottom, 19)
-                    .background(Color(hex: "FEFCFB"))
-
+                }
+                .padding(.horizontal, 20)
+                .padding(.bottom, 19)
+                .background(Color(hex: "FEFCFB"))
                 Rectangle()
                     .frame(height: 1)
                     .foregroundColor(Color(hex: "E8E8E8"))
-
                 ScrollView {
                     ScrollViewReader { proxy in
                         ForEach(viewModel.dictionaryPreDetailCategory.dictionaryDetailCategory.indices, id: \.self) { preindex in
@@ -86,7 +87,7 @@ struct DictionaryDetailedView: View {
                                     .padding(.bottom, 14)
                                     .padding(.top, 41)
                                 ForEach(viewModel.dictionaryPreDetailCategory.dictionaryDetailCategory[preindex].equipmentList.indices, id: \.self) { index in
-                                    NavigationLink(destination: EditorMainView(), label: {
+                                    NavigationLink(destination: DictionaryContentView(jsonFileName: self.viewModel.dictionaryPreDetailCategory.dictionaryDetailCategory[preindex].equipmentList[index].paintingName), label: {
                                         EquipmentBox(imageSet: self.$viewModel.imageSet, imageName: self.viewModel.dictionaryPreDetailCategory.dictionaryDetailCategory[preindex].equipmentList[index].paintingName, equipmentName: self.viewModel.dictionaryPreDetailCategory.dictionaryDetailCategory[preindex].equipmentList[index].name)
                                     })
                                     .padding(.bottom, index != 5 ? 6 : 40)
@@ -104,12 +105,20 @@ struct DictionaryDetailedView: View {
                     }
                 }
             }
-                .navigationBarTitle("")
-                .navigationBarHidden(true)
-                .navigationBarBackButtonHidden(true)
-                .onAppear {
-                    viewModel.viewAppeared()
+        }
+        .toolbar {
+            ToolbarItem(placement: .principal) {
+                VStack {
+                    Text("장비 리스트")
+                        .font(.headline)
                 }
+            }
+        }
+        .navigationBarTitle(self.viewModel.dictionaryPreDetailCategory.dictionaryDetailCategory[selectedEquipmentNumber].name, displayMode: .inline)
+        .onAppear {
+            viewModel.viewAppeared()
+            // scrollIndex = 1
+        }
     }
 }
 
@@ -133,9 +142,9 @@ struct EquipmentBox: View {
             HStack(spacing: 0) {
                 if let uiImage = UIImage(data: imageSet[self.imageName] ?? imageSet["none"]!) {
                     Image(uiImage: uiImage)
-                    .resizable()
-                    .frame(width: 66, height: 66)
-                    .padding(.leading, 30)
+                        .resizable()
+                        .frame(width: 66, height: 66)
+                        .padding(.leading, 30)
                 }
                 Text(self.equipmentName)
                     .font(.system(.headline, design: .default))

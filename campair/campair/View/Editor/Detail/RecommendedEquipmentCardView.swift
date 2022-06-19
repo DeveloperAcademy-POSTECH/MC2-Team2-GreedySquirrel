@@ -45,6 +45,7 @@ struct RecommendedEquipmentCardView: View {
                     .foregroundColor(Color.red)
                     .padding(.trailing, 14)
             }
+            .navigationTitle("")
             .background(
                 RoundedRectangle(cornerRadius: 20)
                     .stroke(lineWidth: 1)

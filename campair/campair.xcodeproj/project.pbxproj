@@ -1490,7 +1490,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"campair/Application/Preview Content\"";
-				DEVELOPMENT_TEAM = J7ZP3WYXRW;
+				DEVELOPMENT_TEAM = 54QH6LCWDM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -1521,7 +1521,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"campair/Application/Preview Content\"";
-				DEVELOPMENT_TEAM = J7ZP3WYXRW;
+				DEVELOPMENT_TEAM = 54QH6LCWDM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
