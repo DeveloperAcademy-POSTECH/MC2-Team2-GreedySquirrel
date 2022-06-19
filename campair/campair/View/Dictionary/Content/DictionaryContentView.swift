@@ -32,11 +32,11 @@ struct DictionaryContentView: View {
             }
             Text(self.viewModel.dictionaryEquipmentContent.content)
                 .bodyDefaultDarkGray()
-            Rectangle()
-                .frame(height: 8)
-                .foregroundColor(Color(hex: "FEFCFB"))
-                .padding(.vertical, 40)
             if let prosArray = self.viewModel.dictionaryEquipmentContent.pros {
+                Rectangle()
+                    .frame(height: 8)
+                    .foregroundColor(Color(hex: "FEFCFB"))
+                    .padding(.vertical, 40)
                 Text("장점")
                     .fontWeight(Font.Weight.bold)
                     .padding(.bottom, 10)

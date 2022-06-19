@@ -50,12 +50,12 @@
             "lowerContent" : "작지만 확실한 행복을 경량 의자에서 느껴보세요. 경량 테이블과 함께라면 가벼운 식탁 혹은 담소가 오가는 거실이 될 수도 있어요."
         },
         {
-            "title" : "조명 용품",
+            "title" : "랜턴",
             "upperContent" : "자연 속에서의 어둠은 우리에게 조금 더 깊게 다가와요. 깜깜한 저녁을 대비해 조명 용품을 준비해보세요. 감성과 안전을 조명과 함께 챙겨보세요.",
             "recommendedEquipments" : [
                 {
-                    "name" : "조명 용품",
-                    "paintingImageName" : "조명_용품",
+                    "name" : "랜턴",
+                    "paintingImageName" : "랜턴",
                     "paintingURLString" : ""
                 }
             ],

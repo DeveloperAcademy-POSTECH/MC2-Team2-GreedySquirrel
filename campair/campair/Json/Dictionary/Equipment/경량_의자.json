@@ -2,8 +2,7 @@
     "name" : "경량 의자",
     "paintingName" : "폴딩_테이블",
     "paintingURLString" : "",
-    "content" : "sometext",
-    "pros" : ["some", "some2", "some3"],
-    "cons" : ["some", "some2", "some3"],
-    "installationGuide" : "some"
+    "content" : "경량 의자는 비교적 작은 사이즈로 간편하게 앉을 자리를 마련할 수 있어요. 등받이의 유무에 따라 부피 차이가 있어요. 가볍게, 어느 곳에서나 앉아있기에 좋아요.",
+    "pros" : ["조립하기 전에는 작은 사이즈라 이동과 보관에 용의해요.", "보통 1kg 내외로 비교적 가벼워요."],
+    "cons" : ["가볍게 앉아있기에는 좋지만, 장시간 사용하기에는 불편할 수 있어요."],
 }

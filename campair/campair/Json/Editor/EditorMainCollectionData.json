@@ -53,8 +53,8 @@
                     "paintingURLString" : ""
                 },
                 {
-                    "name" : "숯/연료/연료통",
-                    "paintingImageName" : "숯_연료_연료통",
+                    "name" : "숯/연료",
+                    "paintingImageName" : "숯_연료",
                     "paintingURLString" : ""
                 },
                 {
@@ -122,8 +122,8 @@
                     "paintingURLString" : ""
                 },
                 {
-                    "name" : "조명 용품",
-                    "paintingImageName" : "조명_용품",
+                    "name" : "랜턴",
+                    "paintingImageName" : "랜턴",
                     "paintingURLString" : ""
                 }
             ]
