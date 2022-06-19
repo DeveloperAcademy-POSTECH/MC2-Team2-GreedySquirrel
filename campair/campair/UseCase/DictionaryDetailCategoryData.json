@@ -1,21 +1,85 @@
-
 {
-    "name" : "텐트",
-    "equipmentList" : [
-        {
-            "name" : "그늘막 텐트",
-            "paintingName" : "폴대2",
-            "paintingURLString" : ""
-        },
-        {
-            "name" : "동글동글 텐트",
-            "paintingName" : "폴대2",
-            "paintingURLString" : ""
-        },
-        {
-            "name" : "창문 텐트",
-            "paintingName" : "폴대2",
-            "paintingURLString" : ""
-        }
-    ]
-}
+    "dictionaryDetailCategory" :
+         [
+             {
+                 "name" : "텐트",
+                 "equipmentList" : [
+                     {
+                         "name" : "그늘막 텐트",
+                         "paintingName" : "폴대",
+                         "paintingURLString" : ""
+                     },
+                     {
+                         "name" : "동글동글 텐트",
+                         "paintingName" : "폴대",
+                         "paintingURLString" : ""
+                     },
+                     {
+                         "name" : "창문 텐트",
+                         "paintingName" : "폴대",
+                         "paintingURLString" : ""
+                     }
+                 ]
+             },
+             {
+                 "name" : "타프",
+                 "equipmentList" : [
+                     {
+                         "name" : "그늘막 텐트",
+                         "paintingName" : "부품",
+                         "paintingURLString" : ""
+                     },
+                     {
+                         "name" : "동글동글 텐트",
+                         "paintingName" : "부품",
+                         "paintingURLString" : ""
+                     },
+                     {
+                         "name" : "창문 텐트",
+                         "paintingName" : "부품",
+                         "paintingURLString" : ""
+                     }
+                 ]
+             },
+             {
+                 "name" : "시트",
+                 "equipmentList" : [
+                     {
+                         "name" : "그늘막 텐트",
+                         "paintingName" : "매트",
+                         "paintingURLString" : ""
+                     },
+                     {
+                         "name" : "동글동글 텐트",
+                         "paintingName" : "매트",
+                         "paintingURLString" : ""
+                     },
+                     {
+                         "name" : "창문 텐트",
+                         "paintingName" : "매트",
+                         "paintingURLString" : ""
+                     }
+                 ]
+             },
+             {
+                 "name" : "해먹",
+                 "equipmentList" : [
+                     {
+                         "name" : "그늘막 텐트",
+                         "paintingName" : "해먹",
+                         "paintingURLString" : ""
+                     },
+                     {
+                         "name" : "동글동글 텐트",
+                         "paintingName" : "해먹",
+                         "paintingURLString" : ""
+                     },
+                     {
+                         "name" : "창문 텐트",
+                         "paintingName" : "해먹",
+                         "paintingURLString" : ""
+                     }
+                 ]
+             }
+         ]
+ }

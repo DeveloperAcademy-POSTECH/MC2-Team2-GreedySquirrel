@@ -12,7 +12,7 @@ struct RecommendedEquipmentCardView: View {
     @Binding var imageSet: [String: Data]
     var body: some View {
         NavigationLink {
-            DictionaryContentView(jsonFileName: equipment.paintingImageName)
+            DictionaryContentView(equipmentCategory: "HI", jsonFileName: equipment.paintingImageName)
         } label: {
             HStack(spacing: 0) {
                 if let uiImage = UIImage(data: imageSet[equipment.paintingImageName] ?? imageSet["none"]! ) {

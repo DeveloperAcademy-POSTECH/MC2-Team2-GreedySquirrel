@@ -10,21 +10,30 @@ import Foundation
 
 final class DictionaryDetailedViewModel: ObservableObject {
     private let dictionaryUseCase = DictionaryUseCase(repository: DictionaryRepository())
-    @Published var dictionaryDetailCategory: DictionaryDetailCategory?
-    @Published var imageSet: [String: Data] = [:]
+    @Published var dictionaryPreDetailCategory: DictionaryPreDetailCategory
+    @Published var imageSet: [String: Data] = ["none": Data()]
+    init(dictionaryPreDetailCategory: DictionaryPreDetailCategory = DictionaryPreDetailCategory()) {
+        self.dictionaryPreDetailCategory = dictionaryPreDetailCategory
+    }
     func viewAppeared() {
-        self.dictionaryUseCase.getDictionaryDetailCategory { [weak self] dictionaryDetailCategoryData in
+        self.dictionaryUseCase.getDictionaryDetailCategory { [weak self] dictionaryPreDetailCategoryData in
             guard let self = self else { return }
-            self.dictionaryDetailCategory = dictionaryDetailCategoryData
-            for categoryIndex in
-                    dictionaryDetailCategoryData.equipmentList.indices {
-                let dictionaryCategory = dictionaryDetailCategoryData.equipmentList[categoryIndex]
-                self.dictionaryUseCase.fetchImageData(fromURLString: dictionaryCategory.paintingURLString) { imageData in
-                    DispatchQueue.main.async {
-                        self.imageSet[dictionaryCategory.paintingName] = imageData
+            self.dictionaryPreDetailCategory = dictionaryPreDetailCategoryData
+            for preCategoryIndex in dictionaryPreDetailCategoryData.dictionaryDetailCategory.indices {
+                let dictionaryDetailCategory = dictionaryPreDetailCategoryData.dictionaryDetailCategory[preCategoryIndex]
+                for categoryIndex in
+                        dictionaryDetailCategory.equipmentList.indices {
+                    let dictionaryCategory = dictionaryDetailCategory.equipmentList[categoryIndex]
+                    self.dictionaryUseCase.fetchImageData(fromURLString: dictionaryCategory.paintingURLString) { imageData in
+                        DispatchQueue.main.async {
+                            self.imageSet[dictionaryCategory.paintingName] = imageData
+                        }
                     }
                 }
             }
+//            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3) {
+//                print(dictionaryPreDetailCategoryData)
+//            }
         }
     }
 }

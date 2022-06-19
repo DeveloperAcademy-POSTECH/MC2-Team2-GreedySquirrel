@@ -24,7 +24,7 @@ struct DictionaryUseCase {
         }
     }
 
-    func getDictionaryDetailCategory(completion: @escaping (DictionaryDetailCategory) -> Void) {
+    func getDictionaryDetailCategory(completion: @escaping (DictionaryPreDetailCategory) -> Void) {
            repository.fetchDictionaryCategory { result in
                switch result {
                case .success(let dictionaryCategory) : completion(dictionaryCategory)

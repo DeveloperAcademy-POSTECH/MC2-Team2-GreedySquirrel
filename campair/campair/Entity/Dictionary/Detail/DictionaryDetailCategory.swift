@@ -7,6 +7,13 @@
 
 import Foundation
 
+struct DictionaryPreDetailCategory: Codable {
+     var dictionaryDetailCategory: [DictionaryDetailCategory]
+     init(dictionaryDetailCategory: [DictionaryDetailCategory] = [DictionaryDetailCategory()]) {
+         self.dictionaryDetailCategory = dictionaryDetailCategory
+     }
+ }
+
 struct DictionaryDetailCategory: Codable {
     let name: String
     var equipmentList: [EquipmentList]

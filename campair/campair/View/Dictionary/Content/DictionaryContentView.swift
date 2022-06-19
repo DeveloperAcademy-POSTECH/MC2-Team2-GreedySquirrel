@@ -8,10 +8,36 @@
 import SwiftUI
 
 struct DictionaryContentView: View {
+    let equipmentCategory: String
     @ObservedObject var viewModel = DictionaryContentViewModel()
     @Environment(\.presentationMode) var mode: Binding<PresentationMode>
     var jsonFileName: String
     var body: some View {
+        VStack {
+            VStack(spacing: 0) {
+                Rectangle()
+                    .ignoresSafeArea()
+                    .frame(height: 0)
+                    .foregroundColor(Color(hex: "FEFCFB"))
+                HStack {
+                    Button(action: {
+                        self.mode.wrappedValue.dismiss()
+                    }, label: {
+                        Image(systemName: "chevron.left")
+                            .frame(width: 40, height: 40)
+                            .foregroundColor(Color.black)
+                    })
+                    .padding(.leading, 8)
+                    Spacer()
+                    Text(equipmentCategory)
+                        .padding(.trailing, 179)
+                }
+                .padding(.bottom, 10)
+                .background(Color(hex: "FEFCFB"))
+                Rectangle()
+                    .frame(height:1)
+                    .foregroundColor(Color(hex:"E8E8E8"))
+            }
         ScrollView {
         VStack(alignment: .leading, spacing: 0) {
             Text(self.viewModel.dictionaryEquipmentContent.name)
@@ -78,22 +104,15 @@ struct DictionaryContentView: View {
         .onAppear(perform: {
             self.viewModel.viewAppeared(fileName: jsonFileName)
         })
-        .navigationBarBackButtonHidden(true)
-        .navigationBarTitle("", displayMode: .inline)
-        .toolbar {
-            ToolbarItemGroup(placement: .navigationBarLeading) {
-                Button(action: {
-                    self.mode.wrappedValue.dismiss()
-                }, label: {
-                    Image(systemName: "chevron.left")
-                        .foregroundColor(Color(hex: "4F4F4F"))
-                })
-            }
         }
+        .navigationBarTitle("")
+        .navigationBarHidden(true)
+        .navigationBarBackButtonHidden(true)
     }
 }
+
 struct DictionaryContentView_Previews: PreviewProvider {
     static var previews: some View {
-        DictionaryContentView(jsonFileName: "경량_의자")
+        DictionaryContentView(equipmentCategory: "HI", jsonFileName: "경량_의자")
     }
 }
