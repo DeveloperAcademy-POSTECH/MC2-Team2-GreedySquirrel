@@ -27,6 +27,7 @@ struct DictionaryDetailedView: View {
                 HStack {
                     Button(action: {
                         self.mode.wrappedValue.dismiss()
+                        selectedEquipmentNumber = 0
                     }, label: {
                         Image(systemName: "chevron.left")
                             .frame(width: 40, height: 40)
@@ -46,6 +47,7 @@ struct DictionaryDetailedView: View {
                                 Button {
                                     selectedEquipmentNumber = index
                                     scrollIndex = index
+                                    print(selectedEquipmentNumber)
                                 } label: {
                                     Text(viewModel.dictionaryPreDetailCategory.dictionaryDetailCategory[index].name)
                                         .foregroundColor(self.selectedEquipmentNumber == index ? Color.white : Color(#colorLiteral(red: 0.6071556211, green: 0.603967011, blue: 0.6179282665, alpha: 1)))
@@ -107,7 +109,6 @@ struct DictionaryDetailedView: View {
                 .navigationBarBackButtonHidden(true)
                 .onAppear {
                     viewModel.viewAppeared()
-                    // scrollIndex = 1
                 }
     }
 }
