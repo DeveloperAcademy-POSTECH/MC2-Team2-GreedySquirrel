@@ -6,17 +6,32 @@
                  "equipmentList" : [
                      {
                          "name" : "그늘막 텐트",
-                         "paintingName" : "폴대",
+                         "paintingName" : "그늘막_텐트",
                          "paintingURLString" : ""
                      },
                      {
-                         "name" : "동글동글 텐트",
-                         "paintingName" : "폴대",
+                         "name" : "돔형 텐트",
+                         "paintingName" : "돔형_텐트",
                          "paintingURLString" : ""
                      },
                      {
-                         "name" : "창문 텐트",
-                         "paintingName" : "폴대",
+                         "name" : "거실형 텐트",
+                         "paintingName" : "거실형_텐트",
+                         "paintingURLString" : ""
+                     },
+                     {
+                         "name" : "루프탑 텐트",
+                         "paintingName" : "루프탑_텐트",
+                         "paintingURLString" : ""
+                     },
+                     {
+                         "name" : "티피 텐트",
+                         "paintingName" : "티피_텐트",
+                         "paintingURLString" : ""
+                     },
+                     {
+                         "name" : "터널형 텐트",
+                         "paintingName" : "터널형_텐트",
                          "paintingURLString" : ""
                      }
                  ]
@@ -25,18 +40,53 @@
                  "name" : "타프",
                  "equipmentList" : [
                      {
-                         "name" : "그늘막 텐트",
-                         "paintingName" : "부품",
+                         "name" : "핵사 타프",
+                         "paintingName" : "헥사_타프",
                          "paintingURLString" : ""
                      },
                      {
-                         "name" : "동글동글 텐트",
-                         "paintingName" : "부품",
+                         "name" : "렉타 타프",
+                         "paintingName" : "렉타_타프",
                          "paintingURLString" : ""
                      },
                      {
-                         "name" : "창문 텐트",
-                         "paintingName" : "부품",
+                         "name" : "윙 타프",
+                         "paintingName" : "윙_타프",
+                         "paintingURLString" : ""
+                     },
+                     {
+                         "name" : "실 타프",
+                         "paintingName" : "실_타프",
+                         "paintingURLString" : ""
+                     },
+                     {
+                         "name" : "타프스크린",
+                         "paintingName" : "타프스크린",
+                         "paintingURLString" : ""
+                     },
+                     {
+                         "name" : "파라솔",
+                         "paintingName" : "파라솔",
+                         "paintingURLString" : ""
+                     },
+                     {
+                         "name" : "캐노피 천막",
+                         "paintingName" : "캐노피_천막",
+                         "paintingURLString" : ""
+                     },
+                     {
+                         "name" : "베스티블",
+                         "paintingName" : "베스티블",
+                         "paintingURLString" : ""
+                     },
+                     {
+                         "name" : "차광막",
+                         "paintingName" : "차광막",
+                         "paintingURLString" : ""
+                     },
+                     {
+                         "name" : "어닝/사이드월",
+                         "paintingName" : "어닝_사이드월",
                          "paintingURLString" : ""
                      }
                  ]
@@ -45,18 +95,128 @@
                  "name" : "시트",
                  "equipmentList" : [
                      {
-                         "name" : "그늘막 텐트",
-                         "paintingName" : "매트",
+                         "name" : "그라운드시트",
+                         "paintingName" : "그라운드시트",
                          "paintingURLString" : ""
                      },
                      {
-                         "name" : "동글동글 텐트",
-                         "paintingName" : "매트",
+                         "name" : "이너매트",
+                         "paintingName" : "이너매트",
+                         "paintingURLString" : ""
+                     }
+                 ]
+             },
+             {
+                 "name" : "텐트/타프",
+                 "equipmentList" : [
+                     {
+                         "name" : "텐트팩",
+                         "paintingName" : "텐트팩",
                          "paintingURLString" : ""
                      },
                      {
-                         "name" : "창문 텐트",
-                         "paintingName" : "매트",
+                         "name" : "카라비너",
+                         "paintingName" : "카라비너",
+                         "paintingURLString" : ""
+                     },
+                     {
+                         "name" : "스토퍼",
+                         "paintingName" : "스토퍼",
+                         "paintingURLString" : ""
+                     },
+                     {
+                         "name" : "스트링가드",
+                         "paintingName" : "스트링가드",
+                         "paintingURLString" : ""
+                     },
+                     {
+                         "name" : "타프클립",
+                         "paintingName" : "타프클립",
+                         "paintingURLString" : ""
+                     }
+                 ]
+             },
+             {
+                 "name" : "폴대",
+                 "equipmentList" : [
+                     {
+                         "name" : "TPU창/패널",
+                         "paintingName" : "TPU창_패널",
+                         "paintingURLString" : ""
+                     },
+                     {
+                         "name" : "스트레치코드",
+                         "paintingName" : "스트레치_코드",
+                         "paintingURLString" : ""
+                     },
+                     {
+                         "name" : "폴대",
+                         "paintingName" : "폴대2",
+                         "paintingURLString" : ""
+                     }
+                 ]
+             },
+             {
+                 "name" : "테이블",
+                 "equipmentList" : [
+                     {
+                         "name" : "롤 테이블",
+                         "paintingName" : "롤_테이블",
+                         "paintingURLString" : ""
+                     },
+                     {
+                         "name" : "원액션 테이블",
+                         "paintingName" : "원액션_테이블",
+                         "paintingURLString" : ""
+                     },
+                     {
+                         "name" : "폴딩 테이블",
+                         "paintingName" : "폴딩_테이블",
+                         "paintingURLString" : ""
+                     },
+                     {
+                         "name" : "IGT 테이블",
+                         "paintingName" : "IGT_테이블",
+                         "paintingURLString" : ""
+                     },
+                     {
+                         "name" : "화로 테이블",
+                         "paintingName" : "화로_테이블",
+                         "paintingURLString" : ""
+                     },
+                     {
+                         "name" : "경량 테이블",
+                         "paintingName" : "경량_테이블",
+                         "paintingURLString" : ""
+                     },
+                     {
+                         "name" : "키친 테이블",
+                         "paintingName" : "키친_테이블",
+                         "paintingURLString" : ""
+                     },
+                     {
+                         "name" : "이지 박스",
+                         "paintingName" : "이지_박스",
+                         "paintingURLString" : ""
+                     }
+                 ]
+             },
+             {
+                 "name" : "캠핑체어",
+                 "equipmentList" : [
+                     {
+                         "name" : "경량 의자",
+                         "paintingName" : "경량_의자",
+                         "paintingURLString" : ""
+                     },
+                     {
+                         "name" : "릴렉스 체어",
+                         "paintingName" : "릴렉스_체어",
+                         "paintingURLString" : ""
+                     },
+                     {
+                         "name" : "폴딩 체어",
+                         "paintingName" : "폴딩_체어",
                          "paintingURLString" : ""
                      }
                  ]
@@ -65,18 +225,223 @@
                  "name" : "해먹",
                  "equipmentList" : [
                      {
-                         "name" : "그늘막 텐트",
-                         "paintingName" : "해먹",
+                         "name" : "마야 해먹",
+                         "paintingName" : "미야_해먹",
+                         "paintingURLString" : ""
+                     }
+                 ]
+             },
+             {
+                 "name" : "침낭",
+                 "equipmentList" : [
+                     {
+                         "name" : "직사각형 침낭",
+                         "paintingName" : "직사각형_침낭",
                          "paintingURLString" : ""
                      },
                      {
-                         "name" : "동글동글 텐트",
-                         "paintingName" : "해먹",
+                         "name" : "반미라형 침낭",
+                         "paintingName" : "반미라형_침낭",
                          "paintingURLString" : ""
                      },
                      {
-                         "name" : "창문 텐트",
-                         "paintingName" : "해먹",
+                         "name" : "미라형 침낭",
+                         "paintingName" : "미라형_침낭",
+                         "paintingURLString" : ""
+                     },
+                     {
+                         "name" : "야전 침대",
+                         "paintingName" : "야전_침대",
+                         "paintingURLString" : ""
+                     }
+                 ]
+             },
+             {
+                 "name" : "주방용품",
+                 "equipmentList" : [
+                     {
+                         "name" : "그릴/오븐",
+                         "paintingName" : "그릴_오븐",
+                         "paintingURLString" : ""
+                     },
+                     {
+                         "name" : "버너/스토브",
+                         "paintingName" : "버너_스토브",
+                         "paintingURLString" : ""
+                     },
+                     {
+                         "name" : "숯 연료",
+                         "paintingName" : "숯_연료",
+                         "paintingURLString" : ""
+                     },
+                     {
+                         "name" : "식기/용기",
+                         "paintingName" : "식기_용기",
+                         "paintingURLString" : ""
+                     },
+                     {
+                         "name" : "코펠/조리도구",
+                         "paintingName" : "코펠_조리도구",
+                         "paintingURLString" : ""
+                     },
+                     {
+                         "name" : "설거지통",
+                         "paintingName" : "설거지통",
+                         "paintingURLString" : ""
+                     },
+                     {
+                         "name" : "아이스박스",
+                         "paintingName" : "아이스박스",
+                         "paintingURLString" : ""
+                     }
+                 ]
+             },
+             {
+                 "name" : "매트",
+                 "equipmentList" : [
+                     {
+                         "name" : "자충 매트",
+                         "paintingName" : "자충_매트",
+                         "paintingURLString" : ""
+                     },
+                     {
+                         "name" : "에어매트",
+                         "paintingName" : "에어매트",
+                         "paintingURLString" : ""
+                     },
+                     {
+                         "name" : "돗자리",
+                         "paintingName" : "돗자리",
+                         "paintingURLString" : ""
+                     },
+                 ]
+             },
+             {
+                 "name" : "수납/정리",
+                 "equipmentList" : [
+                     {
+                         "name" : "캠핑용 수납/선반",
+                         "paintingName" : "캠핑용_수납_선반",
+                         "paintingURLString" : ""
+                     },
+                     {
+                         "name" : "캠핑용 건조대",
+                         "paintingName" : "캠핑용_건조대",
+                         "paintingURLString" : ""
+                     },
+                     {
+                         "name" : "캠핑 가방/케이스",
+                         "paintingName" : "캠핑_가방_케이스",
+                         "paintingURLString" : ""
+                     },
+                     {
+                         "name" : "캠핑카 루프백",
+                         "paintingName" : "캠핑카_루프백",
+                         "paintingURLString" : ""
+                     },
+                     {
+                         "name" : "캠핑 트레일러",
+                         "paintingName" : "캠핑_트레일러",
+                         "paintingURLString" : ""
+                     }
+                 ]
+             },
+             {
+                 "name" : "조명용품",
+                 "equipmentList" : [
+                     {
+                         "name" : "랜턴",
+                         "paintingName" : "랜턴",
+                         "paintingURLString" : ""
+                     },
+                     {
+                         "name" : "랜턴걸이/거치대",
+                         "paintingName" : "랜턴걸이_거치대",
+                         "paintingURLString" : ""
+                     }
+                 ]
+             },
+             {
+                 "name" : "캠핑공구",
+                 "equipmentList" : [
+                     {
+                         "name" : "멀티툴/캠핑공구",
+                         "paintingName" : "멀티툴_캠핑공구",
+                         "paintingURLString" : ""
+                     },
+                     {
+                         "name" : "캠핑 칼",
+                         "paintingName" : "캠핑_칼",
+                         "paintingURLString" : ""
+                     },
+                     {
+                         "name" : "전기연장선/릴선",
+                         "paintingName" : "전기연장선_릴선",
+                         "paintingURLString" : ""
+                     },
+                     {
+                         "name" : "캠핑 난방용품",
+                         "paintingName" : "캠핑_난방용품",
+                         "paintingURLString" : ""
+                     },
+                     {
+                         "name" : "담요",
+                         "paintingName" : "담요",
+                         "paintingURLString" : ""
+                     }
+                 ]
+             },
+             {
+                 "name" : "응급용품",
+                 "equipmentList" : [
+                     {
+                         "name" : "담요",
+                         "paintingName" : "담요",
+                         "paintingURLString" : ""
+                     },
+                     {
+                         "name" : "파이어스타터",
+                         "paintingName" : "파이어스타터",
+                         "paintingURLString" : ""
+                     },
+                     {
+                         "name" : "조난신호용품",
+                         "paintingName" : "조난신호용품",
+                         "paintingURLString" : ""
+                     },
+                     {
+                         "name" : "구급상자키트",
+                         "paintingName" : "구급상자키트",
+                         "paintingURLString" : ""
+                     },
+                     {
+                         "name" : "서바이벌키트",
+                         "paintingName" : "서바이벌키트",
+                         "paintingURLString" : ""
+                     }
+                 ]
+             },
+             {
+                 "name" : "샤워용품",
+                 "equipmentList" : [
+                     {
+                         "name" : "샤워부스/샤워텐트",
+                         "paintingName" : "샤워부스_샤워텐트",
+                         "paintingURLString" : ""
+                     },
+                     {
+                         "name" : "샤워기",
+                         "paintingName" : "샤워기",
+                         "paintingURLString" : ""
+                     },
+                     {
+                         "name" : "세면기",
+                         "paintingName" : "세면기",
+                         "paintingURLString" : ""
+                     },
+                     {
+                         "name" : "간이 화장실",
+                         "paintingName" : "간이화장실",
                          "paintingURLString" : ""
                      }
                  ]
