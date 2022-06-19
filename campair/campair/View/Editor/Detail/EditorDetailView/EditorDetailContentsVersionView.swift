@@ -22,8 +22,8 @@ struct EditorDetailContentsVersionView: View {
                         let lastIndexOfEquipmentContents = equipmentContents.count - 1
                         if index != lastIndexOfEquipmentContents {
                             Rectangle()
-                                .frame(height: 8)
-                                .foregroundColor(Color(hex: "FEFCFB"))
+                                .frame(height: 20)
+                                .foregroundColor(Color(hex: "FAF7F6"))
                         }
                     }
                 }

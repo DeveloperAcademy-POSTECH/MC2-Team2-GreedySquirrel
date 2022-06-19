@@ -34,13 +34,19 @@ struct EditorDetailView: View {
                 Button {
                     showModal.toggle()
                 } label: {
-                    let topColor = Color(hex: viewModel.editorDetailContent.openingSection.cardPaintingTitleColor)
-                    let bottomColor = Color(hex: viewModel.editorDetailContent.openingSection.titleColor)
-                    Image(systemName: "xmark.circle.fill")
-                        .font(.title)
-                        .foregroundColor( scrollOffset > -380.0 ? topColor : bottomColor)
-                        .animation(.default, value: scrollOffset)
-                        .padding(20)
+                    let topColor = Color.white
+                    let bottomColor = Color(hex: "A5A5A5")
+                    ZStack {
+                        Rectangle()
+                            .foregroundColor(scrollOffset > -380.0 ? bottomColor : topColor)
+                            .frame(width: 20, height: 20)
+                            .padding(.trailing, 20)
+                        Image(systemName: "xmark.circle.fill")
+                            .font(.title)
+                            .foregroundColor( scrollOffset > -380.0 ? topColor : bottomColor)
+                            .animation(.default, value: scrollOffset)
+                            .padding(.trailing, 20)
+                    }
                 }
                 .padding(.top, UIDevice.current.getSafeAreaTopValue)
             }

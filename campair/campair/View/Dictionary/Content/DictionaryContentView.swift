@@ -19,6 +19,7 @@ struct DictionaryContentView: View {
                 .font(.system(.title))
                 .padding(.top, 20)
                 .foregroundColor(Color(hex: "4F4F4F"))
+                .padding(.horizontal, 20)
             HStack {
                 Spacer()
                 if let uiImage = UIImage(data: self.viewModel.imageSet[self.viewModel.dictionaryEquipmentContent.name] ?? self.viewModel.imageSet["none"]! ) {
@@ -32,18 +33,21 @@ struct DictionaryContentView: View {
             }
             Text(self.viewModel.dictionaryEquipmentContent.content)
                 .bodyDefaultDarkGray()
+                .padding(.horizontal, 20)
             if let prosArray = self.viewModel.dictionaryEquipmentContent.pros {
                 Rectangle()
-                    .frame(height: 8)
-                    .foregroundColor(Color(hex: "FEFCFB"))
+                    .frame(height: 20)
+                    .foregroundColor(Color(hex: "FAF7F6"))
                     .padding(.vertical, 40)
                 Text("장점")
                     .fontWeight(Font.Weight.bold)
                     .padding(.bottom, 10)
+                    .padding(.horizontal, 20)
                     .bodyBold000000Opacity60()
                 let pros = prosArray.reduce("") {"\($0)\($1)\n"}
                 Text(pros)
                     .bodyDefaultDarkGray()
+                    .padding(.horizontal, 20)
             }
             if let consArray = self.viewModel.dictionaryEquipmentContent.cons {
                 Text("단점")
@@ -51,9 +55,11 @@ struct DictionaryContentView: View {
                     .padding(.bottom, 10)
                     .bodyBold000000Opacity60()
                     .padding(.top, 20)
+                    .padding(.horizontal, 20)
                 let cons = consArray.reduce("") {"\($0)\($1)\n"}
                 Text(cons)
                     .bodyDefaultDarkGray()
+                    .padding(.horizontal, 20)
             }
             if let installationGuide = self.viewModel.dictionaryEquipmentContent.installationGuide {
                 Text("설치방법")
@@ -61,12 +67,13 @@ struct DictionaryContentView: View {
                     .padding(.bottom, 10)
                     .bodyBold000000Opacity60()
                     .padding(.top, 20)
+                    .padding(.horizontal, 20)
                 Text(installationGuide)
                     .bodyDefaultDarkGray()
+                    .padding(.horizontal, 20)
             }
         }
         .padding(.bottom, 50)
-        .padding(.horizontal, 20)
         }
         .onAppear(perform: {
             self.viewModel.viewAppeared(fileName: jsonFileName)

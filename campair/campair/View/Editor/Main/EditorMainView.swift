@@ -22,7 +22,8 @@ struct EditorMainView: View {
                             .font(.largeTitle)
                             .fontWeight(.bold)
                     }
-                    .padding(.top, 45)
+                    .foregroundColor(Color(hex: "4F4F4F"))
+                    .padding(.top, 30)
                     .padding(.leading, 20)
                     VStack(spacing: 50) {
                         ForEach(self.viewModel.editorMainCollection.editorMainContents.indices, id: \.self) { contentsIndex in

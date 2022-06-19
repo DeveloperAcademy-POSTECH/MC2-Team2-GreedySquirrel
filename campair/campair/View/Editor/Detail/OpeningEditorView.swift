@@ -22,9 +22,10 @@ struct OpeningEditorView: View {
                         )
                         .padding(.bottom, 6)
                     Text("\(self.openingSection.cardPaintingTitle)")
-                        .font(.system(.title2))
+                        .font(.system(.title))
                         .fontWeight(.bold)
                         .foregroundColor(Color(hex: self.openingSection.cardPaintingTitleColor))
+                        .padding(.bottom, 20)
                     if let uiImage = UIImage(data: imageSet[openingSection.cardPaintingImageName] ?? imageSet["none"]! ) {
                         Image(uiImage: uiImage)
                             .resizable()
@@ -35,7 +36,7 @@ struct OpeningEditorView: View {
                     }
                 }
                 .padding(.horizontal, 20)
-                .padding(.bottom, 20)
+                .padding(.bottom, 60)
                 .padding(.top, 34 + UIDevice.current.getSafeAreaTopValue)
             }
             .background(Color(hex: self.openingSection.cardPaintingBackgroundColor))

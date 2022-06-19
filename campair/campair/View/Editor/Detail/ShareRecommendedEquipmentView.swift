@@ -36,7 +36,7 @@ struct ShareRecommendedEquipmentView: View {
         }
         .frame(maxWidth: .infinity)
         .padding(.horizontal, 25)
-        .background(Color(hex: "FEFCFB"))
+        .background(Color(hex: "FAF7F6"))
         .padding(.vertical, 40)
     }
 }

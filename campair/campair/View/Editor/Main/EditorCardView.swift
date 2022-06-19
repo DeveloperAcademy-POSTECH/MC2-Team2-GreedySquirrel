@@ -28,11 +28,13 @@ struct EditorCardView: View {
                 }
                 .padding(.top, 34)
                 .padding(.leading, 20)
+                .padding(.bottom, 10)
                 if let uiImage = UIImage(data: cardPaintingImage) {
                     Image(uiImage: uiImage)
                         .resizable()
                         .scaledToFit()
-                        .padding(20)
+                        .padding(.horizontal, 20)
+                        .padding(.bottom, 20)
                 } else {
                     ProgressView()
                         .frame(width: 350, height: 300)
