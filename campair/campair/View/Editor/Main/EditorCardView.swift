@@ -22,7 +22,7 @@ struct EditorCardView: View {
                         .font(.subheadline)
                         .fontWeight(.semibold)
                     Text(editorMainContent.cardPaintingTitle)
-                        .foregroundColor(.white)
+                        .foregroundColor(Color(hex: editorMainContent.cardPaintingTitleColor))
                         .font(.title)
                         .fontWeight(.bold)
                 }
