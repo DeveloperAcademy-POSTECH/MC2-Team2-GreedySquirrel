@@ -48,6 +48,7 @@ struct EditorMainView: View {
                 .padding(.bottom, 50)
             }
             .navigationBarHidden(true)
+            .navigationTitle("")
             .onAppear(perform: {
                 viewModel.viewAppeared()
             })

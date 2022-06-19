@@ -72,6 +72,7 @@ struct DictionaryDetailedView: View {
                 }
                 .padding(.horizontal, 20)
                 .padding(.bottom, 19)
+                .padding(.top, 30)
                 .background(Color(hex: "FEFCFB"))
                 Rectangle()
                     .frame(height: 1)
