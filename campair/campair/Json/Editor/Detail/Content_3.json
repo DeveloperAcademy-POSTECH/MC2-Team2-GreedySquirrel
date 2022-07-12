@@ -22,8 +22,7 @@
                     "paintingImageName" : "터널형_텐트",
                     "paintingURLString" : ""
                 }
-            ],
-            "lowerContent" : "날씨, 계절, 인원수를 고려해서 텐트를 선택해보세요. 가볍고 설치가 쉬운 팝업 텐트로 시작해봐도 좋겠어요."
+            ]
         },
         {
             "title" : "이너매트",
@@ -34,8 +33,7 @@
                     "paintingImageName" : "이너매트",
                     "paintingURLString" : ""
                 }
-            ],
-            "lowerContent" : "매트는 텐트뿐만 아니라 차에서도 활용할 수 있어요. 텐트의 바닥 사이즈를 고려하는게 중요해요. 겨울에는 핫팩과 담욜 보온력을 높여보세요."
+            ]
         },
         {
             "title" : "미라형 침낭",
@@ -46,8 +44,7 @@
                     "paintingImageName" : "미라형_침낭",
                     "paintingURLString" : ""
                 }
-            ],
-            "lowerContent" : "침낭은 가볍고 보온력이 높은 소재를 선택하는 것이 중요해요. 침낭의 길이는 키보다 30cm 정도 길어야 편해요. 계절에 따라 다양한 침낭을 살펴보세요."
+            ]
         },
         {
             "title" : "폴딩 테이블",
@@ -58,8 +55,7 @@
                     "paintingImageName" : "폴딩_테이블",
                     "paintingURLString" : ""
                 }
-            ],
-            "lowerContent" : "혼자 또 같이 사용할 테이블이라면 인원수와 높이, 부피를 고려해보세요. 의자와 함께라면 식탁이 되기도 하고, 대화의 장이 되기도 해요."
+            ]
         },
         {
             "title" : "릴렉스 체어",
@@ -70,8 +66,7 @@
                     "paintingImageName" : "릴렉스_체어",
                     "paintingURLString" : ""
                 }
-            ],
-            "lowerContent" : "몸을 감싸는 만큼 부피가 큰 편이에요. 부피가 중요하다면 경량 의자를 고려해보세요."
+            ]
         },
         {
             "title" : "이런 장비도 있으면 좋아요.",

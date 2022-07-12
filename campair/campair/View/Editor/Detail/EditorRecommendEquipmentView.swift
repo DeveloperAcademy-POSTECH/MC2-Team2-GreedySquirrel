@@ -30,16 +30,7 @@ struct EditorRecommendEquipmentView: View {
                         ForEach(recommendedEquipments.indices, id: \.self) { index in
                             RecommendedEquipmentCardView(equipment: recommendedEquipments[index], imageSet: $imageSet)
                                 .padding(.top, index > 0 ? 6 : 0)
-                        }
-                        if let lowerContent = self.equipmentContent.lowerContent {
-                            Text("에디터 팁")
-                                .font(.system(.headline, design: .default))
-                                .padding(.top, 20)
-                                .padding(.bottom, 10)
-                                .foregroundColor(Color.customDarkGray)
-                            Text("\(lowerContent)")
-                                .bodyDefaultDarkGray()
-                                .padding(.bottom, 40)
+                                .padding(.bottom, index == recommendedEquipments.count-1 ? 30 : 0)
                         }
                     }
                 }
@@ -56,8 +47,7 @@ struct EditorRecommendEquipmentView_Previews: PreviewProvider {
                                             upperContent: "산에서도 바다에서도 의자만 있다면 그곳이 여러분의 차크닉 장소예요. 드넓은 초원과 끝없이 이어지는 바다를 바라보는 것에서 차크닉의 힐링이 시작돼요. 앉아서 즐기는 모든 것들을 경량 의자와 함께하세요.",
                                             recommendedEquipments: [
                                                 ContentEquipment()
-                                            ],
-                                            lowerContent: "평범한 자동차 여행에서 작지만 확실한 행복을 경량 의자에서 느낄 수 있어요. 혼자 또 같이 소소한 힐링을 느껴보세요."
+                                            ]
                                         ), imageSet: .constant(["none": Data()])
         )
     }

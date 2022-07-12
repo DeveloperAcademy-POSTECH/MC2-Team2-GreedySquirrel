@@ -11,11 +11,9 @@ struct EquipmentContent: Codable {
     let title: String?
     let upperContent: String?
     var recommendedEquipments: [ContentEquipment]
-    let lowerContent: String?
-    init(title: String? = nil, upperContent: String? = nil, recommendedEquipments: [ContentEquipment] = [], lowerContent: String? = nil) {
+    init(title: String? = nil, upperContent: String? = nil, recommendedEquipments: [ContentEquipment] = []) {
         self.title = title
         self.upperContent = upperContent
         self.recommendedEquipments = recommendedEquipments
-        self.lowerContent = lowerContent
     }
 }

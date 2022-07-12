@@ -60,8 +60,7 @@ struct EditorDetailListVersionView_Previews: PreviewProvider {
                                                                                 ContentEquipment(),
                                                                                 ContentEquipment(),
                                                                                 ContentEquipment()
-                                                                            ],
-                                                                            lowerContent: nil
+                                                                            ]
                                                                         )
                                                                     ]
                                                                 )
