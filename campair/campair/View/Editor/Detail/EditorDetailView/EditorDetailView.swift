@@ -19,17 +19,24 @@ struct EditorDetailView: View {
     var body: some View {
         NavigationView {
             ZStack(alignment: .topTrailing) {
-                ScrollViewOffset(color: viewModel.editorDetailContent.openingSection.cardPaintingBackgroundColor) {
+                let backGroundColorOfPaintingString = viewModel.editorDetailContent.openingSection.cardPaintingBackgroundColor
+                Color(hex: backGroundColorOfPaintingString)
+                ScrollViewOffset(color: backGroundColorOfPaintingString) {
                     switch self.viewModel.editorDetailContent.version {
                     case .contents :
                             EditorDetailContentsVersionView(viewModel: self.viewModel, fileName: self.filename)
                                 .navigationBarHidden(true)
+                            .background(Color.white)
                     case .list :
                             EditorDetailListVersionView(viewModel: self.viewModel, fileName: self.filename)
                                 .navigationBarHidden(true)
+                            .background(Color.white)
                     }
                 } onOffsetChange: {
                     scrollOffset = $0
+                    if $0 > 100 {
+                        showModal.toggle()
+                    }
                 }
                 Button {
                     showModal.toggle()
@@ -52,6 +59,7 @@ struct EditorDetailView: View {
             }
             .ignoresSafeArea()
         }
+        .animation(Animation.easeIn(duration: 1), value: showModal)
         .accentColor(Color(hex: "4F4F4F"))
     }
 }

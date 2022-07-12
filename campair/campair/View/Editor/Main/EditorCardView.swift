@@ -50,10 +50,9 @@ struct EditorCardView: View {
         }
     }
 }
-//
-// struct EditorCardView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        EditorCardView()
-//            .previewDevice("iPod touch (7th generation)")
-//    }
-// }
+
+ struct EditorCardView_Previews: PreviewProvider {
+    static var previews: some View {
+        EditorCardView(editorMainContent: .constant(EditorMainContent()), cardPaintingImage: Data())
+    }
+ }

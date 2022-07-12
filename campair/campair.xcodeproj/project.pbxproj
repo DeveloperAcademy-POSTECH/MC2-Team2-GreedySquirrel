@@ -10,7 +10,6 @@
 		40610BD9285C5E3600CC7903 /* DictionaryDetailCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40610BD8285C5E3600CC7903 /* DictionaryDetailCategory.swift */; };
 		40610BDB285C5E4200CC7903 /* DictionaryEquipmentContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40610BDA285C5E4200CC7903 /* DictionaryEquipmentContent.swift */; };
 		40610BDE285C5F3500CC7903 /* DictionaryMainCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40610BDD285C5F3500CC7903 /* DictionaryMainCollection.swift */; };
-		823A03E07B3007B9DB63E4CA /* Pods_campair.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEE262B177D80904B01C5D51 /* Pods_campair.framework */; };
 		911531CF28587B7000961E08 /* EditorEquipListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911531CE28587B7000961E08 /* EditorEquipListView.swift */; };
 		911841AF285C5818004E7BB3 /* DictionaryContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911841AE285C5818004E7BB3 /* DictionaryContentView.swift */; };
 		911841B3285C586C004E7BB3 /* EditorDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911841B2285C586C004E7BB3 /* EditorDetailViewModel.swift */; };
@@ -454,7 +453,6 @@
 		CC9D118A28573366000FEC81 /* EditorMainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditorMainViewModel.swift; sourceTree = "<group>"; };
 		CC9D118C2857336F000FEC81 /* EditorUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditorUseCase.swift; sourceTree = "<group>"; };
 		CC9D118E2857337A000FEC81 /* EditorRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditorRepository.swift; sourceTree = "<group>"; };
-		EEE262B177D80904B01C5D51 /* Pods_campair.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_campair.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F62A6D1B2859B9BC00755AF3 /* DictionaryDetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryDetailedView.swift; sourceTree = "<group>"; };
 		F62A6D1D2859BC4400755AF3 /* DictionaryMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryMainView.swift; sourceTree = "<group>"; };
 		F6AC5584285DD0B3008CA2E4 /* DictionaryDetailCategoryData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = DictionaryDetailCategoryData.json; path = campair/UseCase/DictionaryDetailCategoryData.json; sourceTree = SOURCE_ROOT; };
@@ -466,7 +464,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				823A03E07B3007B9DB63E4CA /* Pods_campair.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,7 +473,6 @@
 		0F68B6219A352C19692AE98D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				EEE262B177D80904B01C5D51 /* Pods_campair.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
