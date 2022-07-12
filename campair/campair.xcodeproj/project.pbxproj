@@ -131,6 +131,7 @@
 		CC215E34285D922F00B5DBDA /* 테이블.png in Resources */ = {isa = PBXBuildFile; fileRef = CC215E24285D922F00B5DBDA /* 테이블.png */; };
 		CC215E3B285DAD5C00B5DBDA /* Content_2.json in Resources */ = {isa = PBXBuildFile; fileRef = CC215E3A285DAD5C00B5DBDA /* Content_2.json */; };
 		CC215E3D285DB6E900B5DBDA /* DictionaryMainCollectionData.json in Resources */ = {isa = PBXBuildFile; fileRef = CC215E3C285DB6E900B5DBDA /* DictionaryMainCollectionData.json */; };
+		CC282029287D731E00587334 /* InterestEquipmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC282028287D731E00587334 /* InterestEquipmentView.swift */; };
 		CC396453285B338D005DC3F8 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC396452285B338D005DC3F8 /* ViewExtension.swift */; };
 		CC434EAA2859C80600EB487F /* ShareRecommendedEquipmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC434EA92859C80600EB487F /* ShareRecommendedEquipmentView.swift */; };
 		CC434EAC2859C82300EB487F /* RecommendedEquipmentCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC434EAB2859C82300EB487F /* RecommendedEquipmentCardView.swift */; };
@@ -359,6 +360,7 @@
 		CC215E24285D922F00B5DBDA /* 테이블.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "테이블.png"; sourceTree = "<group>"; };
 		CC215E3A285DAD5C00B5DBDA /* Content_2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Content_2.json; sourceTree = "<group>"; };
 		CC215E3C285DB6E900B5DBDA /* DictionaryMainCollectionData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = DictionaryMainCollectionData.json; path = campair/Json/Editor/Detail/DictionaryMainCollectionData.json; sourceTree = SOURCE_ROOT; };
+		CC282028287D731E00587334 /* InterestEquipmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestEquipmentView.swift; sourceTree = "<group>"; };
 		CC396452285B338D005DC3F8 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 		CC434EA92859C80600EB487F /* ShareRecommendedEquipmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareRecommendedEquipmentView.swift; sourceTree = "<group>"; };
 		CC434EAB2859C82300EB487F /* RecommendedEquipmentCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedEquipmentCardView.swift; sourceTree = "<group>"; };
@@ -899,6 +901,7 @@
 				9127D63A285DB69300C2B369 /* TabbarView.swift */,
 				9194800528575D91004F4BF5 /* Editor */,
 				F62A6D1A2859B99D00755AF3 /* Dictionary */,
+				CC282027287D72EC00587334 /* InterestEquipment */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -957,6 +960,14 @@
 				9127D63C285DE36300C2B369 /* Content_4.json */,
 			);
 			path = Detail;
+			sourceTree = "<group>";
+		};
+		CC282027287D72EC00587334 /* InterestEquipment */ = {
+			isa = PBXGroup;
+			children = (
+				CC282028287D731E00587334 /* InterestEquipmentView.swift */,
+			);
+			path = InterestEquipment;
 			sourceTree = "<group>";
 		};
 		CC434EA72859BB5C00EB487F /* Main */ = {
@@ -1326,6 +1337,7 @@
 				911841B9285C58D0004E7BB3 /* DictionaryMainViewModel.swift in Sources */,
 				911841B3285C586C004E7BB3 /* EditorDetailViewModel.swift in Sources */,
 				CC434EB02859CC2A00EB487F /* OpeningEditorView.swift in Sources */,
+				CC282029287D731E00587334 /* InterestEquipmentView.swift in Sources */,
 				91915AB7285AC55500003C7F /* ContentEquipment.swift in Sources */,
 				911841AF285C5818004E7BB3 /* DictionaryContentView.swift in Sources */,
 				9194800728575DAE004F4BF5 /* EditorMainView.swift in Sources */,

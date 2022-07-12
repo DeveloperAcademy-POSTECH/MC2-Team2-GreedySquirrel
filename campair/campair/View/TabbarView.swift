@@ -22,6 +22,12 @@ struct TabbarView: View {
                     Image(uiImage: dictionaryIcon!)
                     Text("장비사전")
                 }
+            InterestEquipmentView()
+                .tabItem {
+                    // TODO: Temp Image
+                    Image(systemName: "heart.fill")
+                    Text("관심장비")
+                }
         }
         .accentColor(Color(hex: "4F4F4F"))
     }
