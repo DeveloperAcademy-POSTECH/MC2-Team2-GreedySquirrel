@@ -10,6 +10,11 @@ import SwiftUI
 struct RecommendedEquipmentCardView: View {
     let equipment: ContentEquipment
     @Binding var imageSet: [String: Data]
+    @EnvironmentObject var viewModel: InterestEquipmentViewModel
+    init(equipment: ContentEquipment, imageSet: Binding<[String: Data]>) {
+        self.equipment = equipment
+        self._imageSet = imageSet
+    }
     var body: some View {
         NavigationLink {
             DictionaryContentView(jsonFileName: equipment.paintingImageName)
@@ -37,13 +42,14 @@ struct RecommendedEquipmentCardView: View {
                         .padding(.bottom, 22)
                 }
                 Spacer()
-                Image("buttonArrow")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 34, height: 34)
-                    .foregroundColor(Color(hex: "D1D1D6"))
-                    .foregroundColor(Color.red)
-                    .padding(.trailing, 14)
+                Button {
+                    self.heartButtonClicked()
+                } label: {
+                    Image(systemName: viewModel.isHearted(equipmentName: equipment.name) ? "heart.fill" : "heart")
+                        .font(.title3)
+                        .foregroundColor(Color.customDarkGray)
+                        .padding(.trailing, 14)
+                }
             }
             .navigationTitle("")
             .background(
@@ -51,6 +57,14 @@ struct RecommendedEquipmentCardView: View {
                     .stroke(lineWidth: 1)
                     .foregroundColor(Color.customLightGray)
             )
+        }
+    }
+    func heartButtonClicked() {
+        let isHearted = viewModel.isHearted(equipmentName: equipment.name)
+        if isHearted {
+            viewModel.removeEquipment(equipmentName: equipment.name)
+        } else {
+            viewModel.addEquipment(equipmentName: equipment.name, equipmentPaintingImageName: equipment.paintingImageName)
         }
     }
 }

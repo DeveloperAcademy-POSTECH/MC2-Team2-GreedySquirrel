@@ -31,9 +31,6 @@ final class DictionaryDetailedViewModel: ObservableObject {
                     }
                 }
             }
-//            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3) {
-//                print(dictionaryPreDetailCategoryData)
-//            }
         }
     }
 }

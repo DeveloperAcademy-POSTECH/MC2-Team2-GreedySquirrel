@@ -34,10 +34,9 @@ struct EditorEquipListView: View {
     }
 }
 
-// struct EditorEquipListView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        EditorEquipListView()
-//        EditorEquipListView()
-//            .previewDevice("iPod touch (7th generation)")
-//    }
-// }
+ struct EditorEquipListView_Previews: PreviewProvider {
+    static var previews: some View {
+        EditorEquipListView(name: "", paintingImage: Data(), cardPaintingBackgroundColor: "ffffff")
+            .previewDevice("iPod touch (7th generation)")
+    }
+ }
