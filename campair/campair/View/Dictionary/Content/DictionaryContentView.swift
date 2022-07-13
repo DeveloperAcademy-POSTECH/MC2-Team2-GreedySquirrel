@@ -101,6 +101,7 @@ struct DictionaryContentView: View {
         .padding(.bottom, 50)
         }
         .onAppear(perform: {
+            print(jsonFileName)
             self.viewModel.viewAppeared(fileName: jsonFileName)
         })
         }

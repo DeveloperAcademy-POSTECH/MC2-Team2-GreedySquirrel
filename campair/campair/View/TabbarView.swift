@@ -29,6 +29,7 @@ struct TabbarView: View {
                     Text("관심장비")
                 }
         }
+        .environmentObject(InterestEquipmentViewModel())
         .accentColor(Color(hex: "4F4F4F"))
     }
 }
