@@ -134,8 +134,6 @@ struct DictionaryDetailedView: View {
         .accentColor(Color(hex: "4F4F4F"))
 //        .onAppear {
 //            DictionaryDetailedView.onoff = true
-//            viewModel.viewAppeared()
-//            // selectedEquipmentNumber = 1
 //        }
         .navigationBarTitle(self.viewModel.dictionaryPreDetailCategory.dictionaryDetailCategory[selectedEquipmentNumber].name, displayMode: .inline)
     }

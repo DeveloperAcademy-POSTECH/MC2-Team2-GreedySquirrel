@@ -16,32 +16,29 @@ struct DictionaryMainView: View {
         GridItem(.flexible(), spacing: 12, alignment: nil)
     ]
     var body: some View {
-//        NavigationView {
-            VStack(spacing: 0) {
-                contentMainTitleView
-                    .padding(.top, 20.0)
-                LazyVGrid(columns: self.columns, spacing: 23) {
-                    ForEach(self.viewModel.dictionaryMainCollection.dictionaryMainCategory.indices, id: \.self) { index in
-                        let equipmentName = self.viewModel.dictionaryMainCollection.dictionaryMainCategory[index]
-                        NavigationLink(destination: DictionaryDetailedView(selectedEquipmentNumber: index), label: {
-                            CategoryButtonView(imageSet: self.$viewModel.imageSet, imageName: equipmentName.paintingName, catagoryName: equipmentName.categoryName)
-                        })
-    //                    .accentColor(Color(hex: "4F4F4F"))
-                    }
-                    .foregroundColor(Color(red: 0.361, green: 0.361, blue: 0.361))
+        VStack(spacing: 0) {
+            contentMainTitleView
+                .padding(.top, 20.0)
+            LazyVGrid(columns: self.columns, spacing: 23) {
+                ForEach(self.viewModel.dictionaryMainCollection.dictionaryMainCategory.indices, id: \.self) { index in
+                    let equipmentName = self.viewModel.dictionaryMainCollection.dictionaryMainCategory[index]
+                    NavigationLink(destination: DictionaryDetailedView(selectedEquipmentNumber: index), label: {
+                        CategoryButtonView(imageSet: self.$viewModel.imageSet, imageName: equipmentName.paintingName, catagoryName: equipmentName.categoryName)
+                    })
                 }
-                .padding(.top, 30.0)
-                .padding(.horizontal, 40.0)
-                Spacer()
+                .foregroundColor(Color(red: 0.361, green: 0.361, blue: 0.361))
             }
-            .padding(.top, UIDevice.current.getSafeAreaTopValue)
-            .background(Color(red: 254/255, green: 252/255, blue: 251/255))
-            .ignoresSafeArea()
-            .navigationTitle("")
-            .onAppear {
-                viewModel.viewAppeared()
-            }
-//        }
+            .padding(.top, 30.0)
+            .padding(.horizontal, 40.0)
+            Spacer()
+        }
+        .padding(.top, UIDevice.current.getSafeAreaTopValue)
+        .background(Color(red: 254/255, green: 252/255, blue: 251/255))
+        .ignoresSafeArea()
+        .navigationTitle("")
+        .onAppear {
+            viewModel.viewAppeared()
+        }
     }
     var contentMainTitleView : some View {
         HStack {
