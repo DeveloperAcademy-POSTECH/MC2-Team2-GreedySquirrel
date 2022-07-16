@@ -16,16 +16,17 @@ struct DictionaryMainView: View {
         GridItem(.flexible(), spacing: 12, alignment: nil)
     ]
     var body: some View {
-        NavigationView {
+//        NavigationView {
             VStack(spacing: 0) {
                 contentMainTitleView
                     .padding(.top, 20.0)
                 LazyVGrid(columns: self.columns, spacing: 23) {
                     ForEach(self.viewModel.dictionaryMainCollection.dictionaryMainCategory.indices, id: \.self) { index in
                         let equipmentName = self.viewModel.dictionaryMainCollection.dictionaryMainCategory[index]
-                        NavigationLink(destination: DictionaryDetailedView(), label: {
+                        NavigationLink(destination: DictionaryDetailedView(selectedEquipmentNumber: index), label: {
                             CategoryButtonView(imageSet: self.$viewModel.imageSet, imageName: equipmentName.paintingName, catagoryName: equipmentName.categoryName)
                         })
+    //                    .accentColor(Color(hex: "4F4F4F"))
                     }
                     .foregroundColor(Color(red: 0.361, green: 0.361, blue: 0.361))
                 }
@@ -37,10 +38,10 @@ struct DictionaryMainView: View {
             .background(Color(red: 254/255, green: 252/255, blue: 251/255))
             .ignoresSafeArea()
             .navigationTitle("")
-        }
-        .onAppear {
-            viewModel.viewAppeared()
-        }
+            .onAppear {
+                viewModel.viewAppeared()
+            }
+//        }
     }
     var contentMainTitleView : some View {
         HStack {

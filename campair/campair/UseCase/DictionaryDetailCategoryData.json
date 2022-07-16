@@ -40,7 +40,7 @@
                  "name" : "타프",
                  "equipmentList" : [
                      {
-                         "name" : "핵사 타프",
+                         "name" : "헥사 타프",
                          "paintingName" : "헥사_타프",
                          "paintingURLString" : ""
                      },
@@ -226,7 +226,7 @@
                  "equipmentList" : [
                      {
                          "name" : "마야 해먹",
-                         "paintingName" : "미야_해먹",
+                         "paintingName" : "마야_해먹",
                          "paintingURLString" : ""
                      }
                  ]

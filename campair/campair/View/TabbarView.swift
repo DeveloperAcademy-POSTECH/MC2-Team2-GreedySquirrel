@@ -11,17 +11,20 @@ struct TabbarView: View {
     let editorIcon = UIImage(named: "EditorTabbarImage")
     let dictionaryIcon = UIImage(named: "DictionaryTabbarImage")
     var body: some View {
-        TabView {
-            EditorMainView()
-                .tabItem {
-                    Image(uiImage: editorIcon!)
-                    Text("에디터")
-                }
-            DictionaryMainView()
-                .tabItem {
-                    Image(uiImage: dictionaryIcon!)
-                    Text("장비사전")
-                }
+        NavigationView {
+            TabView {
+                EditorMainView()
+                    .tabItem {
+                        Image(uiImage: editorIcon!)
+                        Text("에디터")
+                    }
+                DictionaryMainView()
+                    .tabItem {
+                        Image(uiImage: dictionaryIcon!)
+                        Text("장비사전")
+                    }
+            }
+            .navigationBarHidden(true)
         }
         .accentColor(Color(hex: "4F4F4F"))
     }
