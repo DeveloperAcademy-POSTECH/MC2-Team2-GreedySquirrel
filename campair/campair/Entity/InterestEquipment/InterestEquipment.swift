@@ -2,7 +2,7 @@
 //  InterestEquipmentContent.swift
 //  campair
 //
-//  Created by 이가은 on 2022/07/13.
+//  Created by 이가은 on 2022/07/17.
 //
 
 import Foundation

@@ -16,9 +16,9 @@ struct InterestEquipmentUseCase {
     func getInterestEquipmentContent(fileName: String, completion: @escaping (InterestEquipmentContent) -> Void) {
         repository.fetchInterestEquipmentContent(fileName: fileName) { result in
             switch result {
-            case .success(let interestEquipmentContent) : completion(interestEquipmentContent)
-            case .failure(let error) :
-                os_log(.error, log: .default, "\(error.localizedDescription)")
+                case .success(let interestEquipmentContent) : completion(interestEquipmentContent)
+                case .failure(let error) :
+                    os_log(.error, log: .default, "\(error.localizedDescription)")
             }
         }
     }

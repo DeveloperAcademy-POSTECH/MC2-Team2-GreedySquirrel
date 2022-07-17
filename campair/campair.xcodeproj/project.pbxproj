@@ -131,11 +131,11 @@
 		CC215E34285D922F00B5DBDA /* 테이블.png in Resources */ = {isa = PBXBuildFile; fileRef = CC215E24285D922F00B5DBDA /* 테이블.png */; };
 		CC215E3B285DAD5C00B5DBDA /* Content_2.json in Resources */ = {isa = PBXBuildFile; fileRef = CC215E3A285DAD5C00B5DBDA /* Content_2.json */; };
 		CC215E3D285DB6E900B5DBDA /* DictionaryMainCollectionData.json in Resources */ = {isa = PBXBuildFile; fileRef = CC215E3C285DB6E900B5DBDA /* DictionaryMainCollectionData.json */; };
+		CC219438288436FD00E93AC7 /* InterestEquipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC219437288436FD00E93AC7 /* InterestEquipment.swift */; };
 		CC282029287D731E00587334 /* InterestEquipmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC282028287D731E00587334 /* InterestEquipmentView.swift */; };
 		CC282038287EA35B00587334 /* InterestEquipmentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC282037287EA35B00587334 /* InterestEquipmentViewModel.swift */; };
 		CC28203A287EA4E800587334 /* InterestEquipmentUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC282039287EA4E800587334 /* InterestEquipmentUseCase.swift */; };
 		CC28203C287EA51900587334 /* InterestEquipmentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC28203B287EA51900587334 /* InterestEquipmentRepository.swift */; };
-		CC282044287F0C0300587334 /* InterestEquipmentContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC282043287F0C0300587334 /* InterestEquipmentContent.swift */; };
 		CC396453285B338D005DC3F8 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC396452285B338D005DC3F8 /* ViewExtension.swift */; };
 		CC434EAA2859C80600EB487F /* ShareRecommendedEquipmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC434EA92859C80600EB487F /* ShareRecommendedEquipmentView.swift */; };
 		CC434EAC2859C82300EB487F /* RecommendedEquipmentCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC434EAB2859C82300EB487F /* RecommendedEquipmentCardView.swift */; };
@@ -364,11 +364,11 @@
 		CC215E24285D922F00B5DBDA /* 테이블.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "테이블.png"; sourceTree = "<group>"; };
 		CC215E3A285DAD5C00B5DBDA /* Content_2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Content_2.json; sourceTree = "<group>"; };
 		CC215E3C285DB6E900B5DBDA /* DictionaryMainCollectionData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = DictionaryMainCollectionData.json; path = campair/Json/Editor/Detail/DictionaryMainCollectionData.json; sourceTree = SOURCE_ROOT; };
+		CC219437288436FD00E93AC7 /* InterestEquipment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestEquipment.swift; sourceTree = "<group>"; };
 		CC282028287D731E00587334 /* InterestEquipmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestEquipmentView.swift; sourceTree = "<group>"; };
 		CC282037287EA35B00587334 /* InterestEquipmentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestEquipmentViewModel.swift; sourceTree = "<group>"; };
 		CC282039287EA4E800587334 /* InterestEquipmentUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestEquipmentUseCase.swift; sourceTree = "<group>"; };
 		CC28203B287EA51900587334 /* InterestEquipmentRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestEquipmentRepository.swift; sourceTree = "<group>"; };
-		CC282043287F0C0300587334 /* InterestEquipmentContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestEquipmentContent.swift; sourceTree = "<group>"; };
 		CC396452285B338D005DC3F8 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 		CC434EA92859C80600EB487F /* ShareRecommendedEquipmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareRecommendedEquipmentView.swift; sourceTree = "<group>"; };
 		CC434EAB2859C82300EB487F /* RecommendedEquipmentCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedEquipmentCardView.swift; sourceTree = "<group>"; };
@@ -947,9 +947,9 @@
 		A884D26B2852CE2A004871B1 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				CC2194392884371100E93AC7 /* InterestEquipment */,
 				91915AB4285AC33400003C7F /* Editor */,
 				91915AB5285AC33D00003C7F /* Dictionary */,
-				CC282043287F0C0300587334 /* InterestEquipmentContent.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -972,6 +972,14 @@
 				9127D63C285DE36300C2B369 /* Content_4.json */,
 			);
 			path = Detail;
+			sourceTree = "<group>";
+		};
+		CC2194392884371100E93AC7 /* InterestEquipment */ = {
+			isa = PBXGroup;
+			children = (
+				CC219437288436FD00E93AC7 /* InterestEquipment.swift */,
+			);
+			path = InterestEquipment;
 			sourceTree = "<group>";
 		};
 		CC282027287D72EC00587334 /* InterestEquipment */ = {
@@ -1353,7 +1361,6 @@
 				CC00FAD428574F5F00BA8549 /* EditorDetailContentsVersionView.swift in Sources */,
 				CC282038287EA35B00587334 /* InterestEquipmentViewModel.swift in Sources */,
 				911841B5285C58A4004E7BB3 /* DictionaryContentViewModel.swift in Sources */,
-				CC282044287F0C0300587334 /* InterestEquipmentContent.swift in Sources */,
 				CC434EAC2859C82300EB487F /* RecommendedEquipmentCardView.swift in Sources */,
 				CC434EB32859CCBD00EB487F /* EditorDetailListVersionView.swift in Sources */,
 				911841B9285C58D0004E7BB3 /* DictionaryMainViewModel.swift in Sources */,
@@ -1381,6 +1388,7 @@
 				911841BD285C5965004E7BB3 /* DictionaryRepository.swift in Sources */,
 				CC00FADC28583B1F00BA8549 /* SafeAreaPadding.swift in Sources */,
 				CC434EAE2859C83400EB487F /* EditorRecommendEquipmentView.swift in Sources */,
+				CC219438288436FD00E93AC7 /* InterestEquipment.swift in Sources */,
 				CC9D118D2857336F000FEC81 /* EditorUseCase.swift in Sources */,
 				F62A6D1C2859B9BC00755AF3 /* DictionaryDetailedView.swift in Sources */,
 				CC00FADA28581E8E00BA8549 /* ColorExtension.swift in Sources */,
