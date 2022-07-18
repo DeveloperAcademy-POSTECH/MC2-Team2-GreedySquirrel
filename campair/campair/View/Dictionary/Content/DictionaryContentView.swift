@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct DictionaryContentView: View {
-    @ObservedObject var viewModel = DictionaryContentViewModel()
+    @StateObject var viewModel = DictionaryContentViewModel()
 //    @Environment(\.presentationMode) var mode: Binding<PresentationMode>
     var jsonFileName: String
     var body: some View {
@@ -102,6 +102,7 @@ struct DictionaryContentView: View {
         }
         .onAppear(perform: {
             self.viewModel.viewAppeared(fileName: jsonFileName)
+            print(self.viewModel.dictionaryEquipmentContent.content)
         })
         }
         .toolbar {
