@@ -25,9 +25,9 @@ extension View {
             .font(.system(.caption, design: .default))
     }
     func bodyBold000000Opacity60() -> some View {
-            self
+        self
             .foregroundColor(Color(hex: "000000"))
             .opacity(0.6)
             .font(.system(.body))
-        }
+    }
 }

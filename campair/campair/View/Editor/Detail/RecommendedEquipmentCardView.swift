@@ -46,7 +46,8 @@ struct RecommendedEquipmentCardView: View {
                     self.heartButtonClicked()
                 } label: {
                     Image(systemName: viewModel.isHearted(equipmentName: equipment.name) ? "heart.fill" : "heart")
-                        .font(.title3)
+                        .font(.system(size: 18))
+                        .frame(width: 34, height: 34)
                         .foregroundColor(Color.customDarkGray)
                         .padding(.trailing, 14)
                 }

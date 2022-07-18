@@ -11,7 +11,7 @@ struct EquipmentList: Codable {
     let name: String
     let paintingName: String
     var paintingURLString: String
-    init(name: String = "", paintingName: String = "임시이미지", paintingURLString: String = "") {
+    init(name: String = "", paintingName: String = "", paintingURLString: String = "") {
         self.name = name
         self.paintingName = paintingName
         self.paintingURLString = paintingURLString

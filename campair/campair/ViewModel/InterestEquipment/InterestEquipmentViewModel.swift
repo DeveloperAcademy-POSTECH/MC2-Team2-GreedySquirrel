@@ -9,7 +9,11 @@ import Foundation
 
 final class InterestEquipmentViewModel: ObservableObject {
     /// interestEquipments - key : name , value : ImageName
-    @Published var interestEquipments: [String: String] = [:]
+    @Published var interestEquipments: [String: String] = [:] {
+        didSet {
+            viewAppeared()
+        }
+    }
     private let useCase = InterestEquipmentUseCase(repository: InterestEquipmentRepository())
     @Published var imageSet: [String: Data] = ["none": Data()]
     @Published var interestEquipmentContent: InterestEquipmentContent = InterestEquipmentContent()
