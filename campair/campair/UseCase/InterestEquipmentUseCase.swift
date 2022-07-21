@@ -22,6 +22,9 @@ struct InterestEquipmentUseCase {
             }
         }
     }
+    func getUserDefault() -> [String: String] {
+        UserDefaults.standard.object(forKey: "interestEquipments") as? [String: String] ?? [String: String]()
+    }
 
     func fetchImageData(fromURLString urlString: String, completion: @escaping (Data) -> Void) {
         repository.fetchImage(urlString: urlString) { result in
@@ -32,5 +35,17 @@ struct InterestEquipmentUseCase {
                 os_log(.error, log: .default, "\(error.localizedDescription)")
             }
         }
+    }
+    func removeEquipment(equipmentName: String) -> [String: String] {
+        var interestEquipments = UserDefaults.standard.object(forKey: "interestEquipments") as? [String: String] ?? [String: String]()
+        interestEquipments[equipmentName] = nil
+        UserDefaults.standard.set(interestEquipments, forKey: "interestEquipments")
+        return UserDefaults.standard.object(forKey: "interestEquipments") as? [String: String] ?? [String: String]()
+    }
+    func addEquipment(equipmentName: String, equipmentPaintingImageName: String) -> [String: String] {
+        var interestEquipments = UserDefaults.standard.object(forKey: "interestEquipments") as? [String: String] ?? [String: String]()
+        interestEquipments[equipmentName] = equipmentPaintingImageName
+        UserDefaults.standard.set(interestEquipments, forKey: "interestEquipments")
+        return UserDefaults.standard.object(forKey: "interestEquipments") as? [String: String] ?? [String: String]()
     }
 }

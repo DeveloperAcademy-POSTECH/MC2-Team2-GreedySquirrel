@@ -45,7 +45,7 @@ struct InterestEquipmentView: View {
                 Spacer()
             }
             .onAppear {
-                viewModel.interestEquipments = (UserDefaults.standard.object(forKey: "interestEquipments") as? [String: String] ?? [String: String]())
+                viewModel.viewAppeared()
             }
             .padding(.top, 30)
             .navigationBarHidden(true)

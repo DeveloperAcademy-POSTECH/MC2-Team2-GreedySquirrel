@@ -62,11 +62,7 @@ struct RecommendedEquipmentCardView: View {
     }
     func heartButtonClicked() {
         let isHearted = viewModel.isHearted(equipmentName: equipment.name)
-        if isHearted {
-            viewModel.removeEquipment(equipmentName: equipment.name)
-        } else {
-            viewModel.addEquipment(equipmentName: equipment.name, equipmentPaintingImageName: equipment.paintingImageName)
-        }
+        viewModel.clickedHeart(isHearted: isHearted, equipmentName: equipment.name, equipmentPaintingImageName: equipment.paintingImageName)
     }
 }
 

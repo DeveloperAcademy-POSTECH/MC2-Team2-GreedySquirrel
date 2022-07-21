@@ -9,15 +9,12 @@ import Foundation
 
 final class InterestEquipmentViewModel: ObservableObject {
     /// interestEquipments - key : name , value : ImageName
-    @Published var interestEquipments: [String: String] = [:] {
-        didSet {
-            viewAppeared()
-        }
-    }
+    @Published var interestEquipments: [String: String] = [:]
     private let useCase = InterestEquipmentUseCase(repository: InterestEquipmentRepository())
     @Published var imageSet: [String: Data] = ["none": Data()]
     @Published var interestEquipmentContent: InterestEquipmentContent = InterestEquipmentContent()
     func viewAppeared() {
+        self.interestEquipments = useCase.getUserDefault()
         for interestEquipment in interestEquipments {
             self.useCase.getInterestEquipmentContent(fileName: interestEquipment.value) {[weak self] interestEquipmentContentData in
                 guard let self = self else { return }
@@ -33,16 +30,11 @@ final class InterestEquipmentViewModel: ObservableObject {
     func isHearted(equipmentName: String) -> Bool {
        return self.interestEquipments.contains(where: { $0.key == equipmentName })
     }
-    func removeEquipment(equipmentName: String) {
-        var interestEquipments = UserDefaults.standard.object(forKey: "interestEquipments") as? [String: String] ?? [String: String]()
-        interestEquipments[equipmentName] = nil
-        UserDefaults.standard.set(interestEquipments, forKey: "interestEquipments")
-        self.interestEquipments = UserDefaults.standard.object(forKey: "interestEquipments") as? [String: String] ?? [String: String]()
-    }
-    func addEquipment(equipmentName: String, equipmentPaintingImageName: String) {
-        var interestEquipments = UserDefaults.standard.object(forKey: "interestEquipments") as? [String: String] ?? [String: String]()
-        interestEquipments[equipmentName] = equipmentPaintingImageName
-        UserDefaults.standard.set(interestEquipments, forKey: "interestEquipments")
-        self.interestEquipments = UserDefaults.standard.object(forKey: "interestEquipments") as? [String: String] ?? [String: String]()
+    func clickedHeart(isHearted: Bool, equipmentName: String, equipmentPaintingImageName: String) {
+        if isHearted {
+            self.interestEquipments = useCase.removeEquipment(equipmentName: equipmentName)
+        } else {
+            self.interestEquipments = useCase.addEquipment(equipmentName: equipmentName, equipmentPaintingImageName: equipmentPaintingImageName)
+        }
     }
 }
