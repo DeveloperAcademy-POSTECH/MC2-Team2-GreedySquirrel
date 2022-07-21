@@ -28,7 +28,7 @@ struct EditorMainView: View {
                     VStack(spacing: 50) {
                         ForEach(self.viewModel.editorMainCollection.editorMainContents.indices, id: \.self) { contentsIndex in
                             let editorMainContent = self.viewModel.editorMainCollection.editorMainContents[contentsIndex]
-                            VStack(spacing: 10) {
+                            VStack(spacing: 6) {
                                 EditorCardView(editorMainContent: self.$viewModel.editorMainCollection.editorMainContents[contentsIndex], cardPaintingImage: self.viewModel.imageSet[editorMainContent.cardPaintingTitle] ?? self.viewModel.imageSet["none"]!)
                                 HStack(spacing: 6) {
                                     ForEach(editorMainContent.contentEquipments.indices, id: \.self) { equipmentIndex in

@@ -46,7 +46,6 @@ struct OpeningEditorView: View {
                     .font(.system(.headline, design: .default))
                 Text("\(self.openingSection.content)")
                     .bodyDefaultDarkGray()
-                // TODO : 스케치에서는 26으로 되어있는데 폰트 사이즈를 빼서 계산을 해야 한다고... but 쉬운 방법이 있을 거 같아서 찾아보는 중입니다.
                     .lineSpacing(5.0)
             }
             .padding(.horizontal, 25)

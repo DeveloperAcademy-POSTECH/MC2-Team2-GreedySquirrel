@@ -50,7 +50,7 @@ struct DictionaryMainCategory: Codable {
     let categoryName: EquipmentGroup
     let paintingName: String
     var paintingURLString: String
-    init(categoryName: EquipmentGroup = EquipmentGroup.tent, paintingName: String = "임시이미지", paintingURLString: String = "") {
+    init(categoryName: EquipmentGroup = EquipmentGroup.tent, paintingName: String = "", paintingURLString: String = "") {
         self.categoryName = categoryName
         self.paintingName = paintingName
         self.paintingURLString = paintingURLString

@@ -51,7 +51,7 @@ struct DictionaryContentView: View {
                     Image(uiImage: uiImage)
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 190, height: 190)
+                        .frame(width: 300, height: 300)
                         .padding(.vertical, 20) // 원래 55인데 20으로 바꾸고 싶음..
                 }
                 Spacer()

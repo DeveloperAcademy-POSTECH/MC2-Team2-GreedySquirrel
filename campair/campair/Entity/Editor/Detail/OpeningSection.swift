@@ -20,7 +20,7 @@ struct OpeningSection: Codable {
     let titleColor: String
     let title: String
     let content: String
-    init(cardPaintingBackgroundColor: String = "FFFFFF", cardPaintingSubTitleColor: String = "FFFFFF", cardPaintingSubTitle: String = "", cardPaintingTitleColor: String = "FFFFFF", cardPaintingTitle: String = "jj", cardPaintingImageName: String = "임시이미지", cardPaintingURLString: String = "", titleColor: String = "", title: String = "FFFFFF", content: String = "") {
+    init(cardPaintingBackgroundColor: String = "FFFFFF", cardPaintingSubTitleColor: String = "FFFFFF", cardPaintingSubTitle: String = "", cardPaintingTitleColor: String = "FFFFFF", cardPaintingTitle: String = "jj", cardPaintingImageName: String = "", cardPaintingURLString: String = "", titleColor: String = "", title: String = "FFFFFF", content: String = "") {
         self.cardPaintingBackgroundColor = cardPaintingBackgroundColor
         self.cardPaintingSubTitleColor = cardPaintingSubTitleColor
         self.cardPaintingSubTitle = cardPaintingSubTitle

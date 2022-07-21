@@ -46,7 +46,8 @@ struct RecommendedEquipmentCardView: View {
                     self.heartButtonClicked()
                 } label: {
                     Image(systemName: viewModel.isHearted(equipmentName: equipment.name) ? "heart.fill" : "heart")
-                        .font(.title3)
+                        .font(.system(size: 18))
+                        .frame(width: 34, height: 34)
                         .foregroundColor(Color.customDarkGray)
                         .padding(.trailing, 14)
                 }
@@ -61,11 +62,7 @@ struct RecommendedEquipmentCardView: View {
     }
     func heartButtonClicked() {
         let isHearted = viewModel.isHearted(equipmentName: equipment.name)
-        if isHearted {
-            viewModel.removeEquipment(equipmentName: equipment.name)
-        } else {
-            viewModel.addEquipment(equipmentName: equipment.name, equipmentPaintingImageName: equipment.paintingImageName)
-        }
+        viewModel.clickedHeart(isHearted: isHearted, equipmentName: equipment.name, equipmentPaintingImageName: equipment.paintingImageName)
     }
 }
 

@@ -47,7 +47,7 @@ struct DictionaryMainView: View {
             Text("여행의 시작은\n장비 준비부터")
                 .font(.largeTitle)
                 .fontWeight(.bold)
-                .foregroundColor(Color.black)
+                .foregroundColor(Color(hex: "4F4F4F"))
                 .multilineTextAlignment(.leading)
                 .padding(.leading, 20.0)
                 .padding(.top, 36.0)

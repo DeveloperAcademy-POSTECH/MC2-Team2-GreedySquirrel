@@ -10,22 +10,22 @@ import SwiftUI
 struct TabbarView: View {
     let editorIcon = UIImage(named: "EditorTabbarImage")
     let dictionaryIcon = UIImage(named: "DictionaryTabbarImage")
+    let interestEquipmentIcon = UIImage(named: "InterestEquipmentImage")
     var body: some View {
         TabView {
-            EditorMainView()
-                .tabItem {
-                    Image(uiImage: editorIcon!)
-                    Text("에디터")
-                }
             DictionaryMainView()
                 .tabItem {
                     Image(uiImage: dictionaryIcon!)
                     Text("장비사전")
                 }
+            EditorMainView()
+                .tabItem {
+                    Image(uiImage: editorIcon!)
+                    Text("에디터")
+                }
             InterestEquipmentView()
                 .tabItem {
-                    // TODO: Temp Image
-                    Image(systemName: "heart.fill")
+                    Image(uiImage: interestEquipmentIcon!)
                     Text("관심장비")
                 }
         }
