@@ -10,7 +10,7 @@ import SwiftUI
 struct ShareRecommendedEquipmentView: View {
     var body: some View {
         VStack(spacing: 0) {
-            Image("FindingEquipment")
+            Image("FindingEquipmentIcon")
                 .resizable()
                 .scaledToFit()
                 .frame(width: 58, height: 69)

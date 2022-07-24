@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct TabbarView: View {
-    let editorIcon = UIImage(named: "EditorTabbarIcon")
-    let dictionaryIcon = UIImage(named: "DictionaryTabbarIcon")
-    let interestEquipmentIcon = UIImage(named: "InterestEquipmentIcon")
+    let editorIcon = UIImage(named: "EditorTabbarImage")
+    let dictionaryIcon = UIImage(named: "DictionaryTabbarImage")
+    let interestEquipmentIcon = UIImage(named: "InterestEquipmentImage")
     var body: some View {
         TabView {
             DictionaryMainView()
