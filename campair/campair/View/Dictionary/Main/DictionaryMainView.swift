@@ -18,9 +18,11 @@ struct DictionaryMainView: View {
     var body: some View {
         NavigationView {
             VStack(spacing: 0) {
+                Image("dictionaryBackground")
+                    .ignoresSafeArea()
                 contentMainTitleView
-                    .padding(.top, 20.0)
-                LazyVGrid(columns: self.columns, spacing: 23) {
+//                    .padding(.top, 30.0)
+                LazyVGrid(columns: self.columns, spacing: 28) {
                     ForEach(self.viewModel.dictionaryMainCollection.dictionaryMainCategory.indices, id: \.self) { index in
                         let equipmentName = self.viewModel.dictionaryMainCollection.dictionaryMainCategory[index]
                         NavigationLink(destination: DictionaryDetailedView(), label: {
@@ -29,12 +31,10 @@ struct DictionaryMainView: View {
                     }
                     .foregroundColor(Color(red: 0.361, green: 0.361, blue: 0.361))
                 }
-                .padding(.top, 30.0)
-                .padding(.horizontal, 40.0)
-                Spacer()
+                .padding(.horizontal, 28.0)
             }
             .padding(.top, UIDevice.current.getSafeAreaTopValue)
-            .background(Color(red: 254/255, green: 252/255, blue: 251/255))
+//            .background(Color(red: 254/255, green: 252/255, blue: 251/255))
             .ignoresSafeArea()
             .navigationTitle("")
         }
@@ -43,19 +43,23 @@ struct DictionaryMainView: View {
         }
     }
     var contentMainTitleView : some View {
-        HStack {
-            Text("여행의 시작은\n장비 준비부터")
-                .font(.largeTitle)
-                .fontWeight(.bold)
-                .foregroundColor(Color(hex: "4F4F4F"))
-                .multilineTextAlignment(.leading)
-                .padding(.leading, 20.0)
-                .padding(.top, 36.0)
-            Spacer()
-            Image("CategoryBackground")
-                .frame(width: 150, height: 150, alignment: .center)
-                .padding(.leading, 20.0)
-        }
+            ZStack {
+//                Image("dictionaryBackground")
+//                    .ignoresSafeArea()
+                Text("여행의 시작은\n장비 준비부터")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                //  .foregroundColor(Color(hex: "4F4F4F"))
+                    .multilineTextAlignment(.leading)
+                    .padding(.trailing, 171.0)
+                    .padding(.top, -195.0)
+//                    .padding(.leading, 20.0) //for 12 mini
+                Image("squirrel")
+                    .frame(width: 186, height: 138, alignment: .leading)
+                    .padding(.leading, 191.0)
+                    .padding(.trailing, 13.0)
+                    .padding(.top, -200.0)
+            }
     }
 }
 
@@ -64,6 +68,7 @@ struct CategoryButtonView: View {
     let imageName: String
     let catagoryName: EquipmentGroup
     var body: some View {
+        ZStack {
             VStack(spacing: 0) {
                 if let uiImage = UIImage(data: imageSet[self.imageName] ?? imageSet["none"]! ) {
                     Image(uiImage: uiImage)
@@ -78,6 +83,7 @@ struct CategoryButtonView: View {
                 Text(self.catagoryName.korean)
                     .font(.system(size: 13))
             }
+        }
     }
 }
 

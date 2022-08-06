@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="390px" height="221px" viewBox="0 0 390 221" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 9</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="390" height="205"></rect>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="*Push_디자인0718" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-9">
+            <g id="img_sky">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <rect stroke="#979797" x="0.5" y="0.5" width="389" height="204"></rect>
+                <g mask="url(#mask-2)">
+                    <g transform="translate(-13.000000, 0.000000)">
+                        <rect id="Rectangle" fill="#F9EEEA" x="13" y="0" width="390" height="221"></rect>
+                        <path d="M13,99 C231.781929,100.552613 361.781929,105.532521 403,113.939724 C444.218071,122.346926 444.218071,143.882968 403,178.547849 L225.65279,189.703828 L13,209 L13,99 Z" id="Path-165" fill="#FCF7F5"></path>
+                        <path d="M100.9,50 C319.681929,50.4798987 449.681929,52.019143 490.9,54.6177327 C507.762264,55.6808127 523.038176,57.5753678 527.270967,60.4215373 C530.417474,62.537279 536.298336,67.5285281 544.913553,75.3952847 L313.55279,78.0357285 L100.9,84 L100.9,50 Z" id="Path-165-Copy" fill="#F1E2DD" transform="translate(322.906777, 67.000000) scale(-1, -1) translate(-322.906777, -67.000000) "></path>
+                        <path d="M0,28 C225.064208,28.4798987 358.797131,30.019143 401.198771,32.6177327 C443.60041,35.2163225 443.60041,41.8729173 401.198771,52.587517 L218.759072,56.0357285 L0,62 L0,28 Z" id="Path-165-Copy-4" fill="#F1E2DD" transform="translate(216.500000, 45.000000) scale(-1, -1) translate(-216.500000, -45.000000) "></path>
+                        <polygon id="Fill-22" fill="#DC5F42" points="342.517662 49.9383082 334.042416 43.4634146 325.045017 49.2203655 325.045017 61.8805269 342.517662 61.8805269 342.517662 55.1239106 335.710398 55.12702"></polygon>
+                        <path d="M3.13050758,156.5 C159.403314,157.036357 252.260457,158.756689 281.701936,161.660995 C311.143415,164.565302 311.143415,172.005025 281.701936,183.980166 L155.025358,187.83405 L3.13050758,194.5 L3.13050758,156.5 Z" id="Path-165-Copy-2" fill="#F9EEEA"></path>
+                        <polygon id="Fill-20" fill="#F6A093" points="51.2518761 138.280024 70.0940164 146.678439 59.2634512 157.463415 48.5853659 157.264112"></polygon>
+                        <polygon id="Fill-18" fill="#5090A7" points="358.276357 153.5699 377.056845 153.248504 366.284952 172.028991 358.276357 172.028991"></polygon>
+                        <polygon id="Fill-16" fill="#FFCC64" transform="translate(119.867934, 35.080552) rotate(18.000000) translate(-119.867934, -35.080552) " points="110.219286 43.5805517 110.219286 27.028369 118.060063 26.5805517 122.740874 32.8391571 129.516583 26.5805517 129.516583 42.9900665"></polygon>
+                    </g>
+                </g>
+            </g>
+            <g id="img_book" transform="translate(0.000000, 166.000000)">
+                <g id="Group-37">
+                    <rect id="Rectangle" fill="#F3EAE8" x="194.5" y="13" width="3" height="42"></rect>
+                    <rect id="Rectangle" fill="#FFFFFF" x="0" y="22" width="195" height="33"></rect>
+                    <rect id="Rectangle-Copy" fill="#FFFFFF" x="196" y="22" width="194" height="33"></rect>
+                    <g id="Group-19" fill="#FFFFFF">
+                        <path d="M0,13 C31.634581,4.33333333 68.7305406,0 111.287879,0 C153.845217,0 181.749257,4.33333333 195,13 L195,26 L0,26 L0,13 Z" id="Path-221"></path>
+                        <path d="M196,13 C227.472352,4.33333333 264.378076,0 306.717172,0 C349.056267,0 376.81721,4.33333333 390,13 L390,26 L196,26 L196,13 Z" id="Path-221-Copy" transform="translate(293.000000, 13.000000) scale(-1, 1) translate(-293.000000, -13.000000) "></path>
+                    </g>
+                </g>
+                <rect id="Rectangle" fill="url(#linearGradient-3)" transform="translate(195.000000, 40.000000) scale(1, -1) translate(-195.000000, -40.000000) " x="0" y="25" width="390" height="30"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
