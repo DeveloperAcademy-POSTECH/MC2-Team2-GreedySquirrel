@@ -19,9 +19,7 @@ struct DictionaryMainView: View {
         NavigationView {
             VStack(spacing: 0) {
                 Image("dictionaryBackground")
-//                    .ignoresSafeArea()
                     .foregroundColor(.black)
-//                    .background(Color.red)
                 contentMainTitleView
                 ScrollView {
                     LazyVGrid(columns: self.columns, spacing: 28) {
@@ -36,6 +34,7 @@ struct DictionaryMainView: View {
                     .padding(.horizontal, 28.0)
                     .padding(.top, 10.0)
                 }
+                .padding(.bottom, 100.0)
             }
             .ignoresSafeArea()
             .navigationTitle("")
@@ -46,16 +45,12 @@ struct DictionaryMainView: View {
     }
     var contentMainTitleView : some View {
             ZStack {
-//                Image("dictionaryBackground")
-//                    .ignoresSafeArea()
                 Text("여행의 시작은\n장비 준비부터")
                     .font(.largeTitle)
                     .fontWeight(.bold)
-                //  .foregroundColor(Color(hex: "4F4F4F"))
                     .multilineTextAlignment(.leading)
                     .padding(.trailing, 171.0)
                     .padding(.top, -148.0)
-//                    .padding(.leading, 20.0) //for 12 mini
                 Image("squirrel")
                     .frame(width: 186, height: 138, alignment: .leading)
                     .padding(.leading, 191.0)
