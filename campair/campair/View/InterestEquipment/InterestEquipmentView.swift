@@ -13,7 +13,7 @@ struct InterestEquipmentView: View {
         NavigationView {
             VStack(alignment: .leading) {
                 HStack(spacing: 0) {
-                    Text("곧 떠나는 \n당신의 관심 장비")
+                    Text("가볍게 떠나는 \n당신의 트렁크")
                         .font(.largeTitle)
                         .fontWeight(.bold)
                         .foregroundColor(Color(hex: "4F4F4F"))
@@ -23,7 +23,7 @@ struct InterestEquipmentView: View {
                     Spacer()
                     VStack(spacing: 0) {
                         Image(uiImage: UIImage(named: "squirrel")!)
-                        Text("텅 비어있습니다")
+                        Text("트렁크가 비어있어요!")
                             .frame(maxWidth: .infinity)
                             .padding(.top, 25)
                     }
