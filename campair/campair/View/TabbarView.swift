@@ -12,25 +12,28 @@ struct TabbarView: View {
     let dictionaryIcon = UIImage(named: "DictionaryTabbarIcon")
     let interestEquipmentIcon = UIImage(named: "InterestEquipmentIcon")
     var body: some View {
-        TabView {
-            DictionaryMainView()
-                .tabItem {
-                    Image(uiImage: dictionaryIcon!)
-                    Text("장비사전")
-                }
-            EditorMainView()
-                .tabItem {
-                    Image(uiImage: editorIcon!)
-                    Text("에디터")
-                }
-            InterestEquipmentView()
-                .tabItem {
-                    Image(uiImage: interestEquipmentIcon!)
-                    Text("관심장비")
-                }
+        NavigationView {
+            TabView {
+                EditorMainView()
+                    .tabItem {
+                        Image(uiImage: editorIcon!)
+                        Text("에디터")
+                    }
+                DictionaryMainView()
+                    .tabItem {
+                        Image(uiImage: dictionaryIcon!)
+                        Text("장비사전")
+                    }
+                InterestEquipmentView()
+                    .tabItem {
+                        Image(uiImage: interestEquipmentIcon!)
+                        Text("관심장비")
+                    }
+            }
+            .navigationBarHidden(true)
+            .environmentObject(InterestEquipmentViewModel())
+            .accentColor(Color(hex: "4F4F4F"))
         }
-        .environmentObject(InterestEquipmentViewModel())
-        .accentColor(Color(hex: "4F4F4F"))
     }
 }
 

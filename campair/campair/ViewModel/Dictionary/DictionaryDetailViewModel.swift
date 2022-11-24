@@ -14,7 +14,9 @@ final class DictionaryDetailedViewModel: ObservableObject {
     @Published var imageSet: [String: Data] = ["none": Data()]
     init(dictionaryPreDetailCategory: DictionaryPreDetailCategory = DictionaryPreDetailCategory()) {
         self.dictionaryPreDetailCategory = dictionaryPreDetailCategory
+        viewAppeared()
     }
+
     func viewAppeared() {
         self.dictionaryUseCase.getDictionaryDetailCategory { [weak self] dictionaryPreDetailCategoryData in
             guard let self = self else { return }

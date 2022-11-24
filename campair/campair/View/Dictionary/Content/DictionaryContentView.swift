@@ -9,34 +9,34 @@ import SwiftUI
 
 struct DictionaryContentView: View {
     @StateObject var viewModel = DictionaryContentViewModel()
-//    @Environment(\.presentationMode) var mode: Binding<PresentationMode>
+    @Environment(\.presentationMode) var mode: Binding<PresentationMode>
     var jsonFileName: String
     var body: some View {
         VStack {
-//            VStack(spacing: 0) {
-//                Rectangle()
-//                    .ignoresSafeArea()
-//                    .frame(height: 0)
-//                    .foregroundColor(Color(hex: "FEFCFB"))
-//                HStack {
-//                    Button(action: {
-//                       self.mode.wrappedValue.dismiss()
-//                    }, label: {
-//                        Image(systemName: "chevron.left")
-//                            .frame(width: 40, height: 40)
-//                            .foregroundColor(Color.black)
-//                    })
-//                    .padding(.leading, 8)
-//                    Spacer()
-//                    Text(self.viewModel.dictionaryEquipmentContent.categoryName)
-//                        .padding(.trailing, 179)
-//                }
-//                .padding(.bottom, 10)
-//                .background(Color(hex: "FEFCFB"))
-//                Rectangle()
-//                    .frame(height: 1)
-//                    .foregroundColor(Color(hex: "E8E8E8"))
-//            }
+            VStack(spacing: 0) {
+                Rectangle()
+                    .ignoresSafeArea()
+                    .frame(height: 0)
+                    .foregroundColor(Color(hex: "FEFCFB"))
+                HStack {
+                    Button(action: {
+                       self.mode.wrappedValue.dismiss()
+                    }, label: {
+                        Image(systemName: "chevron.left")
+                            .frame(width: 40, height: 40)
+                            .foregroundColor(Color.black)
+                    })
+                    .padding(.leading, 8)
+                    Spacer()
+                    Text(self.viewModel.dictionaryEquipmentContent.categoryName)
+                        .padding(.trailing, 179)
+                }
+                .padding(.bottom, 10)
+                .background(Color(hex: "FEFCFB"))
+                Rectangle()
+                    .frame(height: 1)
+                    .foregroundColor(Color(hex: "E8E8E8"))
+            }
         ScrollView {
         VStack(alignment: .leading, spacing: 0) {
             Text(self.viewModel.dictionaryEquipmentContent.name)
@@ -102,7 +102,6 @@ struct DictionaryContentView: View {
         }
         .onAppear(perform: {
             self.viewModel.viewAppeared(fileName: jsonFileName)
-            print(self.viewModel.dictionaryEquipmentContent.content)
         })
         }
         .toolbar {
@@ -113,8 +112,8 @@ struct DictionaryContentView: View {
                 }
             }
         }
-        .navigationBarTitleDisplayMode(.inline)
-        .navigationBarTitle("")
+        .navigationBarHidden(true)
+        .navigationBarBackButtonHidden(true)
     }
 }
 

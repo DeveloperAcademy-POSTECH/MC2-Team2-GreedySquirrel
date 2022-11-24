@@ -16,29 +16,26 @@ struct DictionaryMainView: View {
         GridItem(.flexible(), spacing: 12, alignment: nil)
     ]
     var body: some View {
-        NavigationView {
-            VStack(spacing: 0) {
-                Image("dictionaryBackground")
-                    .foregroundColor(.black)
-                contentMainTitleView
-                ScrollView {
-                    LazyVGrid(columns: self.columns, spacing: 28) {
-                        ForEach(self.viewModel.dictionaryMainCollection.dictionaryMainCategory.indices, id: \.self) { index in
-                            let equipmentName = self.viewModel.dictionaryMainCollection.dictionaryMainCategory[index]
-                            NavigationLink(destination: DictionaryDetailedView(), label: {
-                                CategoryButtonView(imageSet: self.$viewModel.imageSet, imageName: equipmentName.paintingName, catagoryName: equipmentName.categoryName)
-                                    .foregroundColor(.customBlack)
-                            })
-                        }
-                    }
-                    .padding(.horizontal, 28.0)
-                    .padding(.top, 10.0)
+        VStack(spacing: 0) {
+            contentMainTitleView
+                .padding(.top, 20.0)
+            LazyVGrid(columns: self.columns, spacing: 23) {
+                ForEach(self.viewModel.dictionaryMainCollection.dictionaryMainCategory.indices, id: \.self) { index in
+                    let equipmentName = self.viewModel.dictionaryMainCollection.dictionaryMainCategory[index]
+                    NavigationLink(destination: DictionaryDetailedView(scrollOffset: 0, selectedEquipmentNumber: index), label: {
+                        CategoryButtonView(imageSet: self.$viewModel.imageSet, imageName: equipmentName.paintingName, catagoryName: equipmentName.categoryName)
+                    })
                 }
-                .padding(.bottom, 100.0)
+                .foregroundColor(Color(hex: "4F4F4F"))
             }
-            .ignoresSafeArea()
-            .navigationTitle("")
+            .padding(.top, 30.0)
+            .padding(.horizontal, 40.0)
+            Spacer()
         }
+        .padding(.top, UIDevice.current.getSafeAreaTopValue)
+        .background(Color(red: 254/255, green: 252/255, blue: 251/255))
+        .ignoresSafeArea()
+        .navigationTitle("")
         .onAppear {
             viewModel.viewAppeared()
         }
